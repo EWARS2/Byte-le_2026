@@ -41,9 +41,10 @@ class Client(UserClient):
         :param actions:     This is the actions object that you will add effort allocations or decrees to.
         :param world:       Generic world information
         """
-        actions = [ActionType.NONE, ActionType.NONE]
+        actions = []
         # How far is <here> from <there>?
         # distance: int = here.distance(there)
+
 
 
         # Thundar moves every turn
