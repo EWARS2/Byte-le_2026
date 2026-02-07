@@ -116,8 +116,8 @@ def a_star_path(start: Vector, goal: Vector, world, allow_vents = True, game_obj
             top = world.get_top(vec)
             if top and top.object_type != ObjectType.AVATAR:
                 # walls block
-                if top.object_type == ObjectType.WALL:
-                    continue
+                #if top.object_type == ObjectType.WALL:
+                #    continue
 
                 # vents block unless allowed
                 if top.object_type == ObjectType.VENT and not allow_vents:
