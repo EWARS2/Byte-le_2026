@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en" data-accent-color="indigo" data-content_root="./">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Getting Started - 2026 QBB Security Manual</title><link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="How To Play" href="HowToPlay.html" /><link rel="prev" title="2026 QBB Security Manual" href="index.html" /><script>
+    function setColorMode(t){let e=document.documentElement;e.setAttribute("data-color-mode",t);let a=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches,s=t;"auto"===t&&(s=a?"dark":"light"),"light"===s?(e.classList.remove("dark"),e.classList.add("light")):(e.classList.remove("light"),e.classList.add("dark"))}
+    setColorMode(localStorage._theme||"auto");
+  </script><link rel="stylesheet" type="text/css" href="_static/pygments.css?v=e1a1ceaf" />
+    <link rel="stylesheet" type="text/css" href="_static/shibuya.css?v=44020203" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link media="print" rel="stylesheet" type="text/css" href="_static/print.css?v=20ff2c19" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/custom.css?v=5d62d717" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --sy-f-text: "Inter", var(--sy-f-sys), var(--sy-f-cjk), sans-serif;
+  --sy-f-heading: "Inter", var(--sy-f-sys), var(--sy-f-cjk), sans-serif;
+}
+</style>
+    <meta property="og:type" content="website"/><meta property="og:title" content="Getting Started"/>
+    <meta name="twitter:card" content="summary"/>
+  </head>
+<body><div class="sy-head">
+  <div class="sy-head-blur"></div>
+  <div class="sy-head-inner sy-container mx-auto">
+    <a class="sy-head-brand" href="index.html">
+      <img class="light-logo" src="_static/bytele-logo.png" alt="2026 QBB Security Manual" height="28" loading="lazy" />
+      <img class="dark-logo" src="_static/bytele-logo.png" alt="2026 QBB Security Manual" height="28" loading="lazy" />
+      <strong>2026 QBB Security Manual</strong>
+    </a>
+    <div class="sy-head-nav" id="head-nav">
+      <nav class="sy-head-links"></nav>
+      <div class="sy-head-extra flex items-center print:hidden"><form class="searchbox flex items-center" action="search.html" method="get">
+  <input type="text" name="q" placeholder="Search" />
+  <kbd>/</kbd>
+</form><div class="sy-head-socials">
+  <a href="https://github.com/acm-ndsu/Byte-le-2026-Client-Package" aria-label="GitHub">
+    <iconify-icon icon="simple-icons:github"></iconify-icon>
+  </a>
+  <a href="https://discord.gg/zJ9xU7gZ8q" aria-label="Discord">
+    <iconify-icon icon="simple-icons:discord"></iconify-icon>
+  </a></div></div>
+    </div>
+    <div class="sy-head-actions flex items-center shrink-0 print:hidden"><button class="js-theme theme-switch flex items-center"
+data-aria-auto="Switch to light color mode"
+data-aria-light="Switch to dark color mode"
+data-aria-dark="Switch to auto color mode">
+<i class="i-lucide theme-icon"></i>
+</button><button class="md:hidden flex items-center js-menu" aria-label="Menu" type="button" aria-controls="head-nav" aria-expanded="false">
+        <div class="hamburger">
+          <span class="hamburger_1"></span>
+          <span class="hamburger_2"></span>
+          <span class="hamburger_3"></span>
+        </div>
+      </button>
+    </div>
+  </div>
+</div>
+<div class="sy-page sy-container flex mx-auto">
+  <aside id="lside" class="sy-lside md:w-72 md:shrink-0 print:hidden">
+    <div class="sy-lside-inner md:sticky">
+      <div class="sy-scrollbar p-6">
+        <div class="globaltoc" data-expand-depth="0"><ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="HowToPlay.html">How To Play</a></li>
+<li class="toctree-l1"><a class="reference internal" href="server.html">The Server</a></li>
+<li class="toctree-l1"><a class="reference internal" href="controls.html">Controlling your Avatar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tips.html">Tips &amp; Tricks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="useful_commands.html">Useful Commands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="visualizer.html">The Visualizer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="enums.html">Enums</a></li>
+<li class="toctree-l1"><a class="reference internal" href="debugging.html">Debugging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="credits.html">Credits</a></li>
+</ul>
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="lside-overlay js-menu" role="button" aria-label="Close left sidebar" aria-controls="lside" aria-expanded="false"></div>
+  <aside id="rside" class="sy-rside pb-3 w-64 shrink-0 order-last">
+    <button class="rside-close js-menu xl:hidden" aria-label="Close Table of Contents" type="button" aria-controls="rside" aria-expanded="false">
+      <i class="i-lucide close"></i>
+    </button>
+    <div class="sy-scrollbar sy-rside-inner px-6 xl:top-16 xl:sticky xl:pl-0 pt-6 pb-4"><div class="localtoc"><h3>On this page</h3><ul>
+<li><a class="reference internal" href="#ring-ring-hello-hello-hello"><em>ring</em> <em>ring</em> HELLO? HELLO, HELLO?!</a></li>
+<li><a class="reference internal" href="#prerequisites">Prerequisites</a></li>
+<li><a class="reference internal" href="#the-client-package">The Client Package</a><ul>
+<li><a class="reference internal" href="#using-git-s-built-in-cli">Using Git&#8217;s built-in CLI</a></li>
+<li><a class="reference internal" href="#using-github-cli">Using GitHub CLI</a></li>
+<li><a class="reference internal" href="#using-github-desktop">Using GitHub Desktop</a></li>
+<li><a class="reference internal" href="#download-zip">Download ZIP</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#installing-dependencies">Installing Dependencies</a></li>
+<li><a class="reference internal" href="#what-now">What Now?</a></li>
+<li><a class="reference internal" href="#submitting-issues">Submitting Issues</a></li>
+</ul>
+</div><div id="ethical-ad-placement" data-ea-publisher="readthedocs"></div></div>
+  </aside>
+  <div class="rside-overlay js-menu" role="button" aria-label="Close Table of Contents" aria-controls="rside" aria-expanded="false"></div>
+  <main class="sy-main w-full max-sm:max-w-full print:pt-6">
+<div class="sy-breadcrumbs" role="navigation">
+  <div class="sy-breadcrumbs-inner flex items-center">
+    <div class="md:hidden mr-3">
+      <button class="js-menu" aria-label="Menu" type="button" aria-controls="lside" aria-expanded="false">
+        <i class="i-lucide menu"></i>
+      </button>
+    </div>
+    <ol class="flex-1" itemscope itemtype="https://schema.org/BreadcrumbList"><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="index.html"><span itemprop="name">2026 QBB Security Manual</span></a>
+        <span>/</span>
+        <meta itemprop="position" content="1" />
+      </li><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <strong itemprop="name">Getting Started</strong>
+        <meta itemprop="position" content="2" />
+      </li></ol>
+    <div class="xl:hidden ml-1">
+      <button class="js-menu" aria-label="Show table of contents" type="button" aria-controls="rside"
+        aria-expanded="false">
+        <i class="i-lucide outdent"></i>
+      </button>
+    </div>
+  </div>
+</div><div class="flex flex-col break-words justify-between">
+      <div class="relative min-w-0 max-w-6xl px-6 pb-6 pt-8 xl:px-12">
+  <article class="yue" role="main">
+          <section id="getting-started">
+<h1>Getting Started<a class="headerlink" href="#getting-started" title="Link to this heading">¶</a></h1>
+<section id="ring-ring-hello-hello-hello">
+<h2><em>ring</em> <em>ring</em> HELLO? HELLO, HELLO?!<a class="headerlink" href="#ring-ring-hello-hello-hello" title="Link to this heading">¶</a></h2>
+<p><em>uuuuh</em> We wanted to type up a message for you to help you get settled in on your first night.</p>
+</section>
+<section id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Python 3.13; download it <a class="reference external" href="https://www.python.org/downloads/release/python-31312/">here</a>.</dt><dd><ul>
+<li><p>Python 3.14 <strong>HAS</strong> been tested and it does <strong>BREAK</strong> things. Please <strong>DO NOT</strong> use it.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>A code editor with Python support; some recommendations:</dt><dd><ul>
+<li><p>VS Code/<a class="reference external" href="https://vscodium.com/#install">VSCodium</a> with the Python extension published by <strong>ms-python</strong></p></li>
+<li><p><a class="reference external" href="https://www.jetbrains.com/pycharm/download/">PyCharm</a></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</section>
+<section id="the-client-package">
+<h2>The Client Package<a class="headerlink" href="#the-client-package" title="Link to this heading">¶</a></h2>
+<p>To begin patrolling the dark, dank halls of QBB, you must download the contents of <a class="reference external" href="https://github.com/acm-ndsu/Byte-le-2026-Client-Package">this repository</a>.
+You may do so in many ways… here are some:</p>
+<section id="using-git-s-built-in-cli">
+<h3>Using <a class="reference external" href="https://git-scm.com/install">Git</a>’s built-in CLI<a class="headerlink" href="#using-git-s-built-in-cli" title="Link to this heading">¶</a></h3>
+<ol class="arabic simple">
+<li><p>In the directory you want to download to, run the following command:</p></li>
+</ol>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span data-line="1"><span class="go">git clone https://github.com/&lt;user&gt;/Byte-le-Engine-2026-Client-Package.git</span>
+</span></pre></div>
+</div>
+</section>
+<section id="using-github-cli">
+<h3>Using <a class="reference external" href="https://cli.github.com/">GitHub CLI</a><a class="headerlink" href="#using-github-cli" title="Link to this heading">¶</a></h3>
+<ol class="arabic simple">
+<li><p>In the directory you want to download to, run the following command:</p></li>
+</ol>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span data-line="1"><span class="go">gh repo clone &lt;user&gt;/Byte-le-2026-Client-Package</span>
+</span></pre></div>
+</div>
+</section>
+<section id="using-github-desktop">
+<h3>Using <a class="reference external" href="https://desktop.github.com/download/">GitHub Desktop</a><a class="headerlink" href="#using-github-desktop" title="Link to this heading">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Go to <a class="reference external" href="https://github.com/acm-ndsu/Byte-le-2026-Client-Package">https://github.com/acm-ndsu/Byte-le-2026-Client-Package</a></p></li>
+<li><p>Press the <code class="docutils literal notranslate"><span class="pre">&lt;&gt;</span> <span class="pre">Code</span></code> button to drop down a menu:</p></li>
+</ol>
+<figure class="align-center">
+<a class="reference internal image-reference" href="_images/clone_repo.png"><img alt="_images/clone_repo.png" src="_images/clone_repo.png" style="width: 60%;" />
+</a>
+</figure>
+<ol class="arabic simple" start="3">
+<li><dl class="simple">
+<dt>Press “Open with GitHub Desktop”</dt><dd><ol class="lowerroman simple">
+<li><p>Allow the website to open GitHub Desktop if you have it downloaded already</p></li>
+<li><p>Once in GitHub Desktop, the URL to the repository will be provided</p></li>
+<li><p>Choose where you’d like it saved on your device</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Clone</span></code> and you’re good to go!</p></li>
+</ol>
+</dd>
+</dl>
+</li>
+</ol>
+<figure class="align-center">
+<a class="reference internal image-reference" href="_images/github_desktop.png"><img alt="_images/github_desktop.png" src="_images/github_desktop.png" style="width: 70%;" />
+</a>
+</figure>
+</section>
+<section id="download-zip">
+<h3>Download ZIP<a class="headerlink" href="#download-zip" title="Link to this heading">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Go to <a class="reference external" href="https://github.com/acm-ndsu/Byte-le-2026-Client-Package">https://github.com/acm-ndsu/Byte-le-2026-Client-Package</a></p></li>
+<li><p>Press the <code class="docutils literal notranslate"><span class="pre">&lt;&gt;</span> <span class="pre">Code</span></code> button to drop down a menu:</p></li>
+</ol>
+<figure class="align-center">
+<a class="reference internal image-reference" href="_images/clone_repo.png"><img alt="_images/clone_repo.png" src="_images/clone_repo.png" style="width: 60%;" />
+</a>
+</figure>
+<ol class="arabic simple" start="3">
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Download</span> <span class="pre">ZIP</span></code> and find it in your Downloads.</p></li>
+<li><p>Extract the files somewhere on your device.</p></li>
+</ol>
+</section>
+</section>
+<section id="installing-dependencies">
+<h2>Installing Dependencies<a class="headerlink" href="#installing-dependencies" title="Link to this heading">¶</a></h2>
+<p>It’s good practice to set up a virtual environment to separate Byte-le’s packages
+from any system-wide Python packages you might have installed.
+For more information on Python virtual environments, go <a class="reference external" href="https://docs.python.org/3/library/venv.html">here</a>.
+In your project directory, run the following commands in a command line:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span data-line="1"><span class="go">python -m venv .venv</span>
+</span></pre></div>
+</div>
+<p>To activate your virtual environment, run <strong>one</strong> of the following commands depending on your shell:</p>
+<div class="literal-block-wrapper docutils container" id="id3">
+<div class="code-block-caption"><span class="caption-text">cmd</span><a class="headerlink" href="#id3" title="Link to this code">¶</a></div>
+<div class="highlight-cmd notranslate"><div class="highlight"><pre><span></span><span data-line="1">.\.venv\Scripts\activate.bat
+</span></pre></div>
+</div>
+</div>
+<div class="literal-block-wrapper docutils container" id="id4">
+<div class="code-block-caption"><span class="caption-text">PowerShell</span><a class="headerlink" href="#id4" title="Link to this code">¶</a></div>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span data-line="1"> <span class="p">.\.</span><span class="n">venv</span><span class="p">\</span><span class="n">Scripts</span><span class="p">\</span><span class="n">Activate</span><span class="p">.</span><span class="n">ps1</span>
+</span></pre></div>
+</div>
+</div>
+<div class="literal-block-wrapper docutils container" id="id5">
+<div class="code-block-caption"><span class="caption-text">Bash/zsh</span><a class="headerlink" href="#id5" title="Link to this code">¶</a></div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span data-line="1"><span class="nb">source</span><span class="w"> </span>.venv/bin/activate
+</span></pre></div>
+</div>
+</div>
+<div class="literal-block-wrapper docutils container" id="id6">
+<div class="code-block-caption"><span class="caption-text">fish</span><a class="headerlink" href="#id6" title="Link to this code">¶</a></div>
+<div class="highlight-fish notranslate"><div class="highlight"><pre><span></span><span data-line="1"><span class="nb">source</span> .venv/bin/activate.fish
+</span></pre></div>
+</div>
+</div>
+<p>If you don’t see your shell or these don’t work, find the appropriate command for your shell <a class="reference external" href="https://docs.python.org/3/library/venv.html#how-venvs-work">here</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If your virtual environment was activated, your shell might notice, adding “<code class="docutils literal notranslate"><span class="pre">.venv</span></code>” somewhere in your prompt like so:</p>
+<div class="literal-block-wrapper docutils container" id="id7">
+<div class="code-block-caption"><span class="caption-text">cmd</span><a class="headerlink" href="#id7" title="Link to this code">¶</a></div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span data-line="1"><span class="gp gp-VirtualEnv">(.venv)</span> <span class="go">C:\path\to\Byte-le-2026-Client-Package\&gt;</span>
+</span></pre></div>
+</div>
+</div>
+<div class="literal-block-wrapper docutils container" id="id8">
+<div class="code-block-caption"><span class="caption-text">PowerShell</span><a class="headerlink" href="#id8" title="Link to this code">¶</a></div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span data-line="1"><span class="gp gp-VirtualEnv">(.venv)</span> <span class="go">PS C:\path\to\Byte-le-2026-Client-Package\&gt;</span>
+</span></pre></div>
+</div>
+</div>
+<div class="literal-block-wrapper docutils container" id="id9">
+<div class="code-block-caption"><span class="caption-text">Bash</span><a class="headerlink" href="#id9" title="Link to this code">¶</a></div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span data-line="1"><span class="gp gp-VirtualEnv">(.venv)</span> <span class="go">/path/to/Byte-le-2026-Client-Package $</span>
+</span></pre></div>
+</div>
+</div>
+<div class="literal-block-wrapper docutils container" id="id10">
+<div class="code-block-caption"><span class="caption-text">fish</span><a class="headerlink" href="#id10" title="Link to this code">¶</a></div>
+<div class="highlight-fish notranslate"><div class="highlight"><pre><span></span><span data-line="1">.venv /path/to/Byte-le-2026-Client-Package <span class="o">&gt;</span>
+</span></pre></div>
+</div>
+</div>
+<p>Alternatively, you can check your path to Python:</p>
+<div class="literal-block-wrapper docutils container" id="id11">
+<div class="code-block-caption"><span class="caption-text">cmd</span><a class="headerlink" href="#id11" title="Link to this code">¶</a></div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span data-line="1"><span class="go">where.exe python</span>
+</span></pre></div>
+</div>
+</div>
+<div class="literal-block-wrapper docutils container" id="id12">
+<div class="code-block-caption"><span class="caption-text">PowerShell</span><a class="headerlink" href="#id12" title="Link to this code">¶</a></div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span data-line="1"><span class="go">where.exe python</span>
+</span></pre></div>
+</div>
+</div>
+<div class="literal-block-wrapper docutils container" id="id13">
+<div class="code-block-caption"><span class="caption-text">Bash/zsh</span><a class="headerlink" href="#id13" title="Link to this code">¶</a></div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span data-line="1"><span class="go">which python</span>
+</span></pre></div>
+</div>
+</div>
+<p>If your virtual environment is activated, the output of these commands should include a path that looks something like <code class="docutils literal notranslate"><span class="pre">/path/to/Byte-le-2026-Client-Package/path/to/venv/bin/python</span></code>.</p>
+</div>
+<p>Once your virtual environment is activated, run the following command to install Byte-le’s packages:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span data-line="1"><span class="go">pip install -r requirements.txt</span>
+</span></pre></div>
+</div>
+<p>More useful commands are listed in <a class="reference internal" href="useful_commands.html"><span class="doc">Useful Commands</span></a>.</p>
+</section>
+<section id="what-now">
+<h2>What Now?<a class="headerlink" href="#what-now" title="Link to this heading">¶</a></h2>
+<p>To learn more about the game mechanic’s, read <a class="reference internal" href="HowToPlay.html"><span class="doc">How To Play</span></a>!</p>
+<p>To get your team registered and learn how to submit your code, read <a class="reference internal" href="server.html"><span class="doc">The Server</span></a>!</p>
+<p>To learn how to make your lil’ guy do stuff, read <a class="reference internal" href="controls.html"><span class="doc">Controlling your Avatar</span></a>!</p>
+<p>For tips on programming your client, read <a class="reference internal" href="tips.html"><span class="doc">Tips &amp; Tricks</span></a>!</p>
+</section>
+<section id="submitting-issues">
+<h2>Submitting Issues<a class="headerlink" href="#submitting-issues" title="Link to this heading">¶</a></h2>
+<p>If you run into issues with the game, please submit an issue to the Discord server in the
+<a class="reference external" href="https://discord.com/channels/697995889020633221/1357477016269492375">#bug-reporting channel</a>
+or call a developer over!</p>
+</section>
+</section>
+
+        </article><button class="back-to-top" type="button">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+  </svg>
+  <span>Back to top</span>
+</button><div class="navigation flex print:hidden"><div class="navigation-prev">
+    <a href="index.html">
+      <i class="i-lucide chevron-left"></i>
+      <div class="page-info">
+        <span>Previous</span><div class="title">Home</div></div>
+    </a>
+  </div><div class="navigation-next">
+    <a href="HowToPlay.html">
+      <div class="page-info">
+        <span>Next</span>
+        <div class="title">How To Play</div>
+      </div>
+      <i class="i-lucide chevron-right"></i>
+    </a>
+  </div></div></div>
+    </div>
+  </main>
+</div>
+<footer class="sy-foot">
+  <div class="sy-foot-inner sy-container mx-auto">
+    <div class="sy-foot-reserved md:flex justify-between items-center">
+      <div class="sy-foot-copyright"><p>1974-2026, NDSU ACM</p>
+  
+  <p>
+    Made with
+    
+    <a href="https://www.sphinx-doc.org/">Sphinx</a> and
+    
+    <a href="https://shibuya.lepture.com">Shibuya theme</a>.
+  </p>
+</div>
+      <div class="sy-foot-socials">
+<a href="https://github.com/acm-ndsu/Byte-le-2026-Client-Package" aria-label="GitHub">
+  <iconify-icon icon="simple-icons:github"></iconify-icon>
+</a>
+<a href="https://discord.gg/zJ9xU7gZ8q" aria-label="Discord">
+  <iconify-icon icon="simple-icons:discord"></iconify-icon>
+</a></div>
+    </div>
+  </div>
+</footer>
+      <script src="_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="_static/copybutton.js?v=f281be69"></script>
+      <script src="_static/shibuya.js?v=cac61aee"></script></body>
+</html>

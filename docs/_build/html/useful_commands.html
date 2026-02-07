@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en" data-accent-color="indigo" data-content_root="./">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Useful Commands - 2026 QBB Security Manual</title><link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="The Visualizer" href="visualizer.html" /><link rel="prev" title="Tips &amp; Tricks" href="tips.html" /><script>
+    function setColorMode(t){let e=document.documentElement;e.setAttribute("data-color-mode",t);let a=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches,s=t;"auto"===t&&(s=a?"dark":"light"),"light"===s?(e.classList.remove("dark"),e.classList.add("light")):(e.classList.remove("light"),e.classList.add("dark"))}
+    setColorMode(localStorage._theme||"auto");
+  </script><link rel="stylesheet" type="text/css" href="_static/pygments.css?v=e1a1ceaf" />
+    <link rel="stylesheet" type="text/css" href="_static/shibuya.css?v=44020203" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link media="print" rel="stylesheet" type="text/css" href="_static/print.css?v=20ff2c19" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/custom.css?v=5d62d717" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --sy-f-text: "Inter", var(--sy-f-sys), var(--sy-f-cjk), sans-serif;
+  --sy-f-heading: "Inter", var(--sy-f-sys), var(--sy-f-cjk), sans-serif;
+}
+</style>
+    <meta property="og:type" content="website"/><meta property="og:title" content="Useful Commands"/>
+    <meta name="twitter:card" content="summary"/>
+  </head>
+<body><div class="sy-head">
+  <div class="sy-head-blur"></div>
+  <div class="sy-head-inner sy-container mx-auto">
+    <a class="sy-head-brand" href="index.html">
+      <img class="light-logo" src="_static/bytele-logo.png" alt="2026 QBB Security Manual" height="28" loading="lazy" />
+      <img class="dark-logo" src="_static/bytele-logo.png" alt="2026 QBB Security Manual" height="28" loading="lazy" />
+      <strong>2026 QBB Security Manual</strong>
+    </a>
+    <div class="sy-head-nav" id="head-nav">
+      <nav class="sy-head-links"></nav>
+      <div class="sy-head-extra flex items-center print:hidden"><form class="searchbox flex items-center" action="search.html" method="get">
+  <input type="text" name="q" placeholder="Search" />
+  <kbd>/</kbd>
+</form><div class="sy-head-socials">
+  <a href="https://github.com/acm-ndsu/Byte-le-2026-Client-Package" aria-label="GitHub">
+    <iconify-icon icon="simple-icons:github"></iconify-icon>
+  </a>
+  <a href="https://discord.gg/zJ9xU7gZ8q" aria-label="Discord">
+    <iconify-icon icon="simple-icons:discord"></iconify-icon>
+  </a></div></div>
+    </div>
+    <div class="sy-head-actions flex items-center shrink-0 print:hidden"><button class="js-theme theme-switch flex items-center"
+data-aria-auto="Switch to light color mode"
+data-aria-light="Switch to dark color mode"
+data-aria-dark="Switch to auto color mode">
+<i class="i-lucide theme-icon"></i>
+</button><button class="md:hidden flex items-center js-menu" aria-label="Menu" type="button" aria-controls="head-nav" aria-expanded="false">
+        <div class="hamburger">
+          <span class="hamburger_1"></span>
+          <span class="hamburger_2"></span>
+          <span class="hamburger_3"></span>
+        </div>
+      </button>
+    </div>
+  </div>
+</div>
+<div class="sy-page sy-container flex mx-auto">
+  <aside id="lside" class="sy-lside md:w-72 md:shrink-0 print:hidden">
+    <div class="sy-lside-inner md:sticky">
+      <div class="sy-scrollbar p-6">
+        <div class="globaltoc" data-expand-depth="0"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="HowToPlay.html">How To Play</a></li>
+<li class="toctree-l1"><a class="reference internal" href="server.html">The Server</a></li>
+<li class="toctree-l1"><a class="reference internal" href="controls.html">Controlling your Avatar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tips.html">Tips &amp; Tricks</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Useful Commands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="visualizer.html">The Visualizer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="enums.html">Enums</a></li>
+<li class="toctree-l1"><a class="reference internal" href="debugging.html">Debugging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="credits.html">Credits</a></li>
+</ul>
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="lside-overlay js-menu" role="button" aria-label="Close left sidebar" aria-controls="lside" aria-expanded="false"></div>
+  <aside id="rside" class="sy-rside pb-3 w-64 shrink-0 order-last">
+    <button class="rside-close js-menu xl:hidden" aria-label="Close Table of Contents" type="button" aria-controls="rside" aria-expanded="false">
+      <i class="i-lucide close"></i>
+    </button>
+    <div class="sy-scrollbar sy-rside-inner px-6 xl:top-16 xl:sticky xl:pl-0 pt-6 pb-4"><div class="localtoc"><h3>On this page</h3><ul>
+<li><a class="reference internal" href="#pygame-installation">Pygame Installation</a></li>
+<li><a class="reference internal" href="#interpreting-enum-values">Interpreting Enum Values</a></li>
+<li><a class="reference internal" href="#generate-run-visualize">Generate, Run, Visualize</a><ul>
+<li><a class="reference internal" href="#generate">Generate</a></li>
+<li><a class="reference internal" href="#run">Run</a></li>
+<li><a class="reference internal" href="#visualize">Visualize</a></li>
+<li><a class="reference internal" href="#launcher-help">Launcher Help</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#updating-your-launcher">Updating Your Launcher</a></li>
+</ul>
+</div><div id="ethical-ad-placement" data-ea-publisher="readthedocs"></div></div>
+  </aside>
+  <div class="rside-overlay js-menu" role="button" aria-label="Close Table of Contents" aria-controls="rside" aria-expanded="false"></div>
+  <main class="sy-main w-full max-sm:max-w-full print:pt-6">
+<div class="sy-breadcrumbs" role="navigation">
+  <div class="sy-breadcrumbs-inner flex items-center">
+    <div class="md:hidden mr-3">
+      <button class="js-menu" aria-label="Menu" type="button" aria-controls="lside" aria-expanded="false">
+        <i class="i-lucide menu"></i>
+      </button>
+    </div>
+    <ol class="flex-1" itemscope itemtype="https://schema.org/BreadcrumbList"><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="index.html"><span itemprop="name">2026 QBB Security Manual</span></a>
+        <span>/</span>
+        <meta itemprop="position" content="1" />
+      </li><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <strong itemprop="name">Useful Commands</strong>
+        <meta itemprop="position" content="2" />
+      </li></ol>
+    <div class="xl:hidden ml-1">
+      <button class="js-menu" aria-label="Show table of contents" type="button" aria-controls="rside"
+        aria-expanded="false">
+        <i class="i-lucide outdent"></i>
+      </button>
+    </div>
+  </div>
+</div><div class="flex flex-col break-words justify-between">
+      <div class="relative min-w-0 max-w-6xl px-6 pb-6 pt-8 xl:px-12">
+  <article class="yue" role="main">
+          <section id="useful-commands">
+<h1>Useful Commands<a class="headerlink" href="#useful-commands" title="Link to this heading">¶</a></h1>
+<section id="pygame-installation">
+<h2>Pygame Installation<a class="headerlink" href="#pygame-installation" title="Link to this heading">¶</a></h2>
+<p>If you have problems installing the pygame package, try running the following command:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span data-line="1"><span class="go">pip install pygame --pre</span>
+</span></pre></div>
+</div>
+</section>
+<section id="interpreting-enum-values">
+<span id="enum-script"></span><h2>Interpreting Enum Values<a class="headerlink" href="#interpreting-enum-values" title="Link to this heading">¶</a></h2>
+<p>If you have an <a class="reference internal" href="enums.html#object-type"><span class="std std-ref">ObjectType</span></a> or <a class="reference internal" href="enums.html#action-type"><span class="std std-ref">ActionType</span></a>'s value, you can find out what that
+number corresponds to using the <code class="docutils literal notranslate"><span class="pre">convert_enum_value.py</span></code> script.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span data-line="1"><span class="go">python convert_enum.py &lt;o|object|a|action&gt; &lt;number&gt;</span>
+</span></pre></div>
+</div>
+<div class="literal-block-wrapper docutils container" id="id1">
+<div class="code-block-caption"><span class="caption-text">Example inputs/outputs</span><a class="headerlink" href="#id1" title="Link to this code">¶</a></div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span data-line="1"><span class="go">python convert_enum.py object 1  # ObjectType.NONE</span>
+</span><span data-line="2"><span class="go">python convert_enum.py a 1       # ActionType.MOVE_UP</span>
+</span></pre></div>
+</div>
+</div>
+<p>Alternatively, you can use Python’s <a class="reference external" href="https://docs.python.org/3/tutorial/appendix.html#interactive-mode">Interactive Mode</a>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span data-line="1"><span class="n">python</span>
+</span><span data-line="2"><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span><span class="w"> </span><span class="nn">game.common.enums</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+</span><span data-line="3"><span class="o">&gt;&gt;&gt;</span> <span class="n">ObjectType</span><span class="p">(</span><span class="o">&lt;</span><span class="n">number</span><span class="o">&gt;</span><span class="p">)</span>
+</span></pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>As long as you keep entering valid Python, you’re basically writing a temporary Python script in your shell.
+If you wanted, you could even do</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span data-line="1"><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">):</span>
+</span><span data-line="2"><span class="gp">... </span>    <span class="n">ObjectType</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</span></pre></div>
+</div>
+<p>This is a very powerful tool that can be used for much more than converting enums.
+For more information, see <a class="reference external" href="https://docs.python.org/3/tutorial/appendix.html#interactive-mode">https://docs.python.org/3/tutorial/appendix.html#interactive-mode</a>.</p>
+</div>
+</section>
+<section id="generate-run-visualize">
+<h2>Generate, Run, Visualize<a class="headerlink" href="#generate-run-visualize" title="Link to this heading">¶</a></h2>
+<p>As you’re testing your code, it’s important to do these three actions.</p>
+<ul class="simple">
+<li><p><strong>Generate</strong> a new map and seed.</p></li>
+<li><p><strong>Run</strong> a game using your client and generated map.</p></li>
+<li><p><strong>Visualize</strong> what happened in the last ran game.</p></li>
+</ul>
+<p>To do so, use the provided “launcher”:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span data-line="1"><span class="n">python</span> <span class="n">launcher</span><span class="o">.</span><span class="n">pyz</span> <span class="o">&lt;</span><span class="n">command</span><span class="o">&gt;</span>
+</span></pre></div>
+</div>
+<p>where <code class="docutils literal notranslate"><span class="pre">&lt;command&gt;</span></code> describes the action you want to perform:</p>
+<div class="table-wrapper ghost docutils container">
+<table class="ghost docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Action</p></th>
+<th class="head"><p>&lt;command&gt;</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Generate</p></td>
+<td><p>g, gen, generate</p></td>
+</tr>
+<tr class="row-odd"><td><p>Run</p></td>
+<td><p>r, run</p></td>
+</tr>
+<tr class="row-even"><td><p>Visualize</p></td>
+<td><p>v, vis, visualize</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>You can also combine certain commands:</p>
+<div class="literal-block-wrapper docutils container" id="id2">
+<div class="code-block-caption"><span class="caption-text">Do everything</span><a class="headerlink" href="#id2" title="Link to this code">¶</a></div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span data-line="1"><span class="go">python launcher.pyz grv</span>
+</span></pre></div>
+</div>
+</div>
+<div class="literal-block-wrapper docutils container" id="id3">
+<div class="code-block-caption"><span class="caption-text">Generate and run, but don’t visualize</span><a class="headerlink" href="#id3" title="Link to this code">¶</a></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span data-line="1"> <span class="n">python</span> <span class="n">launcher</span><span class="o">.</span><span class="n">pyz</span> <span class="n">gr</span>
+</span></pre></div>
+</div>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>As commands are listed, some will have several versions that perform the same task.</p>
+<p>Only <strong>ONE</strong> line needs to be typed into the terminal, <strong>NOT</strong> all.</p>
+</div>
+<section id="generate">
+<h3>Generate<a class="headerlink" href="#generate" title="Link to this heading">¶</a></h3>
+<p>If you don’t want to have a new, random seed, don’t run this command. With the same seed and clients, the results will
+stay consistent.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span data-line="1"><span class="go">python launcher.pyz g</span>
+</span><span data-line="2"><span class="go">python launcher.pyz gen</span>
+</span><span data-line="3"><span class="go">python launcher.pyz generate</span>
+</span></pre></div>
+</div>
+</section>
+<section id="run">
+<span id="run-command"></span><h3>Run<a class="headerlink" href="#run" title="Link to this heading">¶</a></h3>
+<p>As the game is running, any print statements you have will print to your console, which can be useful for
+debugging. There will also be logs generated in the <code class="docutils literal notranslate"><span class="pre">logs</span></code> folder, showing what information was stored each turn in
+the JSON format.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span data-line="1"><span class="go">python launcher.pyz r</span>
+</span><span data-line="2"><span class="go">python launcher.pyz run</span>
+</span></pre></div>
+</div>
+</section>
+<section id="visualize">
+<h3>Visualize<a class="headerlink" href="#visualize" title="Link to this heading">¶</a></h3>
+<p>This displays each turn of the game you ran, allowing you to debug in a more user-friendly way! How wonderful.
+Visit <a class="reference internal" href="visualizer.html"><span class="doc">The Visualizer</span></a> for more details.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span data-line="1"><span class="go">python launcher.pyz v</span>
+</span><span data-line="2"><span class="go">python launcher.pyz vis</span>
+</span><span data-line="3"><span class="go">python launcher.pyz visualize</span>
+</span></pre></div>
+</div>
+</section>
+<section id="launcher-help">
+<h3>Launcher Help<a class="headerlink" href="#launcher-help" title="Link to this heading">¶</a></h3>
+<p>To see every possible command combination, run</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span data-line="1"><span class="n">python</span> <span class="n">launcher</span><span class="o">.</span><span class="n">pyz</span> <span class="o">-</span><span class="n">h</span>
+</span></pre></div>
+</div>
+<p>Some commands have their own help messages, which can be displayed via</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span data-line="1"><span class="n">python</span> <span class="n">launcher</span><span class="o">.</span><span class="n">pyz</span> <span class="o">&lt;</span><span class="n">command</span><span class="o">&gt;</span> <span class="o">-</span><span class="n">h</span>
+</span></pre></div>
+</div>
+</section>
+</section>
+<section id="updating-your-launcher">
+<h2>Updating Your Launcher<a class="headerlink" href="#updating-your-launcher" title="Link to this heading">¶</a></h2>
+<p>Do <strong>ONE</strong> of the following:</p>
+<ul class="simple">
+<li><p>Pull from the client package repo’s main</p></li>
+<li><p>Save your client file(s) (any code that you wrote) and re-clone/redownload the client package repo (if the first solution didn’t work; it’s happened in the past)</p></li>
+</ul>
+</section>
+</section>
+
+        </article><button class="back-to-top" type="button">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+  </svg>
+  <span>Back to top</span>
+</button><div class="navigation flex print:hidden"><div class="navigation-prev">
+    <a href="tips.html">
+      <i class="i-lucide chevron-left"></i>
+      <div class="page-info">
+        <span>Previous</span><div class="title">Tips &amp; Tricks</div></div>
+    </a>
+  </div><div class="navigation-next">
+    <a href="visualizer.html">
+      <div class="page-info">
+        <span>Next</span>
+        <div class="title">The Visualizer</div>
+      </div>
+      <i class="i-lucide chevron-right"></i>
+    </a>
+  </div></div></div>
+    </div>
+  </main>
+</div>
+<footer class="sy-foot">
+  <div class="sy-foot-inner sy-container mx-auto">
+    <div class="sy-foot-reserved md:flex justify-between items-center">
+      <div class="sy-foot-copyright"><p>1974-2026, NDSU ACM</p>
+  
+  <p>
+    Made with
+    
+    <a href="https://www.sphinx-doc.org/">Sphinx</a> and
+    
+    <a href="https://shibuya.lepture.com">Shibuya theme</a>.
+  </p>
+</div>
+      <div class="sy-foot-socials">
+<a href="https://github.com/acm-ndsu/Byte-le-2026-Client-Package" aria-label="GitHub">
+  <iconify-icon icon="simple-icons:github"></iconify-icon>
+</a>
+<a href="https://discord.gg/zJ9xU7gZ8q" aria-label="Discord">
+  <iconify-icon icon="simple-icons:discord"></iconify-icon>
+</a></div>
+    </div>
+  </div>
+</footer>
+      <script src="_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="_static/copybutton.js?v=f281be69"></script>
+      <script src="_static/shibuya.js?v=cac61aee"></script></body>
+</html>

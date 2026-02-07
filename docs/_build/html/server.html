@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" data-accent-color="indigo" data-content_root="./">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>The Server - 2026 QBB Security Manual</title><link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Controlling your Avatar" href="controls.html" /><link rel="prev" title="How To Play" href="HowToPlay.html" /><script>
+    function setColorMode(t){let e=document.documentElement;e.setAttribute("data-color-mode",t);let a=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches,s=t;"auto"===t&&(s=a?"dark":"light"),"light"===s?(e.classList.remove("dark"),e.classList.add("light")):(e.classList.remove("light"),e.classList.add("dark"))}
+    setColorMode(localStorage._theme||"auto");
+  </script><link rel="stylesheet" type="text/css" href="_static/pygments.css?v=e1a1ceaf" />
+    <link rel="stylesheet" type="text/css" href="_static/shibuya.css?v=44020203" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link media="print" rel="stylesheet" type="text/css" href="_static/print.css?v=20ff2c19" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/custom.css?v=5d62d717" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --sy-f-text: "Inter", var(--sy-f-sys), var(--sy-f-cjk), sans-serif;
+  --sy-f-heading: "Inter", var(--sy-f-sys), var(--sy-f-cjk), sans-serif;
+}
+</style>
+    <meta property="og:type" content="website"/><meta property="og:title" content="The Server"/>
+    <meta name="twitter:card" content="summary"/>
+  </head>
+<body><div class="sy-head">
+  <div class="sy-head-blur"></div>
+  <div class="sy-head-inner sy-container mx-auto">
+    <a class="sy-head-brand" href="index.html">
+      <img class="light-logo" src="_static/bytele-logo.png" alt="2026 QBB Security Manual" height="28" loading="lazy" />
+      <img class="dark-logo" src="_static/bytele-logo.png" alt="2026 QBB Security Manual" height="28" loading="lazy" />
+      <strong>2026 QBB Security Manual</strong>
+    </a>
+    <div class="sy-head-nav" id="head-nav">
+      <nav class="sy-head-links"></nav>
+      <div class="sy-head-extra flex items-center print:hidden"><form class="searchbox flex items-center" action="search.html" method="get">
+  <input type="text" name="q" placeholder="Search" />
+  <kbd>/</kbd>
+</form><div class="sy-head-socials">
+  <a href="https://github.com/acm-ndsu/Byte-le-2026-Client-Package" aria-label="GitHub">
+    <iconify-icon icon="simple-icons:github"></iconify-icon>
+  </a>
+  <a href="https://discord.gg/zJ9xU7gZ8q" aria-label="Discord">
+    <iconify-icon icon="simple-icons:discord"></iconify-icon>
+  </a></div></div>
+    </div>
+    <div class="sy-head-actions flex items-center shrink-0 print:hidden"><button class="js-theme theme-switch flex items-center"
+data-aria-auto="Switch to light color mode"
+data-aria-light="Switch to dark color mode"
+data-aria-dark="Switch to auto color mode">
+<i class="i-lucide theme-icon"></i>
+</button><button class="md:hidden flex items-center js-menu" aria-label="Menu" type="button" aria-controls="head-nav" aria-expanded="false">
+        <div class="hamburger">
+          <span class="hamburger_1"></span>
+          <span class="hamburger_2"></span>
+          <span class="hamburger_3"></span>
+        </div>
+      </button>
+    </div>
+  </div>
+</div>
+<div class="sy-page sy-container flex mx-auto">
+  <aside id="lside" class="sy-lside md:w-72 md:shrink-0 print:hidden">
+    <div class="sy-lside-inner md:sticky">
+      <div class="sy-scrollbar p-6">
+        <div class="globaltoc" data-expand-depth="0"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="HowToPlay.html">How To Play</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">The Server</a></li>
+<li class="toctree-l1"><a class="reference internal" href="controls.html">Controlling your Avatar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tips.html">Tips &amp; Tricks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="useful_commands.html">Useful Commands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="visualizer.html">The Visualizer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="enums.html">Enums</a></li>
+<li class="toctree-l1"><a class="reference internal" href="debugging.html">Debugging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="credits.html">Credits</a></li>
+</ul>
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="lside-overlay js-menu" role="button" aria-label="Close left sidebar" aria-controls="lside" aria-expanded="false"></div>
+  <aside id="rside" class="sy-rside pb-3 w-64 shrink-0 order-last">
+    <button class="rside-close js-menu xl:hidden" aria-label="Close Table of Contents" type="button" aria-controls="rside" aria-expanded="false">
+      <i class="i-lucide close"></i>
+    </button>
+    <div class="sy-scrollbar sy-rside-inner px-6 xl:top-16 xl:sticky xl:pl-0 pt-6 pb-4"><div class="localtoc"><h3>On this page</h3><ul>
+<li><a class="reference internal" href="#code-time-outs">Code Time-Outs</a></li>
+<li><a class="reference internal" href="#client-commands">Client Commands</a><ul>
+<li><a class="reference internal" href="#registering">Registering</a></li>
+<li><a class="reference internal" href="#submitting-code">Submitting Code</a></li>
+<li><a class="reference internal" href="#leaderboard">Leaderboard</a></li>
+<li><a class="reference internal" href="#stats">Stats</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#extra-help">Extra Help</a></li>
+</ul>
+</div><div id="ethical-ad-placement" data-ea-publisher="readthedocs"></div></div>
+  </aside>
+  <div class="rside-overlay js-menu" role="button" aria-label="Close Table of Contents" aria-controls="rside" aria-expanded="false"></div>
+  <main class="sy-main w-full max-sm:max-w-full print:pt-6">
+<div class="sy-breadcrumbs" role="navigation">
+  <div class="sy-breadcrumbs-inner flex items-center">
+    <div class="md:hidden mr-3">
+      <button class="js-menu" aria-label="Menu" type="button" aria-controls="lside" aria-expanded="false">
+        <i class="i-lucide menu"></i>
+      </button>
+    </div>
+    <ol class="flex-1" itemscope itemtype="https://schema.org/BreadcrumbList"><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="index.html"><span itemprop="name">2026 QBB Security Manual</span></a>
+        <span>/</span>
+        <meta itemprop="position" content="1" />
+      </li><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <strong itemprop="name">The Server</strong>
+        <meta itemprop="position" content="2" />
+      </li></ol>
+    <div class="xl:hidden ml-1">
+      <button class="js-menu" aria-label="Show table of contents" type="button" aria-controls="rside"
+        aria-expanded="false">
+        <i class="i-lucide outdent"></i>
+      </button>
+    </div>
+  </div>
+</div><div class="flex flex-col break-words justify-between">
+      <div class="relative min-w-0 max-w-6xl px-6 pb-6 pt-8 xl:px-12">
+  <article class="yue" role="main">
+          <section id="the-server">
+<h1>The Server<a class="headerlink" href="#the-server" title="Link to this heading">¶</a></h1>
+<section id="code-time-outs">
+<h2>Code Time-Outs<a class="headerlink" href="#code-time-outs" title="Link to this heading">¶</a></h2>
+<p>Every team is allowed a maximum of 0.1 seconds for their code to execute. If one of your submissions takes longer than the allowed time, that submission will be disqualified. This is to ensure the competition runs smoothly and pushes
+competitors to write efficient code. Good luck, and think hard!</p>
+</section>
+<section id="client-commands">
+<h2>Client Commands<a class="headerlink" href="#client-commands" title="Link to this heading">¶</a></h2>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>As commands are listed, some will have two versions to perform the same task. The first command will be typed in its entirety, and the second command will be a shortened version for ease of use.</p>
+<p>Only <strong>ONE</strong> line needs to be typed into the terminal, <strong>NOT</strong> both.</p>
+</div>
+<section id="registering">
+<h3>Registering<a class="headerlink" href="#registering" title="Link to this heading">¶</a></h3>
+<p>To register your team, run</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span data-line="1"><span class="n">python</span> <span class="n">launcher</span><span class="o">.</span><span class="n">pyz</span> <span class="n">client</span> <span class="o">-</span><span class="n">register</span>
+</span></pre></div>
+</div>
+<p>Follow the prompts to enter your team name, select your university, and select if you are an alumni.</p>
+<p>After registering, you will receive a new file called <code class="docutils literal notranslate"><span class="pre">vID</span></code> in your root folder.</p>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>DO <strong>NOT</strong> SHARE YOUR vID. THE ANIMATRONICS WILL <strong>GET</strong> YOU.</p>
+</div>
+<p>This is unique to your team and allows you to submit clients and view your team’s information.</p>
+</section>
+<section id="submitting-code">
+<h3>Submitting Code<a class="headerlink" href="#submitting-code" title="Link to this heading">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span data-line="1"><span class="n">python</span> <span class="n">launcher</span><span class="o">.</span><span class="n">pyz</span> <span class="n">client</span> <span class="o">-</span><span class="n">submit</span>
+</span><span data-line="2"><span class="n">python</span> <span class="n">launcher</span><span class="o">.</span><span class="n">pyz</span> <span class="n">c</span> <span class="o">-</span><span class="n">submit</span>
+</span></pre></div>
+</div>
+<p>After successfully registering your team, you are able to submit your client code. At least one client must be
+submitted before the end of the competition to be eligible to win. We recommend that you at least submit the provided <code class="docutils literal notranslate"><span class="pre">base_client.py</span></code>.
+Additionally, any additional clients that you write should (1) have the <code class="docutils literal notranslate"><span class="pre">.py</span></code> extension, (2) contain the word “client” in the filename, and (3) be saved in the root of your package directory so that they can be detected by the launcher.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If your client file does not satisfy the above criteria, you can manually enter a <strong>relative</strong> (based on the package directory) path to your file when prompted by the launcher.</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Your client file cannot import any modules that you create locally; ALL of the logic for your client must be contained in your client file. Sorry!</p>
+</div>
+<p>Once uploaded to the server, your bot will run against other submitted bots to determine placing. You can submit as
+many times as you’d like during the duration of the competition, but please do not excessively submit.</p>
+</section>
+<section id="leaderboard">
+<h3>Leaderboard<a class="headerlink" href="#leaderboard" title="Link to this heading">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span data-line="1"><span class="n">python</span> <span class="n">launcher</span><span class="o">.</span><span class="n">pyz</span> <span class="n">client</span> <span class="n">leaderboard</span>
+</span><span data-line="2"><span class="n">python</span> <span class="n">launcher</span><span class="o">.</span><span class="n">pyz</span> <span class="n">c</span> <span class="n">l</span>
+</span></pre></div>
+</div>
+<p>These will return the leaderboard for all eligible contestants. By default, alumni are not included. To include
+alumni, type one of the following:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span data-line="1"><span class="n">python</span> <span class="n">launcher</span><span class="o">.</span><span class="n">pyz</span> <span class="n">client</span> <span class="n">leaderboard</span> <span class="o">-</span><span class="n">include_alumni</span>
+</span><span data-line="2"><span class="n">python</span> <span class="n">launcher</span><span class="o">.</span><span class="n">pyz</span> <span class="n">c</span> <span class="n">l</span> <span class="o">-</span><span class="n">include_alumni</span>
+</span></pre></div>
+</div>
+<p>If you want to see previous leaderboards from the competition, you may type one of the following by providing a
+leaderboard’s id:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span data-line="1"><span class="n">python</span> <span class="n">launcher</span><span class="o">.</span><span class="n">pyz</span> <span class="n">client</span> <span class="n">leaderboard</span> <span class="o">-</span><span class="n">leaderboard_id</span> <span class="o">&lt;</span><span class="n">leaderboard_id</span><span class="o">&gt;</span>
+</span><span data-line="2"><span class="n">python</span> <span class="n">launcher</span><span class="o">.</span><span class="n">pyz</span> <span class="n">c</span> <span class="n">l</span> <span class="o">-</span><span class="n">leaderboard_id</span> <span class="o">&lt;</span><span class="n">leaderboard_id</span><span class="o">&gt;</span>
+</span></pre></div>
+</div>
+</section>
+<section id="stats">
+<h3>Stats<a class="headerlink" href="#stats" title="Link to this heading">¶</a></h3>
+<p>To view your stats for the latest submission, type one of the following:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span data-line="1"><span class="n">python</span> <span class="n">launcher</span><span class="o">.</span><span class="n">pyz</span> <span class="n">client</span> <span class="n">stats</span>
+</span><span data-line="2"><span class="n">python</span> <span class="n">launcher</span><span class="o">.</span><span class="n">pyz</span> <span class="n">c</span> <span class="n">s</span>
+</span></pre></div>
+</div>
+<p>Your stats will continue to change until all games are completed.</p>
+<p>If you desire to see all of your submissions, type</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span data-line="1"><span class="n">python</span> <span class="n">launcher</span><span class="o">.</span><span class="n">pyz</span> <span class="n">client</span> <span class="n">stats</span> <span class="o">-</span><span class="n">get_submissions</span>
+</span><span data-line="2"><span class="n">python</span> <span class="n">launcher</span><span class="o">.</span><span class="n">pyz</span> <span class="n">c</span> <span class="n">s</span> <span class="o">-</span><span class="n">get_submissions</span>
+</span></pre></div>
+</div>
+<p>to receive all your submission ids. These ids can be used in some of the commands listed below.</p>
+<p>To receive code from a previous submission, have a submission id ready and type</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span data-line="1"><span class="n">python</span> <span class="n">launcher</span><span class="o">.</span><span class="n">pyz</span> <span class="n">client</span> <span class="n">stats</span> <span class="o">-</span><span class="n">get_code_for_submission</span> <span class="o">&lt;</span><span class="n">submission_id</span><span class="o">&gt;</span>
+</span><span data-line="2"><span class="n">python</span> <span class="n">launcher</span><span class="o">.</span><span class="n">pyz</span> <span class="n">c</span> <span class="n">s</span> <span class="o">-</span><span class="n">get_code_for_submission</span> <span class="o">&lt;</span><span class="n">submission_id</span><span class="o">&gt;</span>
+</span></pre></div>
+</div>
+<p>to receive the code file from the given submission.</p>
+</section>
+</section>
+<section id="extra-help">
+<h2>Extra Help<a class="headerlink" href="#extra-help" title="Link to this heading">¶</a></h2>
+<p>For extra help on these commands, you can type <code class="docutils literal notranslate"><span class="pre">-h</span></code> after any of these commands to have the help message appear.
+For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span data-line="1"><span class="n">python</span> <span class="n">launcher</span><span class="o">.</span><span class="n">pyz</span> <span class="n">client</span> <span class="o">-</span><span class="n">h</span>
+</span><span data-line="2"><span class="n">python</span> <span class="n">launcher</span><span class="o">.</span><span class="n">pyz</span> <span class="n">c</span> <span class="o">-</span><span class="n">h</span>
+</span></pre></div>
+</div>
+<p>or</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span data-line="1"><span class="n">python</span> <span class="n">launcher</span><span class="o">.</span><span class="n">pyz</span> <span class="n">client</span> <span class="n">leaderboard</span> <span class="o">-</span><span class="n">h</span>
+</span><span data-line="2"><span class="n">python</span> <span class="n">launcher</span><span class="o">.</span><span class="n">pyz</span> <span class="n">c</span> <span class="n">l</span> <span class="o">-</span><span class="n">h</span>
+</span></pre></div>
+</div>
+<p>will show you the help descriptions of all client and leaderboard commands respectively.</p>
+</section>
+</section>
+
+        </article><button class="back-to-top" type="button">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+  </svg>
+  <span>Back to top</span>
+</button><div class="navigation flex print:hidden"><div class="navigation-prev">
+    <a href="HowToPlay.html">
+      <i class="i-lucide chevron-left"></i>
+      <div class="page-info">
+        <span>Previous</span><div class="title">How To Play</div></div>
+    </a>
+  </div><div class="navigation-next">
+    <a href="controls.html">
+      <div class="page-info">
+        <span>Next</span>
+        <div class="title">Controlling your Avatar</div>
+      </div>
+      <i class="i-lucide chevron-right"></i>
+    </a>
+  </div></div></div>
+    </div>
+  </main>
+</div>
+<footer class="sy-foot">
+  <div class="sy-foot-inner sy-container mx-auto">
+    <div class="sy-foot-reserved md:flex justify-between items-center">
+      <div class="sy-foot-copyright"><p>1974-2026, NDSU ACM</p>
+  
+  <p>
+    Made with
+    
+    <a href="https://www.sphinx-doc.org/">Sphinx</a> and
+    
+    <a href="https://shibuya.lepture.com">Shibuya theme</a>.
+  </p>
+</div>
+      <div class="sy-foot-socials">
+<a href="https://github.com/acm-ndsu/Byte-le-2026-Client-Package" aria-label="GitHub">
+  <iconify-icon icon="simple-icons:github"></iconify-icon>
+</a>
+<a href="https://discord.gg/zJ9xU7gZ8q" aria-label="Discord">
+  <iconify-icon icon="simple-icons:discord"></iconify-icon>
+</a></div>
+    </div>
+  </div>
+</footer>
+      <script src="_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="_static/copybutton.js?v=f281be69"></script>
+      <script src="_static/shibuya.js?v=cac61aee"></script></body>
+</html>
