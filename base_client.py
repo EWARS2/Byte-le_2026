@@ -64,8 +64,6 @@ class Client(UserClient):
                     self.goal = i
             """
 
-
-
         # Calc action1
         action1, position = a_star_move(position, self.goal, world, game_object=avatar)
         # Calc action2
@@ -102,6 +100,12 @@ def a_star_path(start: Vector, goal: Vector, world, allow_vents = True, game_obj
     came_from = {start_p: None}
     cost = {start_p: 0}
 
+    # Get dictionary of objects to avoid
+    objects = []
+    for i in [ObjectType.IAN_BOT, ObjectType.JUMPER_BOT,
+              ObjectType.DUMB_BOT, ObjectType.CRAWLER_BOT]:
+        objects + list(world.get_objects(i))
+
     while frontier:
         _, current = heapq.heappop(frontier)
 
@@ -137,21 +141,14 @@ def a_star_path(start: Vector, goal: Vector, world, allow_vents = True, game_obj
                 if not isinstance(top, Occupiable):
                     continue
 
-
-                # Get dictionary of objects to avoid
                 """
-                objects = {}
-                for i in [ObjectType.IAN_BOT, ObjectType.JUMPER_BOT,
-                                            ObjectType.DUMB_BOT, ObjectType.CRAWLER_BOT]:
-                    objects.update(world.get_objects(i))
-
                 # Can't pass through if bot surrounds this space
                 for x in objects:
                     if vec.distance(x) <= 2:
                         continue
                 """
 
-            new_cost = cost[current] + 1
+            new_cost = cost[current] + 1 + ()
             if nxt not in cost or new_cost < cost[nxt]:
                 cost[nxt] = new_cost
                 priority = new_cost + vec.distance(goal)
