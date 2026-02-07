@@ -1,7 +1,7 @@
 {
 	"players": [
 		{
-			"id": "36106e9f-d423-4246-942a-f4f5146c889c",
+			"id": "a99d430d-2ebb-4c84-998b-4f812a920172",
 			"object_type": 3,
 			"state": "idle",
 			"__class__": "Player",
@@ -16,17 +16,17 @@
 			"avatar": {
 				"id": "f3efc1b5-ccbc-4281-a75d-a6ee954c663e",
 				"object_type": 4,
-				"state": "idle",
+				"state": "hurt",
 				"__class__": "Avatar",
 				"held_index": 0,
 				"held_item": null,
-				"score": 10000,
+				"score": 35900,
 				"position": {
-					"id": "8cedec6e-0bf1-4658-8e87-e39020eab65b",
+					"id": "57e42c69-6145-4feb-b942-be96fe451664",
 					"object_type": 6,
 					"state": "idle",
 					"__class__": "Vector",
-					"x": 1,
+					"x": 16,
 					"y": 1
 				},
 				"inventory": [
@@ -43,9 +43,9 @@
 				],
 				"max_inventory_size": 10,
 				"scrap": 0,
-				"health": 3,
-				"power": 0,
-				"direction": ""
+				"health": 0,
+				"power": 98,
+				"direction": "right"
 			}
 		}
 	]

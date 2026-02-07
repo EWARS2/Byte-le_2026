@@ -34,6 +34,7 @@ class Client(UserClient):
         """
         return "Participation Trophy"
 
+    count = 15
     def take_turn(self, turn: int, world: GameBoard, avatar: Avatar) -> list[ActionType]:
         """
         This is where your AI will decide what to do.
@@ -41,11 +42,38 @@ class Client(UserClient):
         :param actions:     This is the actions object that you will add effort allocations or decrees to.
         :param world:       Generic world information
         """
-        actions = []
+        actions = [ActionType.MOVE_RIGHT, ActionType.NONE]
         # How far is <here> from <there>?
         # distance: int = here.distance(there)
+        position = avatar.position
+        left = position.add_x(-1)
+        right = position.add_x(1)
+        up = position.add_y(-1)
+        down = position.add_y(1)
+        left2 = position.add_x(-2)
+        right2 = position.add_x(2)
+        up2 = position.add_y(-2)
+        down2 = position.add_y(2)
 
+        if len(world.get(position).get_objects(ObjectType.BATTERY_SPAWNER)) > 0:
+            actions = [ActionType.NONE, ActionType.NONE]
 
+        # check if any animatronics are nearby
+        bot_nearby = False
+        for x in world.get_objects(ObjectType.IAN_BOT):
+            if x.distance(position) <= 2:
+                bot_nearby = True
+        for x in world.get_objects(ObjectType.JUMPER_BOT):
+            if x.distance(position) <= 2:
+                bot_nearby = True
+        for x in world.get_objects(ObjectType.DUMB_BOT):
+            if x.distance(position) <= 2:
+                bot_nearby = True
+        for x in world.get_objects(ObjectType.CRAWLER_BOT):
+            if x.distance(position) <= 2:
+                bot_nearby = True
+
+        print(bot_nearby)
 
         # Thundar moves every turn
         if 250 <= turn <= 300:
