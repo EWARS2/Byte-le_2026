@@ -1,12 +1,12 @@
 {
 	"game_board": {
-		"id": "bedbc66c-9baa-421c-b227-2bba1fdafdab",
+		"id": "556ad68e-45c6-4e42-8c94-b869032e3857",
 		"object_type": 5,
 		"state": "idle",
 		"__class__": "GameBoard",
 		"game_map": {
-			"{'id': '214c4c3e-8e62-42ef-920e-3b4db38eae55', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 0, 'y': 0}": {
-				"id": "cc998576-b6e4-4c3d-ac8a-bca9b9b662b0",
+			"{'id': '5f8300b3-ee0f-43cf-b8b0-bdb7e6dfda26', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 0, 'y': 0}": {
+				"id": "7d2f106f-711d-4d64-90a5-1cefef538aff",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -20,8 +20,8 @@
 					}
 				]
 			},
-			"{'id': '8d9f0c0f-77cc-485c-bee6-2498319e96f5', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 1, 'y': 0}": {
-				"id": "6266133a-7a01-4d34-b08f-9abaf1eb1e66",
+			"{'id': '0f39d729-32dc-4142-9e38-e813f62dd81a', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 1, 'y': 0}": {
+				"id": "438c2f97-5401-4613-a922-8ca50c79eb07",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -35,8 +35,8 @@
 					}
 				]
 			},
-			"{'id': '3736db18-8a76-4c9b-8836-c0fce3aa042a', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 2, 'y': 0}": {
-				"id": "24c75076-8f7e-4514-802b-cf9ebbcfcdbe",
+			"{'id': 'b4a2dc96-81eb-45c8-9e9e-0768e50dd5fd', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 2, 'y': 0}": {
+				"id": "b6ebc696-b4b1-4cf7-adfb-ad6875b9b4c6",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -50,8 +50,8 @@
 					}
 				]
 			},
-			"{'id': '03a13026-6d41-4c16-9de0-9b8cf3145c0e', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 3, 'y': 0}": {
-				"id": "4b948409-e632-47e5-9e56-8155d7dea667",
+			"{'id': '823ee41e-30f5-4e41-8b61-1cad798d20c8', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 3, 'y': 0}": {
+				"id": "849cec08-b002-49f2-a98f-fe0acfc06d14",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -65,8 +65,8 @@
 					}
 				]
 			},
-			"{'id': '722803e3-1f34-42a6-a6e3-19d1952bbf9b', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 4, 'y': 0}": {
-				"id": "46f39c20-5944-428b-8b78-6318719825f5",
+			"{'id': '57b681fc-55b0-461b-a435-4e71df1cd3d2', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 4, 'y': 0}": {
+				"id": "6987be4d-b517-4899-820b-8971a95a956c",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -80,8 +80,8 @@
 					}
 				]
 			},
-			"{'id': 'a218c7fd-3b78-4da5-a8ce-fdf3e232ea58', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 5, 'y': 0}": {
-				"id": "1225b534-9d87-4d7b-ad0c-55e2e7c2ffb0",
+			"{'id': '4407e7f2-ee9c-4262-aa20-815eba3acee5', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 5, 'y': 0}": {
+				"id": "2e77da73-b79d-46d1-9d8b-e06b6e924a35",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -95,8 +95,8 @@
 					}
 				]
 			},
-			"{'id': '408b302e-e7a3-4132-ab90-922020a93856', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 6, 'y': 0}": {
-				"id": "f9a10fec-0daa-4957-b9bd-292b16afe7e7",
+			"{'id': '731dba08-a3b2-4f55-a312-56a53ccf6f73', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 6, 'y': 0}": {
+				"id": "a0981ad1-e6a3-427a-98b2-8d252c8e6e56",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -110,8 +110,8 @@
 					}
 				]
 			},
-			"{'id': '43fcfcbc-e88d-4e35-9993-2f2142f4a7e6', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 7, 'y': 0}": {
-				"id": "b79f821f-c16d-4932-b0d5-02d2e3229fb0",
+			"{'id': 'fd434bf6-7fa7-4f03-bea5-532fab9d9e21', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 7, 'y': 0}": {
+				"id": "32ba8908-3f9d-4611-a960-16d764a88198",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -125,8 +125,8 @@
 					}
 				]
 			},
-			"{'id': '63097ae9-f27e-4601-8bf0-a5f504a1487d', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 8, 'y': 0}": {
-				"id": "0a320ea7-3c37-4871-a613-9be43b6e880a",
+			"{'id': 'db75d76f-583e-406f-8a4a-35427e159b02', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 8, 'y': 0}": {
+				"id": "6b26ca6f-edc8-464d-b821-35774252620c",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -140,8 +140,8 @@
 					}
 				]
 			},
-			"{'id': '730c5771-a88f-4cd1-a1c7-a588c9ac750a', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 9, 'y': 0}": {
-				"id": "87899081-23d2-491d-b447-92f17df6a1a4",
+			"{'id': 'da9f6b30-4abc-454b-8261-aafca53d1eac', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 9, 'y': 0}": {
+				"id": "3539b6a3-5e17-4265-ac49-4c4f7c69710e",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -155,8 +155,8 @@
 					}
 				]
 			},
-			"{'id': '9f6b3894-763c-4b7e-830c-256a524e73a2', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 10, 'y': 0}": {
-				"id": "d6b2671e-382d-42c3-bb17-a2b1f0ea9fd0",
+			"{'id': '09f4504a-2cc4-41f7-983d-494bfd13830e', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 10, 'y': 0}": {
+				"id": "fbd02598-d90a-4af5-9a21-0aeab3a74a6a",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -170,8 +170,8 @@
 					}
 				]
 			},
-			"{'id': '31d220ce-a764-49a1-821c-d5ccca9b6deb', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 11, 'y': 0}": {
-				"id": "537ed07c-4646-4f4f-9aee-a9b117845e0d",
+			"{'id': '1a64048a-5a27-41bd-95a4-6e9c5bf4af35', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 11, 'y': 0}": {
+				"id": "8ba3a212-c87c-4230-84dd-b011781283b2",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -185,8 +185,8 @@
 					}
 				]
 			},
-			"{'id': '448febd7-6c6c-4e7e-8a54-6d2711e3fa49', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 12, 'y': 0}": {
-				"id": "77862448-bf27-4ca6-afa6-a69fd0a93f34",
+			"{'id': '37cb2df3-4147-4d2e-af9b-614ef7f5bc11', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 12, 'y': 0}": {
+				"id": "e2f28977-b167-43ae-b115-531fb5be926e",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -200,8 +200,8 @@
 					}
 				]
 			},
-			"{'id': '5e6254be-5a93-4a9c-9569-0371d9fe10cb', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 13, 'y': 0}": {
-				"id": "ec4df18f-b63d-4341-a981-9ea76dbae981",
+			"{'id': '163447fc-93c9-41e6-99c1-4e02b4b0845b', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 13, 'y': 0}": {
+				"id": "660fb400-d760-46eb-9840-fa37d822f761",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -215,8 +215,8 @@
 					}
 				]
 			},
-			"{'id': 'a3361406-6721-46ab-ac8b-e2fe786023ce', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 14, 'y': 0}": {
-				"id": "754b2700-a721-4771-8a5c-f834bd935e1c",
+			"{'id': '74eb8931-d892-41d8-a559-d8e72d723708', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 14, 'y': 0}": {
+				"id": "cfbf5f19-f74f-4012-8095-40713f91db2b",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -230,8 +230,8 @@
 					}
 				]
 			},
-			"{'id': '3b0d3828-3a5f-4aca-8678-7913c8733ac2', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 15, 'y': 0}": {
-				"id": "aa715637-26e6-495f-9a06-7626b5903039",
+			"{'id': '7270179a-3446-444c-9a99-d2723548e64e', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 15, 'y': 0}": {
+				"id": "1ee8d6d0-3695-492b-b763-828f1f68a2d7",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -245,8 +245,8 @@
 					}
 				]
 			},
-			"{'id': '72236627-b236-4e84-8c0c-e9af7b3fcae0', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 16, 'y': 0}": {
-				"id": "adaeabd2-18da-4ce4-afd9-29802b9fe59a",
+			"{'id': '03149cf6-88f9-47a8-9a97-d8d6cdc3fc6e', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 16, 'y': 0}": {
+				"id": "f272ffce-2021-4c44-a7fe-13393e75cbef",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -260,8 +260,8 @@
 					}
 				]
 			},
-			"{'id': '759dd8ed-8ed8-47b0-8c3f-4b5a057ee7f9', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 17, 'y': 0}": {
-				"id": "1a881b7b-31c3-4023-b2cb-3a6b23a64019",
+			"{'id': 'ed10ebdd-c72a-46ba-ac23-b5d120ef32c2', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 17, 'y': 0}": {
+				"id": "27d3fcbf-9e7e-485b-b406-de32b9df8073",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -275,8 +275,8 @@
 					}
 				]
 			},
-			"{'id': '4b38c602-0099-41b5-ae49-c0d7d60b69b5', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 18, 'y': 0}": {
-				"id": "85f53bc7-add4-4780-915f-f4aadec61d49",
+			"{'id': 'dc63999c-5569-4af7-94ae-264592cd9bbf', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 18, 'y': 0}": {
+				"id": "d8cf01ac-a12e-44f2-b116-3fbb976d387f",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -290,8 +290,8 @@
 					}
 				]
 			},
-			"{'id': '1ec2ed78-3f81-4d5f-afd5-4d15e9bba49e', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 19, 'y': 0}": {
-				"id": "44cf4250-bc99-4278-9d75-77136fdf85b5",
+			"{'id': '6545b6fa-7bba-4232-9924-e9325f80f500', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 19, 'y': 0}": {
+				"id": "5dfc10b0-5760-416e-87ad-2f835ada54cc",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -305,8 +305,8 @@
 					}
 				]
 			},
-			"{'id': 'd33c8551-e8f2-439f-9634-34a371e65c3f', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 20, 'y': 0}": {
-				"id": "da9e281f-7034-40da-bce1-99af4d4028c4",
+			"{'id': '49c966e7-d314-4abb-a462-b68e7234c904', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 20, 'y': 0}": {
+				"id": "da4fc471-5ba5-4672-90b4-f87a06a6564d",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -320,8 +320,8 @@
 					}
 				]
 			},
-			"{'id': '791aa2ff-0a51-472c-b369-391a8fe075a3', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 21, 'y': 0}": {
-				"id": "b4a12c2f-1925-45cb-acf4-df3930db1d37",
+			"{'id': '97ed03c4-b1ea-4e7b-9217-afa24d0fc2ce', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 21, 'y': 0}": {
+				"id": "c5079220-e82a-4034-8dd3-12683555d446",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -335,8 +335,8 @@
 					}
 				]
 			},
-			"{'id': '563e72bb-36fa-4b13-9083-84cbeb593568', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 22, 'y': 0}": {
-				"id": "e80195bc-ca1d-4840-bb4a-ca20b0718b21",
+			"{'id': 'd293236d-f248-4be4-9f4f-63a8b9139207', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 22, 'y': 0}": {
+				"id": "ba6acd34-a98e-4a60-bc32-b06391363f9d",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -350,8 +350,8 @@
 					}
 				]
 			},
-			"{'id': '1a69bcc0-b744-4dee-b771-e41cd3a58eb7', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 23, 'y': 0}": {
-				"id": "bae2ca0e-e857-46a7-822c-ca1e09f83f41",
+			"{'id': '37ae58fa-7e10-488e-aa19-9778971540e7', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 23, 'y': 0}": {
+				"id": "c5cddd98-c16b-4ec4-ac1d-8a341679eee9",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -365,8 +365,8 @@
 					}
 				]
 			},
-			"{'id': '94c63f71-7a82-4c38-bf2a-4e1953b921af', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 24, 'y': 0}": {
-				"id": "c3236c1a-c0dd-470f-8a91-4f8ac321c83e",
+			"{'id': 'da44967a-c896-489a-a05f-7e6d4b979341', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 24, 'y': 0}": {
+				"id": "f5a8848b-2c24-4987-b8d2-14b6309e3c90",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -380,8 +380,8 @@
 					}
 				]
 			},
-			"{'id': 'a6780e81-93f4-40ff-bba9-1f83956929e6', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 25, 'y': 0}": {
-				"id": "e13b571c-6539-4585-8fd6-838d6a28c497",
+			"{'id': '1fb37127-f5c9-4c83-a3e9-530dda52b940', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 25, 'y': 0}": {
+				"id": "5ec67b2e-656e-43f6-a351-a0eff1a63410",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -395,8 +395,8 @@
 					}
 				]
 			},
-			"{'id': '202a9c45-3461-4b37-8d54-f6121b16d9e6', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 26, 'y': 0}": {
-				"id": "34922b84-7de4-4286-80dc-cb51bce08be2",
+			"{'id': '338131c6-236a-4564-970e-1b19972bde21', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 26, 'y': 0}": {
+				"id": "a22d046a-5be4-480e-8b0c-7b01c57db9d7",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -410,8 +410,8 @@
 					}
 				]
 			},
-			"{'id': 'e9752521-ba7f-431e-843f-c914d618a2fe', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 27, 'y': 0}": {
-				"id": "d41b3670-bfe4-43fa-939e-d309e4ff19bc",
+			"{'id': '7a1a7cb2-f29b-40d8-b973-11ab44d78a43', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 27, 'y': 0}": {
+				"id": "855448a1-2715-4ab3-8aef-00b93aca41b2",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -425,8 +425,8 @@
 					}
 				]
 			},
-			"{'id': '16f4ccad-ac4e-4367-80ae-bff55d2e5c5b', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 28, 'y': 0}": {
-				"id": "9ee29f8b-d966-40a8-9229-d2ea23ecaaa8",
+			"{'id': 'd707b1ff-54ff-4bbd-a1ae-6920de343fb1', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 28, 'y': 0}": {
+				"id": "704d394a-851b-40c0-bb73-12356890203a",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -440,8 +440,8 @@
 					}
 				]
 			},
-			"{'id': '066d8d48-eeb6-4487-b426-105033f47166', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 29, 'y': 0}": {
-				"id": "eec19fe9-a709-4c6b-a175-d5f82976e777",
+			"{'id': 'e755c71e-1c1d-4775-ae3b-57dac38ce9f0', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 29, 'y': 0}": {
+				"id": "30b85d21-7487-4a92-926b-835f50a7c3a1",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -455,8 +455,8 @@
 					}
 				]
 			},
-			"{'id': 'dfd2cdaa-f8df-42be-8310-3372c1f2aad3', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 30, 'y': 0}": {
-				"id": "dda2af44-aebb-4def-91c5-bd0264a3a589",
+			"{'id': 'a3958461-ba2d-4213-98dc-6fa48b8be08d', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 30, 'y': 0}": {
+				"id": "6247c982-2c51-46d0-9a58-5fe4b5189c40",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -470,8 +470,8 @@
 					}
 				]
 			},
-			"{'id': '3309a4c8-d5ec-4d3d-a22e-458923636a4f', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 31, 'y': 0}": {
-				"id": "ebe65570-0fc1-4216-8ca3-df83eaca4a43",
+			"{'id': '3f9df326-c00d-418c-909d-6b3eb21606ff', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 31, 'y': 0}": {
+				"id": "34547410-8acc-4382-a8d8-58ed3d7235bd",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -485,8 +485,8 @@
 					}
 				]
 			},
-			"{'id': 'cf7d4449-aad3-4823-ab27-1aec15a1c5c0', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 32, 'y': 0}": {
-				"id": "22e35dc4-3bf5-41bc-94f3-0b601bb8f3e2",
+			"{'id': '25fa98d7-5e11-4b4d-95d3-65046704c432', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 32, 'y': 0}": {
+				"id": "f56bd13c-a731-4bb5-9ad3-ccbca3faa9cf",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -500,8 +500,8 @@
 					}
 				]
 			},
-			"{'id': 'b5aca6b0-3cdd-4821-b56a-b664e48fc5af', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 33, 'y': 0}": {
-				"id": "32ebdd1f-52bd-4adb-9607-4087725104f2",
+			"{'id': '347fba45-78f7-4208-a92f-063ddc118146', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 33, 'y': 0}": {
+				"id": "7fb0c33c-aea5-48df-a9b1-7970f0892a6d",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -515,8 +515,8 @@
 					}
 				]
 			},
-			"{'id': 'c1a0386f-1859-49f3-abd2-7f753a248d89', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 34, 'y': 0}": {
-				"id": "016e4c94-f76c-4530-bf7b-eccafb4f96af",
+			"{'id': 'f142912b-6a69-466f-bbbc-b744f5941edf', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 34, 'y': 0}": {
+				"id": "8d969f48-2002-4625-90d8-6db9e836b2ab",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -530,8 +530,8 @@
 					}
 				]
 			},
-			"{'id': '130b0119-55ef-45b8-8b8e-b96720ee4a54', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 35, 'y': 0}": {
-				"id": "659fa1f5-45a9-4f5d-9e43-22ea2cde33a8",
+			"{'id': '114d94f4-273a-4dc1-bd36-128f3f0daf87', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 35, 'y': 0}": {
+				"id": "df20efc7-b9db-4444-89ad-971ad968aa59",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -545,8 +545,8 @@
 					}
 				]
 			},
-			"{'id': '39c7362a-7260-4b7b-9aca-e613a1d247ab', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 36, 'y': 0}": {
-				"id": "d4514eb4-6dcc-404b-b162-d3eab4d3b5ac",
+			"{'id': '8156565a-e782-446d-9a04-17b1e60b03b1', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 36, 'y': 0}": {
+				"id": "cb4afc92-277e-4f2b-ab9b-37988fe63eef",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -560,8 +560,8 @@
 					}
 				]
 			},
-			"{'id': '306c52b5-c0e6-4503-8710-8ec0200c9bcd', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 37, 'y': 0}": {
-				"id": "6b456291-4744-49c8-9bc6-9e9c556e8da8",
+			"{'id': 'af6c5490-bf5a-416b-bf70-284d4776c3f8', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 37, 'y': 0}": {
+				"id": "eb6d43be-b508-442a-b09e-5c89631d7818",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -575,8 +575,8 @@
 					}
 				]
 			},
-			"{'id': '2c6fabe5-7acc-4840-b84a-203aa8c0795d', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 0, 'y': 19}": {
-				"id": "8baf41e4-3d3c-4e6d-a981-967b914306b5",
+			"{'id': 'eb1db976-78a3-4b55-883c-cc0c556ac3a6', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 0, 'y': 19}": {
+				"id": "a0c077b2-f556-4867-b90a-eb37ec48a857",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -590,8 +590,8 @@
 					}
 				]
 			},
-			"{'id': 'dbe20d73-2279-498f-8ddd-fd660f273479', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 1, 'y': 19}": {
-				"id": "8d8e413d-8dbc-4718-a8ba-c54540492dbe",
+			"{'id': 'fc7b0024-6b4e-46ec-873f-d479bb7291c2', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 1, 'y': 19}": {
+				"id": "ad49ef2d-94b5-4806-bd78-ee6623538eba",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -605,8 +605,8 @@
 					}
 				]
 			},
-			"{'id': '7b4a0b8d-03f0-4277-9404-28b98d0e9b6f', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 2, 'y': 19}": {
-				"id": "cb01b834-6480-420f-9521-164a3fc6c2f4",
+			"{'id': '0cd0412a-207d-4476-a722-ac6e8f96300d', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 2, 'y': 19}": {
+				"id": "f726c484-aead-414d-8117-df2a0994c525",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -620,8 +620,8 @@
 					}
 				]
 			},
-			"{'id': '837506a8-f288-406f-9e4b-fdc9c4e71dc9', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 3, 'y': 19}": {
-				"id": "9e1f2036-90bb-4c70-9f0d-a6057ce45802",
+			"{'id': '9547b970-61b9-4d47-bf53-b2a3a571831c', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 3, 'y': 19}": {
+				"id": "7c0387d5-b25f-4e09-89c0-43b2cd3d4d3e",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -635,8 +635,8 @@
 					}
 				]
 			},
-			"{'id': '20372769-8da9-49d7-a540-6c5bce56e6d3', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 4, 'y': 19}": {
-				"id": "e62f4dfc-8e77-4856-b07d-2d278f64dd38",
+			"{'id': '1d6f5e73-bab8-4166-85c3-45c1d4dfa09d', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 4, 'y': 19}": {
+				"id": "0621eaae-3b00-4a69-a643-9995fc3b37a4",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -650,8 +650,8 @@
 					}
 				]
 			},
-			"{'id': '60e37e1d-ea80-4b34-8500-14c9271a5883', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 5, 'y': 19}": {
-				"id": "dcb6674c-7def-430f-9ddd-dd248b229079",
+			"{'id': 'd221a3cf-d76b-4be4-9190-d1fd68a27434', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 5, 'y': 19}": {
+				"id": "6bbadbac-48dc-40b6-bac1-a6e8cfa0ed0b",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -665,8 +665,8 @@
 					}
 				]
 			},
-			"{'id': '3b7d64fb-783d-4405-b374-9c317de82406', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 6, 'y': 19}": {
-				"id": "cdef048e-71ba-494d-b41b-464c5060debe",
+			"{'id': 'ceb2575e-3c3e-48d1-b4be-53b7bd8d581a', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 6, 'y': 19}": {
+				"id": "35b3455b-5d7a-4de9-a14e-00dd108ff374",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -680,8 +680,8 @@
 					}
 				]
 			},
-			"{'id': '202e98f1-5898-4956-8f66-e1e935ded6ad', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 7, 'y': 19}": {
-				"id": "9e267f49-b114-455e-963e-e4fbd439e5b3",
+			"{'id': '3d65f7b0-8b38-42a0-852b-8864d80b2a5f', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 7, 'y': 19}": {
+				"id": "e26ef664-3382-4e66-91a8-42fabf8983bb",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -695,8 +695,8 @@
 					}
 				]
 			},
-			"{'id': '5514f2f9-8480-4310-a885-7ea28ae94c79', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 8, 'y': 19}": {
-				"id": "3c3999fd-597a-402a-99cf-25c1f1de56b4",
+			"{'id': '68295ce3-6930-400a-b714-0e1e6bd2f775', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 8, 'y': 19}": {
+				"id": "c35ab5b8-b96e-4c2b-b0cc-cd3fb4439bc4",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -710,8 +710,8 @@
 					}
 				]
 			},
-			"{'id': '7b2a6d31-ec24-4744-bae7-6e8fc49235e0', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 9, 'y': 19}": {
-				"id": "988db6f2-32a8-43d6-a15e-756d9bde15b6",
+			"{'id': '6c6dbf98-8a62-4702-bdd4-11e5f3dda184', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 9, 'y': 19}": {
+				"id": "7c6f561b-be62-4a23-8044-132ad9112304",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -725,8 +725,8 @@
 					}
 				]
 			},
-			"{'id': '7401ebc3-f623-4f3e-a248-041c81072aba', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 10, 'y': 19}": {
-				"id": "b116e9e9-33d9-47eb-b0c9-4625c2c6c07d",
+			"{'id': 'b126adcd-4bf1-4f81-898b-73f1b9b21d13', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 10, 'y': 19}": {
+				"id": "205c1373-7b3d-47aa-8c99-36e8d1e37bf1",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -740,8 +740,8 @@
 					}
 				]
 			},
-			"{'id': '74d76372-6f9c-4104-bf02-4731c89d9787', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 11, 'y': 19}": {
-				"id": "9d61e0b9-c0eb-448e-a2a7-02524391dec6",
+			"{'id': '2db3179a-b5e2-4798-a632-2225d51a4a16', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 11, 'y': 19}": {
+				"id": "b5acb477-ad1d-4e5b-bb87-1f0bf5224a40",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -755,8 +755,8 @@
 					}
 				]
 			},
-			"{'id': '98a242cc-a7ad-4103-ad06-332de9f505c5', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 12, 'y': 19}": {
-				"id": "a63b0776-1742-4bf9-a5e7-38ad9c400b43",
+			"{'id': '2cf1a268-27a7-4446-bcdd-99efd0ed3abc', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 12, 'y': 19}": {
+				"id": "8a2587ec-8f9c-4b8b-8995-e9225560d8f4",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -770,8 +770,8 @@
 					}
 				]
 			},
-			"{'id': '967d4540-eb53-4553-8962-a33b8c0db3e2', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 13, 'y': 19}": {
-				"id": "aaa802b3-50be-4ca3-aa9a-3ae62bd83fdb",
+			"{'id': '7e2676ba-d667-474f-bbe3-e1f370733139', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 13, 'y': 19}": {
+				"id": "d91a4f0f-65e9-4af0-8b83-43aee0e3a0b1",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -785,8 +785,8 @@
 					}
 				]
 			},
-			"{'id': '3163283a-0cf3-46bf-9cf3-96143885bf64', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 14, 'y': 19}": {
-				"id": "c7f38e2b-82f3-4d51-a160-d51ab8fe1c6f",
+			"{'id': 'caed46ef-269b-4f50-bd8d-32cdb00595df', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 14, 'y': 19}": {
+				"id": "21b41232-2d16-4410-85fc-45520488abeb",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -800,8 +800,8 @@
 					}
 				]
 			},
-			"{'id': 'dfadc330-539d-4f8e-b7f7-35fd22c4276e', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 15, 'y': 19}": {
-				"id": "cd00a306-f176-40d0-a0bc-d2287adff7fb",
+			"{'id': '875bcc6c-44d9-4e04-b2a2-c7728fba9b53', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 15, 'y': 19}": {
+				"id": "83fb404d-9593-418a-9867-ca7275f83d50",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -815,8 +815,8 @@
 					}
 				]
 			},
-			"{'id': '3c6c9a0e-d8ea-4d1a-922c-5e28c77f5cf5', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 16, 'y': 19}": {
-				"id": "5452f989-b105-4898-a5a0-1b674764ea30",
+			"{'id': '2fd98a34-2f72-4aa1-94fe-2286bb38af48', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 16, 'y': 19}": {
+				"id": "eab7eb0b-93f7-44db-8e1e-c7fd4c904197",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -830,8 +830,8 @@
 					}
 				]
 			},
-			"{'id': 'f293cf77-cadc-408f-b6fb-656179f89e34', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 17, 'y': 19}": {
-				"id": "17310389-0206-48ce-b4f2-935328028ea7",
+			"{'id': '31b92242-a1ce-4b50-a436-04ff74ced000', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 17, 'y': 19}": {
+				"id": "9ffc99cc-5bfe-4f2c-b499-4376b1eed536",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -845,8 +845,8 @@
 					}
 				]
 			},
-			"{'id': '92bdfbbb-819e-475f-af96-374c81e873e6', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 18, 'y': 19}": {
-				"id": "c5d53e12-91c5-49f9-83f4-f5171ea3364b",
+			"{'id': '25bd30cc-6824-4c27-b22c-d7a764a1401e', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 18, 'y': 19}": {
+				"id": "09c5be09-c68e-4c8e-98dc-be5d924488d7",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -860,8 +860,8 @@
 					}
 				]
 			},
-			"{'id': 'f174c4c9-1565-411b-9bee-40cc4465bd6b', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 19, 'y': 19}": {
-				"id": "c0fc8d32-ad66-4aac-9b4a-5ebeb87965b8",
+			"{'id': '3e4031d8-11df-4301-9823-54700b3e9454', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 19, 'y': 19}": {
+				"id": "7fece1e9-f6a0-4ff2-8cd8-14d291a49f7e",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -875,8 +875,8 @@
 					}
 				]
 			},
-			"{'id': 'f4e2a66b-45c7-4e66-960f-db02521a3f46', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 20, 'y': 19}": {
-				"id": "9e3397b9-3145-49f5-afd3-d61fba3e12a6",
+			"{'id': '132226ec-1bdb-4f44-b2a8-23dde67962da', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 20, 'y': 19}": {
+				"id": "ec161c01-4332-446b-bf22-4e19758af1c1",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -890,8 +890,8 @@
 					}
 				]
 			},
-			"{'id': 'ad7e8ed3-6ada-4609-a4bd-f470554cc84a', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 21, 'y': 19}": {
-				"id": "403972f2-a131-4717-a331-346d7dd4762c",
+			"{'id': 'b946be88-8f3f-4c4a-b285-1bf0a29b7212', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 21, 'y': 19}": {
+				"id": "61ff01e1-9dfe-48b5-a1c8-74a5fa1b9dfe",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -905,8 +905,8 @@
 					}
 				]
 			},
-			"{'id': 'db01cdcb-339a-413d-866b-77be5eb03a48', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 22, 'y': 19}": {
-				"id": "3ca98066-b3af-4232-9e81-a8f6c69587c1",
+			"{'id': '210b5ca1-12fc-4285-971a-9cb182015c5d', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 22, 'y': 19}": {
+				"id": "c64bd449-f981-49b8-958c-15cbcdceb99f",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -920,8 +920,8 @@
 					}
 				]
 			},
-			"{'id': '7723d56a-c958-4ea0-9a61-323700ec436d', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 23, 'y': 19}": {
-				"id": "0a84a9b0-0980-4c21-b4e0-137903ad9254",
+			"{'id': 'c215d72c-e4fc-45a0-ae46-485c676866ed', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 23, 'y': 19}": {
+				"id": "35924ca0-c75a-4893-bfc3-380cce16fd67",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -935,8 +935,8 @@
 					}
 				]
 			},
-			"{'id': '8f091e83-b3c9-40db-a0ae-58989f4a039f', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 24, 'y': 19}": {
-				"id": "f6549667-057a-40ee-a5ba-c0c714daac89",
+			"{'id': '5ee7c62c-53f1-455a-9e32-d8db17fdec0b', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 24, 'y': 19}": {
+				"id": "514c542f-5202-4dfc-a51a-7a3484b79d24",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -950,8 +950,8 @@
 					}
 				]
 			},
-			"{'id': '79387314-ba10-473b-a6ee-e1cda6c798da', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 25, 'y': 19}": {
-				"id": "1e96c9c1-76db-4539-aaec-db83275006d7",
+			"{'id': '133f4bc7-d8f2-44f5-a544-5546e98bd10c', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 25, 'y': 19}": {
+				"id": "f2dcf75a-2013-4589-aef2-bd6dbbf61e69",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -965,8 +965,8 @@
 					}
 				]
 			},
-			"{'id': 'b9bfe503-0659-45e3-9d99-fc265050eb68', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 26, 'y': 19}": {
-				"id": "c3e69a58-b923-4342-923a-e71f636cc12c",
+			"{'id': 'ae852587-9b36-406f-8033-112d78a9ed6e', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 26, 'y': 19}": {
+				"id": "16881d31-993e-4020-b160-449b936d0c42",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -980,8 +980,8 @@
 					}
 				]
 			},
-			"{'id': '96fec5f2-716b-4403-81aa-2a0ffffb67c8', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 27, 'y': 19}": {
-				"id": "40750496-8cfa-4ffc-8017-9e8234dc99ff",
+			"{'id': '557ab5ce-38b1-49eb-99c9-0cf82e364a6d', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 27, 'y': 19}": {
+				"id": "0e7f51ea-030a-4488-afa9-2e7b2a82bcfb",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -995,8 +995,8 @@
 					}
 				]
 			},
-			"{'id': '01cf4238-0c62-4ee4-a2dc-bb63695bdc8d', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 28, 'y': 19}": {
-				"id": "1d672d6a-77d0-4820-99a5-167c5f629706",
+			"{'id': '6d806dc1-5345-4a00-8d64-9de87c46270d', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 28, 'y': 19}": {
+				"id": "1d872047-527c-4fe9-8b9e-aa305140621e",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1010,8 +1010,8 @@
 					}
 				]
 			},
-			"{'id': '2e348b45-2cd0-41d7-a023-efd9c11df550', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 29, 'y': 19}": {
-				"id": "b080ce72-f46a-4eff-bc4b-c21beb7facba",
+			"{'id': '49a47501-dc26-4dc5-9ad9-f6e625350402', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 29, 'y': 19}": {
+				"id": "32549af0-a1b4-40c7-a3d2-b036db884828",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1025,8 +1025,8 @@
 					}
 				]
 			},
-			"{'id': '7753b2f4-62af-456b-9fab-f1a3b0813cdd', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 30, 'y': 19}": {
-				"id": "590d7a6f-266a-411c-ac8f-dc67f2ac86c4",
+			"{'id': 'e6fd7d0f-b24f-4871-83fb-853c5011980e', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 30, 'y': 19}": {
+				"id": "f4839334-7e71-4fa9-8b01-f34ff8a67255",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1040,8 +1040,8 @@
 					}
 				]
 			},
-			"{'id': '2c5ad5ff-99ae-4bea-9749-211204ff4acf', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 31, 'y': 19}": {
-				"id": "65e8d650-7d35-426f-8ad3-f71fff224c72",
+			"{'id': '253b99e1-6132-46bd-b2c9-33f4b21ecbf4', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 31, 'y': 19}": {
+				"id": "10fac9ff-153f-42ee-8954-c7647a377082",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1055,8 +1055,8 @@
 					}
 				]
 			},
-			"{'id': '56941a9f-b12e-4573-8f04-3a6d9ec406ec', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 32, 'y': 19}": {
-				"id": "8cca568e-ac0e-4f76-b5ce-d149bebb5c6f",
+			"{'id': 'fda9e968-f112-4f29-a227-041e02fbe62a', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 32, 'y': 19}": {
+				"id": "bb58825a-a494-413c-8fc9-886f9afef4ad",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1070,8 +1070,8 @@
 					}
 				]
 			},
-			"{'id': 'b3c5db64-9fad-42b6-bf4f-f21401b6b657', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 33, 'y': 19}": {
-				"id": "d0ad1d6e-e6ca-4e43-911b-3d84c3ec3eef",
+			"{'id': '76251f16-7fd9-4b68-80e2-041f13fc37e3', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 33, 'y': 19}": {
+				"id": "8c8202f5-d35d-44c6-a46c-39b49514b855",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1085,8 +1085,8 @@
 					}
 				]
 			},
-			"{'id': '6387f75d-54d1-42e6-bcc8-22e6ed4d1fc5', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 34, 'y': 19}": {
-				"id": "c7029c0f-4375-4ad9-9992-f9ce12f807fc",
+			"{'id': 'bd806406-472a-4ff8-8a52-ba6b5dabac97', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 34, 'y': 19}": {
+				"id": "33ce5527-19d6-4290-bf1e-c0110ef96b3a",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1100,8 +1100,8 @@
 					}
 				]
 			},
-			"{'id': '4f60665b-2db6-442d-8d53-d372e7d9fa8f', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 35, 'y': 19}": {
-				"id": "0083c0e7-b327-44ae-9715-555098324800",
+			"{'id': '172f928f-1aa5-45df-9e06-243087bb5775', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 35, 'y': 19}": {
+				"id": "440fefb0-d30a-4ac2-bdc4-73aff87b2573",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1115,8 +1115,8 @@
 					}
 				]
 			},
-			"{'id': 'd6728c04-2bf4-441e-84f0-e2e04132d61e', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 36, 'y': 19}": {
-				"id": "4dae25b4-8ff7-4ceb-a939-c41fdf3eed69",
+			"{'id': '83f867a3-6831-4d70-8848-fe348bb0cda8', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 36, 'y': 19}": {
+				"id": "da403117-2303-411c-bd67-468077a3cf96",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1130,8 +1130,8 @@
 					}
 				]
 			},
-			"{'id': '7a599c7d-7f98-4528-8e64-1ddc372197eb', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 37, 'y': 19}": {
-				"id": "12b3d9a8-68c6-4f12-a9bd-1626e442d9b3",
+			"{'id': '4873ed76-e724-4101-a229-763459ca4a6f', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 37, 'y': 19}": {
+				"id": "99a63000-6f68-48ed-9dbd-47ff947688b1",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1145,8 +1145,8 @@
 					}
 				]
 			},
-			"{'id': '2fb16405-efdd-43ec-8262-11422527373a', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 0, 'y': 1}": {
-				"id": "3c010df6-3049-4ed9-9b79-d1037bea0f3c",
+			"{'id': '3d2015da-8389-46c5-b575-8f9f7da0867e', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 0, 'y': 1}": {
+				"id": "814df7f2-0bd4-4234-9ee1-ae3e925ee36e",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1160,8 +1160,8 @@
 					}
 				]
 			},
-			"{'id': 'fcc33409-fc64-4c79-928d-83602ed4c6fa', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 0, 'y': 2}": {
-				"id": "66e56c93-5d0b-4f0c-9507-18f0e4dc612e",
+			"{'id': '797860ac-1864-48cc-aa91-4ae632a662c9', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 0, 'y': 2}": {
+				"id": "c801955a-27c4-4261-8d0e-d4fbc1d85ae4",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1175,8 +1175,8 @@
 					}
 				]
 			},
-			"{'id': '3731f15e-3355-4b5e-a923-d9910607d161', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 0, 'y': 3}": {
-				"id": "af53e1ff-4e86-4832-84a2-81c5ecb221cd",
+			"{'id': '9c0d22d1-3ca7-42b6-8812-aa791331ffac', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 0, 'y': 3}": {
+				"id": "642cf7ab-aedb-4bfb-9ef6-37e967427d85",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1190,8 +1190,8 @@
 					}
 				]
 			},
-			"{'id': 'f2a2bc0b-43e5-4b1f-a5b2-19c8d250573a', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 0, 'y': 4}": {
-				"id": "67e6ebd7-4faa-4b69-aaa1-02ab45a09fd4",
+			"{'id': '29759e30-159c-4364-9e10-8a83226f8b1c', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 0, 'y': 4}": {
+				"id": "29912569-9b47-4bf5-bc68-deb7c4711d3e",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1205,8 +1205,8 @@
 					}
 				]
 			},
-			"{'id': '9c002130-992c-4be6-9b8d-22263b4fa6c9', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 0, 'y': 5}": {
-				"id": "8a275ed5-64db-45bd-9dec-ea4bc6ee3e7f",
+			"{'id': '775aaa92-cbc0-4a32-9837-ec466ec66733', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 0, 'y': 5}": {
+				"id": "cdf347c0-c987-4450-a5af-25d2009d649e",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1220,8 +1220,8 @@
 					}
 				]
 			},
-			"{'id': '6e389207-20fd-4315-a7d0-afeafcb370b5', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 0, 'y': 6}": {
-				"id": "b7baf8d7-3e01-4663-af72-1134a9a99d46",
+			"{'id': 'edef17a4-bb8d-41b9-a817-6c5ae151e62d', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 0, 'y': 6}": {
+				"id": "788750b5-1090-4213-8c2e-db6316346770",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1235,8 +1235,8 @@
 					}
 				]
 			},
-			"{'id': 'f12053f7-36c4-4c39-be2e-bdd89d9254d2', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 0, 'y': 7}": {
-				"id": "499d0dcf-7d60-4508-9a23-26708b104e8c",
+			"{'id': '681a78cb-b701-4ca6-9c35-6672346e36a6', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 0, 'y': 7}": {
+				"id": "b934b1d9-da43-46ec-b4e3-f9aca08d54f6",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1250,8 +1250,8 @@
 					}
 				]
 			},
-			"{'id': '323da693-bd23-4f58-b787-20b908c58e21', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 0, 'y': 8}": {
-				"id": "f7c728dc-e50e-43df-9628-c4152731345a",
+			"{'id': '4025e21a-bd30-404d-94c7-75555f39d3d7', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 0, 'y': 8}": {
+				"id": "84ae2493-f67d-48dd-8adc-198aef518f4f",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1265,8 +1265,8 @@
 					}
 				]
 			},
-			"{'id': '2cfc7272-e817-4022-b9c1-e94d71922088', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 0, 'y': 9}": {
-				"id": "ef0237a9-b3c3-45ef-8421-0ac083f23e29",
+			"{'id': 'b8823b8f-fbca-437c-9928-aa2c8cb94c22', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 0, 'y': 9}": {
+				"id": "5175e9e1-37aa-4329-bc29-b6b96cd526d0",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1280,8 +1280,8 @@
 					}
 				]
 			},
-			"{'id': '35727863-0028-4384-8ecc-cc2425011857', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 0, 'y': 10}": {
-				"id": "b602715a-9b28-4206-84c4-25ac35c1fde3",
+			"{'id': 'b0f97b3f-a2d5-469e-b7f2-4e90ac64decb', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 0, 'y': 10}": {
+				"id": "062ef856-d641-432d-8e99-d84f63b78168",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1295,8 +1295,8 @@
 					}
 				]
 			},
-			"{'id': '259e3ad2-be08-4e94-b0e5-6232aedf30bb', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 0, 'y': 11}": {
-				"id": "d63e0f6d-bfdb-4da5-b986-39a80d8e7cd4",
+			"{'id': '196f9b3d-166f-48bf-9838-b25f5220f718', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 0, 'y': 11}": {
+				"id": "f1b06ff4-f0a0-4f17-b8e6-088dd176c80e",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1310,8 +1310,8 @@
 					}
 				]
 			},
-			"{'id': 'b652ec7e-ce9b-4de5-8eb8-f6fde19cb802', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 0, 'y': 12}": {
-				"id": "beeeb9cb-d8b2-4f0f-bfd3-830301822858",
+			"{'id': 'e17f6cc0-4241-4626-a265-4faea82eda8f', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 0, 'y': 12}": {
+				"id": "e8a66ae7-b2d1-414c-ba31-e4f5c3f3a78c",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1325,8 +1325,8 @@
 					}
 				]
 			},
-			"{'id': '410c3b60-dc5b-4f00-aa26-056bc11cc9a5', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 0, 'y': 13}": {
-				"id": "4fea78e5-5e6c-465c-b03b-9de4a2c074c7",
+			"{'id': 'e4c65980-b182-4fa6-b04b-27114ffaad76', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 0, 'y': 13}": {
+				"id": "76b5bb37-6b59-44b6-82f6-1df1f5fab9e5",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1340,8 +1340,8 @@
 					}
 				]
 			},
-			"{'id': '353c8321-0000-4e48-8541-f43a30272f44', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 0, 'y': 14}": {
-				"id": "79412257-7bdc-420f-aefa-d19f67b8334f",
+			"{'id': 'c6197b63-8436-4571-a950-1ae943cafb98', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 0, 'y': 14}": {
+				"id": "b4a815a4-9e0f-4a75-9643-b70ccd60379a",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1355,8 +1355,8 @@
 					}
 				]
 			},
-			"{'id': '71f775a7-a550-49ac-bcc2-b130f3eaae50', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 0, 'y': 15}": {
-				"id": "99d789e7-7d7a-4130-bef0-956960d20553",
+			"{'id': '4c4f6f84-09f2-4d78-9f12-1d415336a59b', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 0, 'y': 15}": {
+				"id": "69a7edb1-e977-4cad-96fa-1eb00eb67d72",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1370,8 +1370,8 @@
 					}
 				]
 			},
-			"{'id': '158a7e23-8fcd-4859-8320-0cceee67b873', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 0, 'y': 16}": {
-				"id": "886bcac6-17fb-4a2d-8838-1dad904ee6d8",
+			"{'id': 'e3a27d7c-bae8-44ea-9a8b-d641b48234e2', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 0, 'y': 16}": {
+				"id": "f45eff34-45d4-4aa2-a2c8-240c0dfe6328",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1385,8 +1385,8 @@
 					}
 				]
 			},
-			"{'id': '43dfeb33-3b62-4d43-bc03-2a2a516eb05d', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 0, 'y': 17}": {
-				"id": "38c6a2f5-2b37-4ba4-9c09-f9166990ca46",
+			"{'id': '4d42d587-903f-4f39-b359-18b31fdb89f5', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 0, 'y': 17}": {
+				"id": "c5b75390-b8d9-410e-bdad-2184b8f6f5d9",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1400,8 +1400,8 @@
 					}
 				]
 			},
-			"{'id': '967a84cc-0f20-40c1-9d5e-3daf9021713b', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 0, 'y': 18}": {
-				"id": "970705d8-ee5b-4b04-ab02-98260cd1d38e",
+			"{'id': '4862fc55-3e30-4f7c-a8f7-352140eabfd9', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 0, 'y': 18}": {
+				"id": "cea82e6e-cede-46c4-add2-6943269adc52",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1415,8 +1415,8 @@
 					}
 				]
 			},
-			"{'id': '5700fa4d-ddad-4f86-abcd-471dbb749d07', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 37, 'y': 1}": {
-				"id": "0a140d0d-37c4-4cc0-bcd0-8a650e26bb34",
+			"{'id': '600bd123-57f2-410f-abc9-f53675aa18f2', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 37, 'y': 1}": {
+				"id": "1a617268-f0bc-4f69-8238-00d8adc3895a",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1430,8 +1430,8 @@
 					}
 				]
 			},
-			"{'id': '3dafc2ec-0eb3-4bab-865b-ea5e8262da16', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 37, 'y': 2}": {
-				"id": "7bee559e-0aad-4b8e-be58-192f54393949",
+			"{'id': 'd38008c8-dac2-4f4b-aa18-6dcb0864ff52', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 37, 'y': 2}": {
+				"id": "f89a4b07-b753-4d50-a4c9-f453b1f796dc",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1445,8 +1445,8 @@
 					}
 				]
 			},
-			"{'id': 'e39c71a9-dcdb-4f01-95b9-57faaea64775', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 37, 'y': 3}": {
-				"id": "215e0b5b-33ac-4002-b969-265bd637f2c2",
+			"{'id': 'bf4cd895-7a84-4ca2-acb1-5ef37e898d17', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 37, 'y': 3}": {
+				"id": "7479c3d3-eaae-443f-8809-801c77967916",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1460,8 +1460,8 @@
 					}
 				]
 			},
-			"{'id': 'f57f3afe-43bb-4bdf-9214-f68c1e74d6e0', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 37, 'y': 4}": {
-				"id": "6a265c5b-5edb-478d-91e0-cf4eee28d5cc",
+			"{'id': '285f8c95-d037-4082-a86e-2283b3ed9afd', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 37, 'y': 4}": {
+				"id": "8c2213b9-b16b-4796-9e00-fbc73b742a7a",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1475,8 +1475,8 @@
 					}
 				]
 			},
-			"{'id': '49ea66c3-842d-40f8-ab2d-7881f9c403bf', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 37, 'y': 5}": {
-				"id": "e88ce588-fff5-4204-9b94-92da7c77bddb",
+			"{'id': '28211385-d99f-4eac-8965-a96694574b42', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 37, 'y': 5}": {
+				"id": "64dc1fdf-0419-497e-ad22-9870f6415d48",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1490,8 +1490,8 @@
 					}
 				]
 			},
-			"{'id': 'f179ce89-c061-4f87-a5e0-5c6e11653db4', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 37, 'y': 6}": {
-				"id": "0bc8f62c-0eb0-4ccc-ab3d-9a7139f1df71",
+			"{'id': '80f608d3-93ef-4422-bd45-7b5ffa6854f3', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 37, 'y': 6}": {
+				"id": "b0f85c45-1db7-4018-b29d-53ce16025f65",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1505,8 +1505,8 @@
 					}
 				]
 			},
-			"{'id': '0fecb44f-1d25-4478-b0e4-04c3b79f90d1', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 37, 'y': 7}": {
-				"id": "da30df4c-6255-411d-a0f6-4bbfd5cbf5ce",
+			"{'id': '9d062d34-7995-4698-9350-0ed452fd614e', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 37, 'y': 7}": {
+				"id": "4eb502d8-f0cb-4509-b45f-43e27efaf134",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1520,8 +1520,8 @@
 					}
 				]
 			},
-			"{'id': '6a0b875b-3ec0-4b21-a3d5-0f98633ac8e4', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 37, 'y': 8}": {
-				"id": "f5a83891-65ef-4279-80f5-e7734c0bbddf",
+			"{'id': 'c2c71cc0-1bef-4234-84e8-23634ae28aa2', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 37, 'y': 8}": {
+				"id": "866b8bfd-3763-40cf-b806-6fe2b5b3473e",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1535,8 +1535,8 @@
 					}
 				]
 			},
-			"{'id': 'df8c9e72-f5bb-43cb-ae07-3f7420d072c5', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 37, 'y': 9}": {
-				"id": "1d0b688f-471b-41bc-a62e-64a713c3fb1a",
+			"{'id': 'e8c9dcd8-2e78-4bec-994d-b128b2f273e5', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 37, 'y': 9}": {
+				"id": "ed5a2c7b-8b32-4b2c-a894-989baa9722a7",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1550,8 +1550,8 @@
 					}
 				]
 			},
-			"{'id': '8e51fa47-682e-422b-af4e-dc2e5533c60d', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 37, 'y': 10}": {
-				"id": "7cd9a201-b41f-4134-a927-293377656453",
+			"{'id': '35e677a5-a77d-4e7f-8ed1-54d2f70c3fed', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 37, 'y': 10}": {
+				"id": "6f351456-4fdf-43af-9f33-0aa53790d7a6",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1565,8 +1565,8 @@
 					}
 				]
 			},
-			"{'id': '4307c390-ad0c-48cc-9eb6-97c86070cb64', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 37, 'y': 11}": {
-				"id": "76e4ad9d-50be-4d05-9a54-73575e70e266",
+			"{'id': '5b244fdd-9132-4f99-8b67-70506cd724bd', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 37, 'y': 11}": {
+				"id": "7fb9a935-8665-4927-a56c-e96bf71f73f8",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1580,8 +1580,8 @@
 					}
 				]
 			},
-			"{'id': '2f845c5c-0990-46d9-a5ae-91575f6f7164', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 37, 'y': 12}": {
-				"id": "23580629-cbfa-4041-8583-0ab7c25c7756",
+			"{'id': 'bea0c256-e3bc-4c5a-bd1b-9ac29852ec17', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 37, 'y': 12}": {
+				"id": "6bc09630-703b-4738-98dc-4732f33bfed8",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1595,8 +1595,8 @@
 					}
 				]
 			},
-			"{'id': 'a5d5b17e-d9a5-49cf-a8cb-2c9832204714', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 37, 'y': 13}": {
-				"id": "d541910f-f79e-4db4-ad21-2a0e4dfee995",
+			"{'id': '706b003e-ea2a-45cf-9824-d4d4ac3d3ea4', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 37, 'y': 13}": {
+				"id": "1fdc7ded-b8b7-4073-ac17-170ca1c70f50",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1610,8 +1610,8 @@
 					}
 				]
 			},
-			"{'id': '922f9fdc-d666-45b6-833c-f230a1acb93c', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 37, 'y': 14}": {
-				"id": "2958742f-12ab-4645-8049-bc36dc96a558",
+			"{'id': 'e16c7c31-073e-4422-80c5-23edec9c8d00', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 37, 'y': 14}": {
+				"id": "084dbebf-f208-457f-86a3-aafc74784753",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1625,8 +1625,8 @@
 					}
 				]
 			},
-			"{'id': '51d6a90e-6857-4dff-8068-14628387f100', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 37, 'y': 15}": {
-				"id": "a1f19619-5baf-4f58-a6e8-3ec38f03d888",
+			"{'id': '82882900-40b4-4a27-87e9-a9eb08ce6677', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 37, 'y': 15}": {
+				"id": "3116f675-b90b-4bd0-9dc0-7e4d50df4a86",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1640,8 +1640,8 @@
 					}
 				]
 			},
-			"{'id': '251220ca-cf22-4024-aa5d-77962b2fe60a', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 37, 'y': 16}": {
-				"id": "a7e7ce03-f2e8-45cb-8187-4d844e4df2c0",
+			"{'id': '01fb37f4-f369-4943-8772-b4c94b094b9a', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 37, 'y': 16}": {
+				"id": "b504ceff-343c-403b-a7d8-6b253d5bc215",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1655,8 +1655,8 @@
 					}
 				]
 			},
-			"{'id': '47330983-f65d-4a97-b17d-05685589b8f9', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 37, 'y': 17}": {
-				"id": "5ac47927-e818-4bd4-ae1a-f87130dab9e8",
+			"{'id': '2bc006db-5062-4503-84d4-9879f02ff1d1', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 37, 'y': 17}": {
+				"id": "1f14a132-bcdf-4d69-8179-98f7b64c8072",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1670,8 +1670,8 @@
 					}
 				]
 			},
-			"{'id': '4b2ea319-e0da-4e07-bc2d-2d41e4b1d0e1', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 37, 'y': 18}": {
-				"id": "7272e495-2955-4953-bccf-7d086f42bce6",
+			"{'id': 'b6cbe72e-55ca-4bb4-b8ae-287de4970445', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 37, 'y': 18}": {
+				"id": "56755ad4-9f33-4986-87e6-fbc4f6116afa",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1685,8 +1685,8 @@
 					}
 				]
 			},
-			"{'id': 'c4698f13-2c18-4745-9f6a-e1d2112880b6', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 10, 'y': 14}": {
-				"id": "e24c2846-4a24-4b98-8bc7-49cff70d973f",
+			"{'id': '1f415b27-83cd-43b6-b2d9-6b900e476d67', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 10, 'y': 14}": {
+				"id": "3cc77fa1-6052-460e-9fa7-d21ebf02c6ff",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1700,8 +1700,8 @@
 					}
 				]
 			},
-			"{'id': '1d32b23c-3559-4e06-9e58-667cf69d2548', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 3, 'y': 14}": {
-				"id": "fab4304d-4814-444f-af9d-a35337b3b264",
+			"{'id': '8e89f786-cc60-4400-9c2b-4041a57b4a8b', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 3, 'y': 14}": {
+				"id": "75ca3053-775f-412d-89aa-785a4da163a8",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1715,8 +1715,8 @@
 					}
 				]
 			},
-			"{'id': '0e553c5d-3662-40dd-98d2-81ac7c581d38', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 12, 'y': 18}": {
-				"id": "57ee1580-4f57-4fa6-a0c7-822d21d1babe",
+			"{'id': '993b5ff8-770d-4d16-964c-cac15b873cd2', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 12, 'y': 18}": {
+				"id": "c74f22fd-bd8f-4de0-8f84-1d66c142a3d2",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1730,8 +1730,8 @@
 					}
 				]
 			},
-			"{'id': '340d94d1-0eda-490b-adcf-9638fc1f2268', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 12, 'y': 17}": {
-				"id": "65bc5c8b-2517-4d09-a9b2-0909ceff3227",
+			"{'id': 'e632f21a-2b79-4b49-a23b-4c0002e83fce', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 12, 'y': 17}": {
+				"id": "7235af6f-0a41-4d0d-ba29-d8ea417334b8",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1745,8 +1745,8 @@
 					}
 				]
 			},
-			"{'id': '6ede21d0-b597-4fd2-953e-543437817f4e', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 21, 'y': 7}": {
-				"id": "0b526b2a-a8ca-4c0f-8f5c-79a2665ac85b",
+			"{'id': '2f847d1b-5b13-4ac2-865f-c0c6e2896826', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 21, 'y': 7}": {
+				"id": "d4cf5dfe-d377-4148-87d4-9bcc081ddc41",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1760,8 +1760,8 @@
 					}
 				]
 			},
-			"{'id': 'd1936e65-ebcf-4a6a-a730-f291c3930fb1', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 28, 'y': 5}": {
-				"id": "087356e1-fa9f-4c95-b9af-81a04d990d5a",
+			"{'id': '76ce43a6-d141-426a-a937-79911de7a978', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 28, 'y': 5}": {
+				"id": "cd28f6dc-0cd0-468d-8ab7-6b5578aebb58",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1775,8 +1775,8 @@
 					}
 				]
 			},
-			"{'id': 'dbbdd43b-d3ec-49c5-95ad-503b2de88ad3', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 29, 'y': 5}": {
-				"id": "276d5280-0732-4f17-b2a7-4f95ef226ad4",
+			"{'id': '42b21ffb-3165-4c24-9935-bbe91a7b773c', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 29, 'y': 5}": {
+				"id": "a4117953-7171-4401-a946-f7ec0462b974",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1790,8 +1790,8 @@
 					}
 				]
 			},
-			"{'id': '9e400947-4039-4182-a54b-e667d0c55c9c', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 21, 'y': 8}": {
-				"id": "81a539dc-def4-48a5-9d53-e1b07fd2e984",
+			"{'id': '16e1fa63-ed9d-473f-b470-ae6bcd677869', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 21, 'y': 8}": {
+				"id": "d2e9d5ca-6d25-4c49-9cfe-b5da45ac3151",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1805,8 +1805,8 @@
 					}
 				]
 			},
-			"{'id': '69145b60-2c38-4fda-be23-cb2f41f0bab3', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 14, 'y': 15}": {
-				"id": "54948695-6b63-466a-bb75-29bc0a3e2e74",
+			"{'id': '41123580-50d7-43ba-a0c4-1b85142249bb', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 14, 'y': 15}": {
+				"id": "e36c8dfc-4ddc-4f29-861a-2840ff38031a",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1820,8 +1820,8 @@
 					}
 				]
 			},
-			"{'id': '501c6b9b-8b78-41c2-9481-85ea4925a1b0', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 15, 'y': 15}": {
-				"id": "a760d6be-da24-45b4-be4c-87e72e17612d",
+			"{'id': '4f1d0006-ffa0-4bad-856d-ef189e00085e', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 15, 'y': 15}": {
+				"id": "05839bb4-407c-48dd-bcb7-eacd9639da8e",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1835,8 +1835,8 @@
 					}
 				]
 			},
-			"{'id': 'a5a3b393-cb72-4fae-a42f-d9e023a9ea2a', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 1, 'y': 1}": {
-				"id": "924720ee-91d4-429b-9662-31aac2d92536",
+			"{'id': '151ec63b-b83c-4414-98fa-2f8b9a100a0d', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 1, 'y': 1}": {
+				"id": "daa82128-16be-45d3-acac-857b9dfa20e5",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1850,7 +1850,7 @@
 						"held_item": null,
 						"score": 0,
 						"position": {
-							"id": "a5a3b393-cb72-4fae-a42f-d9e023a9ea2a",
+							"id": "151ec63b-b83c-4414-98fa-2f8b9a100a0d",
 							"object_type": 6,
 							"state": "idle",
 							"__class__": "Vector",
@@ -1877,8 +1877,8 @@
 					}
 				]
 			},
-			"{'id': 'b458112b-ea44-499d-8dcc-ee66f3b4a7f0', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 1, 'y': 8}": {
-				"id": "b67a7c2f-6173-42bb-8364-b485a924fe18",
+			"{'id': 'b5322cbc-c4f5-46dd-8c7b-cdb7a253dfd9', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 1, 'y': 8}": {
+				"id": "b10dcb3a-2ab3-4990-9d6e-8c266867520c",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1913,8 +1913,8 @@
 					}
 				]
 			},
-			"{'id': '9fc42205-c8c6-4341-aa36-c349c8750d18', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 1, 'y': 10}": {
-				"id": "dbdf1c18-7bf6-4224-add1-8b3e2d932961",
+			"{'id': 'd9d58ed6-9db5-4a12-9eee-f425b4a883cb', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 1, 'y': 10}": {
+				"id": "017d9f04-53ed-4882-8cea-e6a2b31e1725",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1924,12 +1924,12 @@
 						"object_type": 28,
 						"state": "idle",
 						"__class__": "IANBot",
-						"direction": "",
 						"can_see_player": false,
-						"boosted": false,
 						"has_attacked": false,
+						"boosted": false,
+						"direction": "",
 						"position": {
-							"id": "9fc42205-c8c6-4341-aa36-c349c8750d18",
+							"id": "d9d58ed6-9db5-4a12-9eee-f425b4a883cb",
 							"object_type": 6,
 							"state": "idle",
 							"__class__": "Vector",
@@ -1940,8 +1940,8 @@
 					}
 				]
 			},
-			"{'id': '46b185c9-dc6f-4ee0-8e1f-59e139d7db6c', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 3, 'y': 18}": {
-				"id": "1319bfbd-df7e-45eb-953a-1a8b9f918da0",
+			"{'id': '4a8e1160-ab1a-4363-9d10-920c1d8f869c', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 3, 'y': 18}": {
+				"id": "f8487203-eebf-42c5-8433-9acb9c6b2d3c",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1976,8 +1976,8 @@
 					}
 				]
 			},
-			"{'id': '286ebd61-b692-462f-a755-16b55e47d6b2', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 1, 'y': 16}": {
-				"id": "fc635cc4-4150-43b9-84b5-804521becc7f",
+			"{'id': '6e34e86a-7ffa-4230-bb70-a772c947a14d', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 1, 'y': 16}": {
+				"id": "160f4015-d0cb-439d-b2c9-077cc49d2a1f",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -1987,12 +1987,12 @@
 						"object_type": 30,
 						"state": "idle",
 						"__class__": "SupportBot",
-						"direction": "",
 						"can_see_player": false,
-						"boosted": false,
 						"has_attacked": false,
+						"boosted": false,
+						"direction": "",
 						"position": {
-							"id": "286ebd61-b692-462f-a755-16b55e47d6b2",
+							"id": "6e34e86a-7ffa-4230-bb70-a772c947a14d",
 							"object_type": 6,
 							"state": "idle",
 							"__class__": "Vector",
@@ -2005,8 +2005,8 @@
 					}
 				]
 			},
-			"{'id': '421cd128-95a7-4d26-8f54-0bc30540c76e', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 4, 'y': 6}": {
-				"id": "66bfd14a-21dd-4d77-9ae3-a26d70461d91",
+			"{'id': 'e04811f6-e7ba-4e78-ace7-d2a67fe18768', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 4, 'y': 6}": {
+				"id": "5e125e3d-701a-40cc-a33d-f2a434c5860c",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -2025,7 +2025,7 @@
 							"turns_left": 0
 						},
 						"position": {
-							"id": "421cd128-95a7-4d26-8f54-0bc30540c76e",
+							"id": "e04811f6-e7ba-4e78-ace7-d2a67fe18768",
 							"object_type": 6,
 							"state": "idle",
 							"__class__": "Vector",
@@ -2036,8 +2036,8 @@
 					}
 				]
 			},
-			"{'id': '92e6c38b-d576-45ce-9210-855c3fa12c45', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 7, 'y': 8}": {
-				"id": "218311dc-3de5-426f-97ae-a69573fe61c2",
+			"{'id': '572e4ce2-80e9-4523-a718-03330ec96a89', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 7, 'y': 8}": {
+				"id": "c4f2aea9-3c07-4da2-af4a-c064b288b563",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -2056,7 +2056,7 @@
 							"turns_left": 0
 						},
 						"position": {
-							"id": "92e6c38b-d576-45ce-9210-855c3fa12c45",
+							"id": "572e4ce2-80e9-4523-a718-03330ec96a89",
 							"object_type": 6,
 							"state": "idle",
 							"__class__": "Vector",
@@ -2067,8 +2067,8 @@
 					}
 				]
 			},
-			"{'id': 'dd300dc0-0847-43f6-b7fe-890fc6297c3e', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 4, 'y': 17}": {
-				"id": "00bc4494-aded-4795-b598-d8435d7a751d",
+			"{'id': 'dcdb2abb-b4f0-4985-8166-6bc6c0b825ff', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 4, 'y': 17}": {
+				"id": "a9e9edf2-306a-49a2-83fa-afda851675fd",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -2087,7 +2087,7 @@
 							"turns_left": 0
 						},
 						"position": {
-							"id": "dd300dc0-0847-43f6-b7fe-890fc6297c3e",
+							"id": "dcdb2abb-b4f0-4985-8166-6bc6c0b825ff",
 							"object_type": 6,
 							"state": "idle",
 							"__class__": "Vector",
@@ -2098,8 +2098,8 @@
 					}
 				]
 			},
-			"{'id': '4ec57938-a973-427b-85f8-04b3d80dd362', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 12, 'y': 2}": {
-				"id": "9139dc73-f2d3-4063-b0ba-7c949a42ccbd",
+			"{'id': '71ed7514-16b6-4e1b-aef3-d93dec9e947d', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 12, 'y': 2}": {
+				"id": "87571ee9-2d5a-4dd5-9c35-facd7e357cf7",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -2118,7 +2118,7 @@
 							"turns_left": 0
 						},
 						"position": {
-							"id": "4ec57938-a973-427b-85f8-04b3d80dd362",
+							"id": "71ed7514-16b6-4e1b-aef3-d93dec9e947d",
 							"object_type": 6,
 							"state": "idle",
 							"__class__": "Vector",
@@ -2129,8 +2129,8 @@
 					}
 				]
 			},
-			"{'id': '12f1d197-f911-4527-bb80-f1956c9f0d60', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 17, 'y': 4}": {
-				"id": "1e414dba-910e-493d-84e1-3410f1ad80f9",
+			"{'id': '875ef976-1202-4ecb-b504-5111cf6e037f', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 17, 'y': 4}": {
+				"id": "a2bbfb7a-6b26-4056-bdc5-4dd80f421c0b",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -2149,7 +2149,7 @@
 							"turns_left": 0
 						},
 						"position": {
-							"id": "12f1d197-f911-4527-bb80-f1956c9f0d60",
+							"id": "875ef976-1202-4ecb-b504-5111cf6e037f",
 							"object_type": 6,
 							"state": "idle",
 							"__class__": "Vector",
@@ -2160,8 +2160,8 @@
 					}
 				]
 			},
-			"{'id': '5c56333e-1efa-4e45-96a4-af2c5c83c95c', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 29, 'y': 18}": {
-				"id": "10438bd5-068c-4926-9ec5-5f85f59ce27a",
+			"{'id': 'a3824592-3556-4849-a648-29e7f1a298b9', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 29, 'y': 18}": {
+				"id": "90f47d88-ace1-4c5c-a8b6-77428c1cd908",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -2210,8 +2210,8 @@
 					}
 				]
 			},
-			"{'id': 'ee7d9222-994f-47d1-9ed0-d9405614029a', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 29, 'y': 1}": {
-				"id": "14a92f77-add3-4570-b330-4bc07b31367c",
+			"{'id': 'b467a3e4-1882-482f-955f-23b09bcef83b', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 29, 'y': 1}": {
+				"id": "58945e55-e660-4357-8436-42077d5e028f",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -2221,12 +2221,12 @@
 						"object_type": 26,
 						"state": "idle",
 						"__class__": "CrawlerBot",
-						"direction": "",
 						"can_see_player": false,
-						"boosted": false,
 						"has_attacked": false,
+						"boosted": false,
+						"direction": "",
 						"position": {
-							"id": "ee7d9222-994f-47d1-9ed0-d9405614029a",
+							"id": "b467a3e4-1882-482f-955f-23b09bcef83b",
 							"object_type": 6,
 							"state": "idle",
 							"__class__": "Vector",
@@ -2237,8 +2237,8 @@
 					}
 				]
 			},
-			"{'id': '271dbf8e-ef82-4d57-9c1a-5fc99c978cda', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 36, 'y': 6}": {
-				"id": "e638c419-cf0a-4b2b-a1a9-68e9354bc275",
+			"{'id': 'da21ee98-9784-43a7-9d6f-c19ceac43ddd', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 36, 'y': 6}": {
+				"id": "ad03f92c-57a4-4ab0-9e87-36ea968d8edd",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -2258,7 +2258,7 @@
 							"turns_left": 0
 						},
 						"position": {
-							"id": "271dbf8e-ef82-4d57-9c1a-5fc99c978cda",
+							"id": "da21ee98-9784-43a7-9d6f-c19ceac43ddd",
 							"object_type": 6,
 							"state": "idle",
 							"__class__": "Vector",
@@ -2269,8 +2269,8 @@
 					}
 				]
 			},
-			"{'id': '988511fc-03de-4a7a-9392-9c9e54e97938', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 32, 'y': 7}": {
-				"id": "c2ff01c6-f484-433c-88f3-d2a26dffe399",
+			"{'id': '19fedd1b-d122-4c98-9410-9d92771725a5', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 32, 'y': 7}": {
+				"id": "16dcea6e-a8f8-4f9b-8556-060f37286c05",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -2289,7 +2289,7 @@
 							"turns_left": 0
 						},
 						"position": {
-							"id": "988511fc-03de-4a7a-9392-9c9e54e97938",
+							"id": "19fedd1b-d122-4c98-9410-9d92771725a5",
 							"object_type": 6,
 							"state": "idle",
 							"__class__": "Vector",
@@ -2300,8 +2300,8 @@
 					}
 				]
 			},
-			"{'id': '41b71b02-4f4d-4937-88cc-0c17d0eef740', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 34, 'y': 17}": {
-				"id": "917a35d1-5009-488f-b005-ec60bc5fb624",
+			"{'id': '468f14cc-91ed-4a96-a76c-8e9737a46d61', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 34, 'y': 17}": {
+				"id": "c11ce45f-1be5-4303-8d27-4237b3d36abc",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -2320,7 +2320,7 @@
 							"turns_left": 0
 						},
 						"position": {
-							"id": "41b71b02-4f4d-4937-88cc-0c17d0eef740",
+							"id": "468f14cc-91ed-4a96-a76c-8e9737a46d61",
 							"object_type": 6,
 							"state": "idle",
 							"__class__": "Vector",
@@ -2331,8 +2331,8 @@
 					}
 				]
 			},
-			"{'id': '14d870c8-0c81-4750-93a5-7e600a7b99a4', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 36, 'y': 2}": {
-				"id": "89da4a86-2fc5-40a2-bf07-10d60b398455",
+			"{'id': 'e0df6610-2e3e-4c4d-af52-e194e408c425', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 36, 'y': 2}": {
+				"id": "51e48c4a-367b-4ca3-a06c-5b7598060f79",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -2367,8 +2367,8 @@
 					}
 				]
 			},
-			"{'id': 'e5ed8fb0-ea5a-4209-9278-ed0991ff4f1b', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 29, 'y': 12}": {
-				"id": "effabc70-44f8-4cd3-8b7b-7843d09d4fa7",
+			"{'id': '5c13d467-d84b-4607-bde8-b41038d039f0', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 29, 'y': 12}": {
+				"id": "d8e2a5e4-168e-42aa-bf2e-41b8a9647e6f",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -2378,12 +2378,12 @@
 						"object_type": 29,
 						"state": "idle",
 						"__class__": "JumperBot",
-						"direction": "",
 						"can_see_player": false,
-						"boosted": false,
 						"has_attacked": false,
+						"boosted": false,
+						"direction": "",
 						"position": {
-							"id": "e5ed8fb0-ea5a-4209-9278-ed0991ff4f1b",
+							"id": "5c13d467-d84b-4607-bde8-b41038d039f0",
 							"object_type": 6,
 							"state": "idle",
 							"__class__": "Vector",
@@ -2394,8 +2394,8 @@
 					}
 				]
 			},
-			"{'id': '31191812-d460-48e4-8d0d-f47d194a1044', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 21, 'y': 18}": {
-				"id": "20834c80-4040-418e-b3ce-f411d5693609",
+			"{'id': '5c40d66b-cabe-43da-9850-e6d03f00f037', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 21, 'y': 18}": {
+				"id": "d068c02d-4fab-4a2d-9478-818943082a77",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -2414,7 +2414,7 @@
 							"turns_left": 0
 						},
 						"position": {
-							"id": "31191812-d460-48e4-8d0d-f47d194a1044",
+							"id": "5c40d66b-cabe-43da-9850-e6d03f00f037",
 							"object_type": 6,
 							"state": "idle",
 							"__class__": "Vector",
@@ -2425,8 +2425,8 @@
 					}
 				]
 			},
-			"{'id': '869282e1-af88-4968-8139-2a82d8d555ac', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 17, 'y': 11}": {
-				"id": "3577a52e-4fd8-4056-844c-4e2acee05f9f",
+			"{'id': '6fb966b0-1083-41b4-85fb-83f71e897c9e', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 17, 'y': 11}": {
+				"id": "24fce1c1-c4ff-4604-b3ce-ab45e4239f93",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -2436,12 +2436,12 @@
 						"object_type": 27,
 						"state": "idle",
 						"__class__": "DumbBot",
-						"direction": "",
 						"can_see_player": false,
-						"boosted": false,
 						"has_attacked": false,
+						"boosted": false,
+						"direction": "",
 						"position": {
-							"id": "869282e1-af88-4968-8139-2a82d8d555ac",
+							"id": "6fb966b0-1083-41b4-85fb-83f71e897c9e",
 							"object_type": 6,
 							"state": "idle",
 							"__class__": "Vector",
@@ -2452,8 +2452,8 @@
 					}
 				]
 			},
-			"{'id': '0bb73945-f0c9-493f-bd7a-9890732ebd75', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 19, 'y': 11}": {
-				"id": "e037cd21-f94c-4f59-9c31-5207feb85f26",
+			"{'id': '30d63a78-13ac-44f0-ac9a-6eaed0c1fbba', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 19, 'y': 11}": {
+				"id": "527bad61-7756-4985-a4df-c4abf00a414c",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -2473,7 +2473,7 @@
 							"turns_left": 0
 						},
 						"position": {
-							"id": "0bb73945-f0c9-493f-bd7a-9890732ebd75",
+							"id": "30d63a78-13ac-44f0-ac9a-6eaed0c1fbba",
 							"object_type": 6,
 							"state": "idle",
 							"__class__": "Vector",
@@ -2484,8 +2484,8 @@
 					}
 				]
 			},
-			"{'id': '126c997a-5b39-4670-b6c1-f0243799b5f1', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 4, 'y': 10}": {
-				"id": "9f8a13d4-b364-487b-90d2-bf9ac27f9732",
+			"{'id': '5f268d4c-8a65-4a6e-9a27-6fefa776100a', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 4, 'y': 10}": {
+				"id": "9b18dcb7-5d75-4fec-9796-8a9eeae9ba26",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -2504,7 +2504,7 @@
 							"turns_left": 0
 						},
 						"position": {
-							"id": "126c997a-5b39-4670-b6c1-f0243799b5f1",
+							"id": "5f268d4c-8a65-4a6e-9a27-6fefa776100a",
 							"object_type": 6,
 							"state": "idle",
 							"__class__": "Vector",
@@ -2515,8 +2515,8 @@
 					}
 				]
 			},
-			"{'id': '07dc389a-b101-4ccf-8d1d-712f7388fb1f', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 11, 'y': 10}": {
-				"id": "b5b7fce2-c22d-4612-9b25-81d31033829a",
+			"{'id': '0731772b-0396-498a-9eca-d3ab3b12b51d', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 11, 'y': 10}": {
+				"id": "c5e4fd20-8e33-41b7-9f47-516a2e326625",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -2535,7 +2535,7 @@
 							"turns_left": 0
 						},
 						"position": {
-							"id": "07dc389a-b101-4ccf-8d1d-712f7388fb1f",
+							"id": "0731772b-0396-498a-9eca-d3ab3b12b51d",
 							"object_type": 6,
 							"state": "idle",
 							"__class__": "Vector",
@@ -2546,8 +2546,8 @@
 					}
 				]
 			},
-			"{'id': '3403ba31-560b-41f2-b4f3-7206750149be', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 1, 'y': 13}": {
-				"id": "19bb0b43-fcbb-4bb0-b0f8-ee8e92db3498",
+			"{'id': '91beb72a-6898-4cc9-9eaf-b200e69985bc', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 1, 'y': 13}": {
+				"id": "de520363-754b-4dc7-92d0-debfba04182b",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -2566,7 +2566,7 @@
 							"turns_left": 0
 						},
 						"position": {
-							"id": "3403ba31-560b-41f2-b4f3-7206750149be",
+							"id": "91beb72a-6898-4cc9-9eaf-b200e69985bc",
 							"object_type": 6,
 							"state": "idle",
 							"__class__": "Vector",
@@ -2577,8 +2577,8 @@
 					}
 				]
 			},
-			"{'id': 'd6fbf70e-f7c5-431a-9043-54ed35ffbd2b', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 16, 'y': 1}": {
-				"id": "cc19a7d9-eeb8-414e-9a87-223f2799a49f",
+			"{'id': '40d7e3c7-6a71-4c7b-8758-54599b8cfaa0', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 16, 'y': 1}": {
+				"id": "50f8e1b3-6d34-4489-ac7b-8a1df4032693",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -2598,7 +2598,7 @@
 							"turns_left": 0
 						},
 						"position": {
-							"id": "d6fbf70e-f7c5-431a-9043-54ed35ffbd2b",
+							"id": "40d7e3c7-6a71-4c7b-8758-54599b8cfaa0",
 							"object_type": 6,
 							"state": "idle",
 							"__class__": "Vector",
@@ -2609,8 +2609,8 @@
 					}
 				]
 			},
-			"{'id': '6bd17ee7-9dc9-4bc3-89b9-9f862c709580', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 33, 'y': 4}": {
-				"id": "8894f4ab-39ba-47fd-ac0d-e365ac4493a0",
+			"{'id': '65227843-75b4-4282-b967-ff09e54c32b3', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 33, 'y': 4}": {
+				"id": "e3523a71-c961-44f1-858c-8b0718ccd958",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -2629,7 +2629,7 @@
 							"turns_left": 0
 						},
 						"position": {
-							"id": "6bd17ee7-9dc9-4bc3-89b9-9f862c709580",
+							"id": "65227843-75b4-4282-b967-ff09e54c32b3",
 							"object_type": 6,
 							"state": "idle",
 							"__class__": "Vector",
@@ -2640,8 +2640,8 @@
 					}
 				]
 			},
-			"{'id': '83c455fa-b44f-425c-a090-b938fd0d1be9', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 8, 'y': 13}": {
-				"id": "8999d8a5-5dac-4ee7-a6bc-89f91137c41e",
+			"{'id': 'd8d51a0e-e760-4144-8f97-7fc75c6c8268', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 8, 'y': 13}": {
+				"id": "1b1f62bd-5708-4634-afb3-4640c5c78e7c",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -2660,7 +2660,7 @@
 							"turns_left": 0
 						},
 						"position": {
-							"id": "83c455fa-b44f-425c-a090-b938fd0d1be9",
+							"id": "d8d51a0e-e760-4144-8f97-7fc75c6c8268",
 							"object_type": 6,
 							"state": "idle",
 							"__class__": "Vector",
@@ -2671,8 +2671,8 @@
 					}
 				]
 			},
-			"{'id': '499a6023-acac-4129-b8c5-7adbe1e301e0', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 27, 'y': 2}": {
-				"id": "b524daab-36a4-4162-b485-8385042d84c1",
+			"{'id': '32053330-b1e0-4a29-8aa9-e4a0e2880bfa', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 27, 'y': 2}": {
+				"id": "c9a3663d-f177-49bf-a794-bdc8b86e8a0b",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -2691,7 +2691,7 @@
 							"turns_left": 0
 						},
 						"position": {
-							"id": "499a6023-acac-4129-b8c5-7adbe1e301e0",
+							"id": "32053330-b1e0-4a29-8aa9-e4a0e2880bfa",
 							"object_type": 6,
 							"state": "idle",
 							"__class__": "Vector",
@@ -2702,8 +2702,8 @@
 					}
 				]
 			},
-			"{'id': '0f17d1dc-83f4-4db5-9a25-e93952ffbc26', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 6, 'y': 15}": {
-				"id": "cfeffa38-eb9a-467b-b180-d63e22b9370c",
+			"{'id': '3ee5296e-c480-4fde-ae95-ccced260ae4b', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 6, 'y': 15}": {
+				"id": "c902e145-dc5e-4ba0-a94d-c5910f8851fe",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -2723,7 +2723,7 @@
 							"turns_left": 0
 						},
 						"position": {
-							"id": "0f17d1dc-83f4-4db5-9a25-e93952ffbc26",
+							"id": "3ee5296e-c480-4fde-ae95-ccced260ae4b",
 							"object_type": 6,
 							"state": "idle",
 							"__class__": "Vector",
@@ -2734,8 +2734,8 @@
 					}
 				]
 			},
-			"{'id': 'de0ba14e-27c8-48b1-8286-903c758a40c2', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 18, 'y': 1}": {
-				"id": "d04010a5-6f45-4b45-8c14-154d86191024",
+			"{'id': '1f82e504-d683-492b-827b-38e83116ca5d', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 18, 'y': 1}": {
+				"id": "a9b8e848-6b57-4a19-975f-487c96a41f0d",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -2749,8 +2749,8 @@
 					}
 				]
 			},
-			"{'id': '6dbd1c33-0912-49ab-bae1-d197bd5235f5', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 19, 'y': 1}": {
-				"id": "27548459-db40-4ccd-b500-bb2153cda686",
+			"{'id': 'ad373bb9-2288-49a3-a796-f9a2b9b30dfb', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 19, 'y': 1}": {
+				"id": "e31fb520-6fe2-45b3-9b3e-bcecaf835223",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -2764,8 +2764,8 @@
 					}
 				]
 			},
-			"{'id': 'baa34e1f-bfbb-45a2-b325-4d1ff25e4426', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 20, 'y': 1}": {
-				"id": "6f25eb34-e214-487c-8064-ba28649fefed",
+			"{'id': '39a6d8c4-693e-4f55-93ec-24beb6373f7c', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 20, 'y': 1}": {
+				"id": "1fd83d21-3ab3-4b97-8726-ab4ca9d9b23a",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -2779,8 +2779,8 @@
 					}
 				]
 			},
-			"{'id': 'b9f9f4e4-0d1d-4f4c-934f-203eddb423aa', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 21, 'y': 1}": {
-				"id": "c996de26-6bf9-405a-afd1-cfcc8423835a",
+			"{'id': '846d9f10-a50a-4d04-acc6-2b4f14a9fdbb', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 21, 'y': 1}": {
+				"id": "e420730a-0c9c-4954-b5f3-b5a9d0953696",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -2794,8 +2794,8 @@
 					}
 				]
 			},
-			"{'id': 'c48694c2-fe0d-4cb9-b27f-fb63bbb018a7', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 22, 'y': 1}": {
-				"id": "22e8c68d-19aa-4459-9a8c-891d31c407d0",
+			"{'id': 'a256bc73-0343-49b5-922b-ddf626898b0e', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 22, 'y': 1}": {
+				"id": "adbb3572-f52c-4c37-855d-056eadc991d0",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -2809,8 +2809,8 @@
 					}
 				]
 			},
-			"{'id': 'f6cd7be8-7907-4198-8435-5ebd0350e784', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 23, 'y': 1}": {
-				"id": "8bf49e27-8286-49c0-b42a-dc2427ff42e2",
+			"{'id': 'db9b7e24-7683-4773-a567-7f5622b3b686', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 23, 'y': 1}": {
+				"id": "2d547790-7d01-4053-a948-d5c2f7e6b0a6",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -2824,8 +2824,8 @@
 					}
 				]
 			},
-			"{'id': '2ac44e8d-e7be-44e9-9fca-8ab5c92f55bf', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 24, 'y': 1}": {
-				"id": "b3398502-0f62-4005-a3f8-243e42bc74d3",
+			"{'id': '7cecbe44-b9ef-4f16-9b63-bc94df245d2c', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 24, 'y': 1}": {
+				"id": "c78e4691-d95c-4c25-b8d8-89ae3143e050",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -2839,8 +2839,8 @@
 					}
 				]
 			},
-			"{'id': 'd9b21828-fd17-46f5-b43d-0ed7e8cc8314', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 25, 'y': 1}": {
-				"id": "2fa067e2-00a2-4635-bb91-c23fb495a4c3",
+			"{'id': 'a355772f-b966-41bb-850c-91b0191e1e41', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 25, 'y': 1}": {
+				"id": "6a2513e6-944b-41cd-ad29-0d92c6379e29",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -2854,8 +2854,8 @@
 					}
 				]
 			},
-			"{'id': 'e2d707fc-e2eb-4c26-8c72-6759551e3740', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 32, 'y': 1}": {
-				"id": "46570f90-7f90-4655-8dbf-170511bdb10a",
+			"{'id': '35813f83-5eb7-4eb4-8fa3-88f2444435f4', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 32, 'y': 1}": {
+				"id": "0700c3f8-3f65-4c63-8a3d-816a241077a7",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -2866,7 +2866,7 @@
 						"state": "idle",
 						"__class__": "Refuge",
 						"vector": {
-							"id": "e2d707fc-e2eb-4c26-8c72-6759551e3740",
+							"id": "35813f83-5eb7-4eb4-8fa3-88f2444435f4",
 							"object_type": 6,
 							"state": "idle",
 							"__class__": "Vector",
@@ -2879,8 +2879,8 @@
 					}
 				]
 			},
-			"{'id': '8bc50d38-3c3d-4213-a1c1-5afab14ec47a', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 33, 'y': 1}": {
-				"id": "79682721-c3cd-4e55-8961-a793bc4a3c5c",
+			"{'id': '005deea6-7b23-49dd-ad22-3a3405be4496', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 33, 'y': 1}": {
+				"id": "bead3e46-420a-4284-bafd-992e43fa5e8d",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -2891,7 +2891,7 @@
 						"state": "idle",
 						"__class__": "Refuge",
 						"vector": {
-							"id": "8bc50d38-3c3d-4213-a1c1-5afab14ec47a",
+							"id": "005deea6-7b23-49dd-ad22-3a3405be4496",
 							"object_type": 6,
 							"state": "idle",
 							"__class__": "Vector",
@@ -2904,8 +2904,8 @@
 					}
 				]
 			},
-			"{'id': '4a10c0ab-a4d4-4425-8431-b2e7f8c41b9b', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 18, 'y': 2}": {
-				"id": "11362624-472a-4d03-a3fa-e935c070e008",
+			"{'id': 'bb1b4bc8-1812-4272-b95e-a6409ddc2be2', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 18, 'y': 2}": {
+				"id": "468751fd-d3f4-4034-9d9a-3bc087fd3d55",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -2919,8 +2919,8 @@
 					}
 				]
 			},
-			"{'id': '0136152f-75f6-4b7a-be8f-fbc2d054dbdb', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 19, 'y': 2}": {
-				"id": "9823a89e-0edd-4fa9-8293-60711f9cdeb6",
+			"{'id': 'c139b5b6-46a3-4831-84f7-051e4208a2f0', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 19, 'y': 2}": {
+				"id": "fd2aa0a8-d855-48a2-9e2e-55a41795105a",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -2934,8 +2934,8 @@
 					}
 				]
 			},
-			"{'id': 'dfbc91b1-1b35-48e1-a88b-083ae2bbebd7', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 20, 'y': 2}": {
-				"id": "c467e40a-e6f4-46ae-bed4-df51329fd01c",
+			"{'id': 'd83a6104-c89d-46e8-aa0b-078e1badcfdd', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 20, 'y': 2}": {
+				"id": "4e2132b8-9217-49de-a90f-2d3a2f280c36",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -2949,8 +2949,8 @@
 					}
 				]
 			},
-			"{'id': '9bc47e5d-f088-4088-b773-8babccbbc44a', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 21, 'y': 2}": {
-				"id": "e09b0ea2-ce1d-43cd-a3d2-fa8c621f8446",
+			"{'id': '1869e5d2-2d64-4767-8ce3-e373d470d77d', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 21, 'y': 2}": {
+				"id": "8e29b8c0-6eee-414a-92da-599c626556f9",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -2964,8 +2964,8 @@
 					}
 				]
 			},
-			"{'id': 'f760e43d-0aae-4a2b-bf7b-3200d549db86', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 22, 'y': 2}": {
-				"id": "3adfc739-c207-442c-95a0-9e92be35edaa",
+			"{'id': '49d06fb2-e61f-4563-a12b-d7d8ed12ad99', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 22, 'y': 2}": {
+				"id": "a144cab5-f777-4e3a-b1b2-2fea1b64a800",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -2979,8 +2979,8 @@
 					}
 				]
 			},
-			"{'id': 'd1ba4675-1087-454a-82c5-d7dcb6b08b0e', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 23, 'y': 2}": {
-				"id": "feb99814-db38-4351-9a63-a482482b3c1d",
+			"{'id': 'ca3ebcec-f721-4a35-b227-734f2ad7d7c7', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 23, 'y': 2}": {
+				"id": "1b3307c3-f361-4933-83c6-b647ad837f31",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -2994,8 +2994,8 @@
 					}
 				]
 			},
-			"{'id': 'a40c0edf-d405-4701-83f4-2516dae2b502', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 24, 'y': 2}": {
-				"id": "00c12329-3a19-4da0-b450-387a1c169fd2",
+			"{'id': '52cbd9d0-b670-4dea-8388-e8d5dbaf3a26', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 24, 'y': 2}": {
+				"id": "dc4d1c8c-068e-458c-93db-1c679e947a4d",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3009,8 +3009,8 @@
 					}
 				]
 			},
-			"{'id': '7ef03880-5b4f-4395-9f9c-d5c65abaf5b3', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 25, 'y': 2}": {
-				"id": "e84dfb5e-1fb5-4634-b717-e68f4ba380df",
+			"{'id': 'e5d29c3e-7be7-4f14-b873-2fbcb4cdc2e5', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 25, 'y': 2}": {
+				"id": "281222d9-1d98-49ba-b49b-413d8e27cccc",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3024,8 +3024,8 @@
 					}
 				]
 			},
-			"{'id': '0b4472af-062f-4a47-8449-066b9dc1f12e', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 18, 'y': 3}": {
-				"id": "3fac5abd-7a4b-4a8c-ba7e-c965b98f73b7",
+			"{'id': 'dffdd83b-3648-4602-8a2f-94e80ba0d7f1', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 18, 'y': 3}": {
+				"id": "e85f47d2-e882-42e5-84c3-0bde3f28c915",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3039,8 +3039,8 @@
 					}
 				]
 			},
-			"{'id': 'd622e997-d9e4-47b2-9399-bb467879ec8d', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 19, 'y': 3}": {
-				"id": "4ff8f398-770e-4acd-8adb-fa131465d78d",
+			"{'id': '79d2e819-81f3-460e-acab-571161fda2bf', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 19, 'y': 3}": {
+				"id": "851ff090-b7b1-4814-8c59-df6e10dea325",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3054,8 +3054,8 @@
 					}
 				]
 			},
-			"{'id': 'b0b40de8-b142-4b97-b5f8-6a6217cd51f7', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 20, 'y': 3}": {
-				"id": "eeea16e0-3af0-469e-9933-8303c5b40d6a",
+			"{'id': 'ee1f4704-29c4-4366-998d-00d260443b93', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 20, 'y': 3}": {
+				"id": "d24c6c62-186b-4cbe-b372-8e262f3ab645",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3069,8 +3069,8 @@
 					}
 				]
 			},
-			"{'id': 'd0f09f92-72d0-4c49-a216-12584fe2423a', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 21, 'y': 3}": {
-				"id": "77d2d0ad-65c6-4821-8a82-ae05dcd9a340",
+			"{'id': 'e9f6dbc3-51ce-4ae3-9a3a-b8d04fa1fedd', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 21, 'y': 3}": {
+				"id": "084460f8-0fca-4efd-92cf-2ac8514712e1",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3084,8 +3084,8 @@
 					}
 				]
 			},
-			"{'id': '2b2dd515-72f4-4909-a94c-33f896b5f1c5', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 22, 'y': 3}": {
-				"id": "33809927-9803-4c7b-8b05-98d85cbcd491",
+			"{'id': '627219a1-4d77-41aa-99ee-658531afff35', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 22, 'y': 3}": {
+				"id": "7ee37821-e5d6-4e1b-bddc-ed24e3a8d364",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3099,8 +3099,8 @@
 					}
 				]
 			},
-			"{'id': '8b0e89aa-18d1-4515-9ae8-1385daa6a0eb', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 23, 'y': 3}": {
-				"id": "451166a4-682a-4a69-9e29-43f9655b26d9",
+			"{'id': '540b0162-900c-46eb-b692-c92e8d4cdc4a', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 23, 'y': 3}": {
+				"id": "e48008ca-6cb7-415c-ac12-8c590ac16eca",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3114,8 +3114,8 @@
 					}
 				]
 			},
-			"{'id': 'b69d30d3-147f-450e-9cdc-081dffb7c251', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 24, 'y': 3}": {
-				"id": "ebcb922f-6882-416f-b3c8-1df4733fe1a2",
+			"{'id': '4c163398-02b6-4380-8baf-3804c58e63db', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 24, 'y': 3}": {
+				"id": "e28eb572-ad74-4908-9d40-ac53d16af453",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3129,8 +3129,8 @@
 					}
 				]
 			},
-			"{'id': '061f72bc-9406-4c86-b5e0-70c70323ed87', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 25, 'y': 3}": {
-				"id": "a47ad685-a317-4f17-a728-da0e6cf737ce",
+			"{'id': '54599c21-0140-43b3-835f-553ae2d3ad4d', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 25, 'y': 3}": {
+				"id": "ca4aac85-faff-4f65-854a-9058e9085b60",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3144,8 +3144,8 @@
 					}
 				]
 			},
-			"{'id': '6172c766-5664-499a-923a-e3b5d22c6e54', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 9, 'y': 4}": {
-				"id": "bd92d3dc-5bd9-487d-ab65-5348cb687ac8",
+			"{'id': 'fda02b14-b461-4635-98dc-0383f2ab8abc', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 9, 'y': 4}": {
+				"id": "3c9052e9-1ec2-40d6-a950-88420a57658d",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3159,8 +3159,8 @@
 					}
 				]
 			},
-			"{'id': '203e85ec-e714-4ea4-a2fb-dc6b18d1c485', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 10, 'y': 4}": {
-				"id": "aed89045-76b5-44f3-9335-109c9ed0e698",
+			"{'id': '74a3456b-b8f2-4b07-8dae-e37f739a63ff', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 10, 'y': 4}": {
+				"id": "8f418193-2642-4d5d-9293-5294d503ebc2",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3174,8 +3174,8 @@
 					}
 				]
 			},
-			"{'id': 'e71dc1c7-c3a1-40bb-9dc8-8397d3088c24', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 11, 'y': 4}": {
-				"id": "7ca03434-6c5c-4b71-88b4-1aaa32f172de",
+			"{'id': 'e64e984e-3d8c-4d73-b366-8ee8abbd0f05', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 11, 'y': 4}": {
+				"id": "82797d26-c61d-4423-87e3-11d3a5d87cd5",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3189,8 +3189,8 @@
 					}
 				]
 			},
-			"{'id': '7b972152-a08b-492a-8251-83b1db9c880c', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 12, 'y': 4}": {
-				"id": "d7ccbebf-4385-42cf-a574-da98ae77d401",
+			"{'id': '748ae2cd-c0f0-43d6-a983-17f7049425e0', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 12, 'y': 4}": {
+				"id": "4ff98cc8-8f0b-49b3-9f6e-4a557be91b6f",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3204,8 +3204,8 @@
 					}
 				]
 			},
-			"{'id': 'a5e4ee13-9075-492c-9c48-1a27640b75e4', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 18, 'y': 4}": {
-				"id": "b0d6d218-1a06-4b2b-ad02-a678d3c41363",
+			"{'id': 'ed0ab767-4040-412d-8712-d18b27ba3889', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 18, 'y': 4}": {
+				"id": "fd02e0b9-624d-4af5-9043-c16b808c7e7f",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3219,8 +3219,8 @@
 					}
 				]
 			},
-			"{'id': '959f58a6-f6bd-4cce-96db-579edaa8699a', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 19, 'y': 4}": {
-				"id": "8f767bc1-d4df-4c16-948f-43a78d798dff",
+			"{'id': '1b30df46-7a72-4e66-9eb7-fc8470a1a89a', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 19, 'y': 4}": {
+				"id": "0b4f6393-2485-4e06-bb66-e569e692b113",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3234,8 +3234,8 @@
 					}
 				]
 			},
-			"{'id': '55044700-5d31-4def-a613-947c2d668de3', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 20, 'y': 4}": {
-				"id": "402727d6-99c6-4666-82de-8bc6b405dc46",
+			"{'id': '42239b77-693c-487c-a074-af90bd0f204b', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 20, 'y': 4}": {
+				"id": "038823ed-a102-42b3-832a-04e2bce5d82e",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3249,8 +3249,8 @@
 					}
 				]
 			},
-			"{'id': '09ac1acb-9d87-4806-b2c9-5cf27f4aa7ff', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 21, 'y': 4}": {
-				"id": "e2d73349-56df-469d-9597-3f97078e04f4",
+			"{'id': 'b38c0460-dc26-4166-ae5c-4d782f1e9499', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 21, 'y': 4}": {
+				"id": "7d769453-ddcc-41f5-8308-ed2f3b9403dd",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3264,8 +3264,8 @@
 					}
 				]
 			},
-			"{'id': '849f681c-9974-463d-a435-52aefb0adffc', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 22, 'y': 4}": {
-				"id": "fe008724-d8f8-4bee-bb36-65b69ed363a6",
+			"{'id': '26df9ff0-9552-4a81-a272-1667fe13b44f', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 22, 'y': 4}": {
+				"id": "9a660a2f-3c62-4009-8130-44e44e103f9d",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3279,8 +3279,8 @@
 					}
 				]
 			},
-			"{'id': 'af28c696-6c31-4493-af91-ee4952c4b0e1', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 23, 'y': 4}": {
-				"id": "214f87d1-280c-4b3f-aeec-90cdc7cf89c0",
+			"{'id': '816f2536-16da-4875-9314-b571727ae768', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 23, 'y': 4}": {
+				"id": "587e45c9-d96c-4afd-8949-c5e089f5b0fc",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3294,8 +3294,8 @@
 					}
 				]
 			},
-			"{'id': '2020183c-13e4-43c5-a281-920a85a7c1aa', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 24, 'y': 4}": {
-				"id": "948feb6a-48ca-4c4c-b588-1f2f0a8ed43a",
+			"{'id': '04187411-308f-4aa7-8946-d5ce138b52ea', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 24, 'y': 4}": {
+				"id": "dbf021b7-0fd1-4214-aa6c-37cb68103eb1",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3309,8 +3309,8 @@
 					}
 				]
 			},
-			"{'id': '405bb9d6-df83-441d-bf1e-7752f2c22425', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 25, 'y': 4}": {
-				"id": "5c7bd349-8661-4fb6-9792-924ba6003769",
+			"{'id': 'fc2e549f-a55b-480c-be2d-d82605115b41', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 25, 'y': 4}": {
+				"id": "073ff73a-5ea4-4da0-810a-6ef969c5144a",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3324,8 +3324,8 @@
 					}
 				]
 			},
-			"{'id': '02a48c01-da40-4ca7-84e5-d413035c006d', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 9, 'y': 5}": {
-				"id": "53f05640-a80d-44c8-a3d7-a3e642f941d1",
+			"{'id': 'b62d2ef0-392f-466a-846c-84c2b7637954', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 9, 'y': 5}": {
+				"id": "86c7e686-fee8-4c20-91c9-5f5af331908e",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3339,8 +3339,8 @@
 					}
 				]
 			},
-			"{'id': '9e8bf3a7-9773-477f-b8fc-4af7275c4da8', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 10, 'y': 5}": {
-				"id": "9bdbb5d3-148e-435a-af63-ee3c1ce34067",
+			"{'id': 'c3d4501c-6d9b-4fa4-8b89-524804a3f4e0', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 10, 'y': 5}": {
+				"id": "bc5ca431-b291-4f3a-9a53-8540ad7aea0d",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3354,8 +3354,8 @@
 					}
 				]
 			},
-			"{'id': '0a470ea6-15fe-4b30-a600-65554bb95c11', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 11, 'y': 5}": {
-				"id": "e7c4119c-b60f-40a4-8032-a33818f743d9",
+			"{'id': 'd9c3b61d-ee45-4260-a47a-ac71cb6b2aea', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 11, 'y': 5}": {
+				"id": "03f09bfc-9825-4276-be48-2442f3a9123f",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3369,8 +3369,8 @@
 					}
 				]
 			},
-			"{'id': '865ca7e7-90c1-4667-bf83-f97cae3df3ec', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 12, 'y': 5}": {
-				"id": "d10c0182-d96d-4836-9111-f6f37694b288",
+			"{'id': '7154a1c3-027a-42bd-b45b-02396a95976e', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 12, 'y': 5}": {
+				"id": "599f3f8a-b0c0-4903-83fb-467d949b0c9d",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3384,8 +3384,8 @@
 					}
 				]
 			},
-			"{'id': '1ae0e50b-b9ce-48fc-97fe-5b752d1595f4', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 18, 'y': 5}": {
-				"id": "6a8d30b0-edf9-4585-ac02-827fbfbf1909",
+			"{'id': '3997c2d4-7515-41d3-8c2d-bc0b6daaf392', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 18, 'y': 5}": {
+				"id": "fe46243f-8fd6-473f-8cdb-4ef973e36fbf",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3399,8 +3399,8 @@
 					}
 				]
 			},
-			"{'id': '1e3d0a6a-a029-4975-bc20-4e0e609b516d', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 19, 'y': 5}": {
-				"id": "d73b1aa9-5771-4c16-a477-2b269cacec89",
+			"{'id': 'b2e0255d-6765-4733-b2f3-8e758dcb7e38', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 19, 'y': 5}": {
+				"id": "0e578fa0-cecd-425b-a9f2-4fdbe919943d",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3414,8 +3414,8 @@
 					}
 				]
 			},
-			"{'id': 'f87314ce-6c34-468c-b9b2-cda85c9307fe', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 20, 'y': 5}": {
-				"id": "bcf6ca9a-430c-4a39-879f-9cf85b67a5c6",
+			"{'id': '572064aa-fea8-498b-85af-8a0277835c32', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 20, 'y': 5}": {
+				"id": "3aafa878-9f95-4f1d-bf26-99a95b15ac79",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3429,8 +3429,8 @@
 					}
 				]
 			},
-			"{'id': '6e1e94c3-cba8-4218-b91c-3cc6e8f796c0', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 21, 'y': 5}": {
-				"id": "b34e187a-10d5-4d5a-b330-539746c1af40",
+			"{'id': 'cae1f0f9-f0b6-4829-8ef6-c9124adfddfa', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 21, 'y': 5}": {
+				"id": "c42bdd56-56fb-4d87-8ff0-8a93b3f0c61f",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3444,8 +3444,8 @@
 					}
 				]
 			},
-			"{'id': '86492174-fd93-44de-9405-0c402441dbc5', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 22, 'y': 5}": {
-				"id": "889c2633-40dc-42dd-88c4-3a383dbf3f7c",
+			"{'id': 'da8c1d5f-a2d9-4246-ad3e-e832b6bc83fd', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 22, 'y': 5}": {
+				"id": "f4a4dc49-dd73-4e13-90b2-9a5674bd7844",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3459,8 +3459,8 @@
 					}
 				]
 			},
-			"{'id': 'efd3275d-ccd4-4d95-9833-8e506b6ce76b', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 23, 'y': 5}": {
-				"id": "576aa1a0-f05b-4765-bdaa-5a60f7b1b6b8",
+			"{'id': '2e099f2e-10be-4e33-8c93-caccd1c12e68', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 23, 'y': 5}": {
+				"id": "3abc0ffc-fb64-418a-b164-815a6e63df37",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3474,8 +3474,8 @@
 					}
 				]
 			},
-			"{'id': 'f7b5a1e3-7587-49da-852e-abeb2cab9736', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 24, 'y': 5}": {
-				"id": "49b951d5-b18d-4521-bde8-36336c7149c9",
+			"{'id': '5cc7f8c6-da1b-4211-a3da-9202adce6e9d', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 24, 'y': 5}": {
+				"id": "7f59860d-0c67-4755-8aec-ce6257897849",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3489,8 +3489,8 @@
 					}
 				]
 			},
-			"{'id': 'bbbf1234-2b62-49a6-91e9-116cebf99fa2', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 25, 'y': 5}": {
-				"id": "653af31e-6bb6-47dd-bf44-9bbcda32fb2b",
+			"{'id': '71697b09-cdaa-47ab-a37c-39c41d43bc73', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 25, 'y': 5}": {
+				"id": "b7d02e8f-674f-49a3-9fc3-d395abe0730c",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3504,8 +3504,8 @@
 					}
 				]
 			},
-			"{'id': '5a920a7c-3fbf-40e3-8245-0264c3d301f5', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 26, 'y': 5}": {
-				"id": "b7f6a2dd-e4c1-44c2-8ee9-0c53a5bcd0e3",
+			"{'id': '32b08cf1-d016-4130-a209-3d11c493a6ea', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 26, 'y': 5}": {
+				"id": "65b7971e-10d6-4bb4-8ef2-38c3c37c2141",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3519,8 +3519,8 @@
 					}
 				]
 			},
-			"{'id': '0705981a-5975-4af4-b813-68d768478a89', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 27, 'y': 5}": {
-				"id": "9ed92573-e69b-403a-8a88-406764c40a54",
+			"{'id': 'fed7e0fe-e7f5-4edd-a87e-4e0d6b1a8f62', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 27, 'y': 5}": {
+				"id": "c77fe2d3-9902-459b-9deb-0cabf699d03f",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3534,8 +3534,8 @@
 					}
 				]
 			},
-			"{'id': '5c2a798c-e485-4c65-ae8c-1838722a5975', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 30, 'y': 5}": {
-				"id": "65b4b308-661d-4e73-924f-9781682da611",
+			"{'id': '291f0f39-1713-47df-8cfc-503d93347b75', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 30, 'y': 5}": {
+				"id": "8f060954-cd07-477c-b473-77c3c4eaff2e",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3549,8 +3549,8 @@
 					}
 				]
 			},
-			"{'id': '84707e72-56ec-42db-89cf-9649f329c1f9', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 31, 'y': 5}": {
-				"id": "08b97190-c36b-433e-89ff-aeda0ec1fc8f",
+			"{'id': '8759f3f5-01b0-42c4-a413-e1b005c79e8c', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 31, 'y': 5}": {
+				"id": "11f1b36a-c85e-465c-9441-a68b5603a85a",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3564,8 +3564,8 @@
 					}
 				]
 			},
-			"{'id': '5fc721f7-d17d-49d8-b239-bf5ed1bc2224', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 32, 'y': 5}": {
-				"id": "ebffc8a2-5f00-4919-a425-3755235be3c3",
+			"{'id': 'adc6f776-a98c-4c4d-b85e-94ffefce533f', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 32, 'y': 5}": {
+				"id": "4a8758c5-e347-46b0-a237-4620b6d3a2e4",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3579,8 +3579,8 @@
 					}
 				]
 			},
-			"{'id': 'b3391924-43f2-4cf4-b021-8238d03ef9f7', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 33, 'y': 5}": {
-				"id": "4183df63-19de-4311-8205-686a479c386f",
+			"{'id': '6480be03-cf45-4931-91dc-e396a383603d', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 33, 'y': 5}": {
+				"id": "a358daab-7ee6-4c43-acc8-442a6a080513",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3594,8 +3594,8 @@
 					}
 				]
 			},
-			"{'id': '21a2eae0-151f-47c3-8f9c-4fc0542f43b9', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 34, 'y': 5}": {
-				"id": "c5722c45-f746-40ca-8e32-6f5109658fbc",
+			"{'id': 'a2f09b19-cffc-4b82-aa60-0e224e76c8cf', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 34, 'y': 5}": {
+				"id": "9cc5eb4e-48e2-43df-8d16-d9d2366d30ab",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3609,8 +3609,8 @@
 					}
 				]
 			},
-			"{'id': 'b7c6de63-4a8f-4b6a-b0b6-0d865f4d2b3a', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 35, 'y': 5}": {
-				"id": "eecd5daf-cd69-4f27-8761-2a03ef88d5b1",
+			"{'id': 'd08c1640-7baa-459b-a13c-459e75a190c4', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 35, 'y': 5}": {
+				"id": "1321fcb4-d907-4b13-aa0a-407cb2b881cd",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3624,8 +3624,8 @@
 					}
 				]
 			},
-			"{'id': 'cd3281fe-c319-452d-8266-1786acb50a8a', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 36, 'y': 5}": {
-				"id": "6bc88c48-7a0f-470a-9647-a1de40811021",
+			"{'id': '43a2da85-305e-472d-a9c5-ac32e4215895', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 36, 'y': 5}": {
+				"id": "315b2426-68e1-4341-bcc1-a41c8b910924",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3639,8 +3639,8 @@
 					}
 				]
 			},
-			"{'id': '72295b6d-94ca-43fb-b723-12f43c2af4fb', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 9, 'y': 6}": {
-				"id": "d9f144a1-106d-4514-9014-edc0a77fdad5",
+			"{'id': '334320a0-2d7f-46ce-a97c-24076bef7e52', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 9, 'y': 6}": {
+				"id": "a215a797-337a-47b6-a9d6-544a76290dbc",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3654,8 +3654,8 @@
 					}
 				]
 			},
-			"{'id': '37925462-a9a0-43a2-9089-600581e4ed12', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 10, 'y': 6}": {
-				"id": "4924d9fe-e44c-46f0-ac0f-e92c8d04f800",
+			"{'id': 'acd8fe71-790d-4b9e-a409-b05a77a88db4', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 10, 'y': 6}": {
+				"id": "7b9f18c1-fc60-4bd3-ba11-bad61ecb98a0",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3669,8 +3669,8 @@
 					}
 				]
 			},
-			"{'id': '21dccd3e-fbf9-4e08-af0b-4dfd294939e1', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 11, 'y': 6}": {
-				"id": "eb23658a-08da-4096-8ce7-4de92ce414aa",
+			"{'id': '172ea800-4fdb-4668-a386-91db2b6e794a', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 11, 'y': 6}": {
+				"id": "9ed49f5c-a8fd-4896-9971-e3f63faf75ed",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3684,8 +3684,8 @@
 					}
 				]
 			},
-			"{'id': '753ac280-8fd8-44f2-92c8-d21b815a7ab4', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 12, 'y': 6}": {
-				"id": "5573a34d-37b3-4a91-8dd5-26c277337fdd",
+			"{'id': 'c04aa3d6-cd6a-41f9-8e53-c0fe1a689e4a', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 12, 'y': 6}": {
+				"id": "7f83b042-1a3e-4732-9517-d5c3c9dbae3f",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3699,8 +3699,8 @@
 					}
 				]
 			},
-			"{'id': 'b25b8fb9-ba44-42b0-8b0c-67c57b910993', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 21, 'y': 6}": {
-				"id": "0e666473-2a04-495d-8d72-435298c18c84",
+			"{'id': 'bf485814-3316-42c3-a123-dae149bec7e5', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 21, 'y': 6}": {
+				"id": "88764a73-525c-4b96-850e-c30eef0db7a5",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3714,8 +3714,8 @@
 					}
 				]
 			},
-			"{'id': 'dad27b00-9ea9-4ea4-a532-c737c1d6e063', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 9, 'y': 7}": {
-				"id": "ef136bad-c7b7-4053-8cbe-237ac9dc39cc",
+			"{'id': 'd2d6ea7d-a2a9-45fb-bc73-cf1ad3ca55ea', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 9, 'y': 7}": {
+				"id": "efccb079-bb1e-46dd-af72-3414ad920dfe",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3729,8 +3729,8 @@
 					}
 				]
 			},
-			"{'id': '6997ab8a-bc7c-4d74-881b-b342272f74c9', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 10, 'y': 7}": {
-				"id": "78a409bb-bfba-4c53-ba42-82bda9a154c3",
+			"{'id': '8416a4ee-8421-4161-8ce5-1de3b2826740', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 10, 'y': 7}": {
+				"id": "03fd7ee8-a09d-4996-8116-dfd62297e786",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3744,8 +3744,8 @@
 					}
 				]
 			},
-			"{'id': 'd8a20042-2f26-4c87-ad26-17405c64d901', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 11, 'y': 7}": {
-				"id": "8013d1e6-6e35-41e0-bb7a-078f2f55230b",
+			"{'id': '7afff56a-33bb-4d3d-a1aa-b950602d47cc', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 11, 'y': 7}": {
+				"id": "0e7d0ded-1c65-429b-9ad1-011ac55cc422",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3759,8 +3759,8 @@
 					}
 				]
 			},
-			"{'id': 'a098909b-5319-4a47-9888-082bd0e6e602', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 12, 'y': 7}": {
-				"id": "2b22074d-c849-4ca9-8598-cd289087d070",
+			"{'id': '06c13843-28ee-42c0-9670-1acd659a4a15', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 12, 'y': 7}": {
+				"id": "dd3a342e-4c94-4a48-9702-1aa54c453ac5",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3774,8 +3774,8 @@
 					}
 				]
 			},
-			"{'id': '925943f8-7a7c-415a-9421-65f7d03ea81b', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 2, 'y': 8}": {
-				"id": "60974949-3a16-4b2d-abee-e5ce45c89559",
+			"{'id': 'ee19b037-41b8-4908-acdd-eb4a84239469', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 2, 'y': 8}": {
+				"id": "39840bef-c37b-4400-bb69-01f08f18f829",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3786,7 +3786,7 @@
 						"state": "idle",
 						"__class__": "Refuge",
 						"vector": {
-							"id": "925943f8-7a7c-415a-9421-65f7d03ea81b",
+							"id": "ee19b037-41b8-4908-acdd-eb4a84239469",
 							"object_type": 6,
 							"state": "idle",
 							"__class__": "Vector",
@@ -3799,8 +3799,8 @@
 					}
 				]
 			},
-			"{'id': '702b9826-2a46-4aa0-b0e7-330646411a19', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 3, 'y': 8}": {
-				"id": "2b6d5ccc-b7ae-4249-abf6-0d206b330de0",
+			"{'id': '413d9513-b0d4-4d4e-bb1e-d1a2794c2345', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 3, 'y': 8}": {
+				"id": "63b81648-2fa7-4631-9783-5ec54f4e6f76",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3811,7 +3811,7 @@
 						"state": "idle",
 						"__class__": "Refuge",
 						"vector": {
-							"id": "702b9826-2a46-4aa0-b0e7-330646411a19",
+							"id": "413d9513-b0d4-4d4e-bb1e-d1a2794c2345",
 							"object_type": 6,
 							"state": "idle",
 							"__class__": "Vector",
@@ -3824,8 +3824,8 @@
 					}
 				]
 			},
-			"{'id': '8cc72bf7-ef6c-4da6-b303-0631fdc549b6', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 9, 'y': 8}": {
-				"id": "f21df941-998a-4fe7-90b7-c14d4571341e",
+			"{'id': 'cb656cd9-d6a2-497e-92fe-e5ed5c959a17', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 9, 'y': 8}": {
+				"id": "adb3ddd9-9bcf-4faf-9dcf-e08f18183fa9",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3839,8 +3839,8 @@
 					}
 				]
 			},
-			"{'id': '61274edc-cbcf-4de0-8e37-4ed65098c247', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 10, 'y': 8}": {
-				"id": "ab580c1e-9061-4bcd-af3f-917a4da20443",
+			"{'id': '4b1e468a-04c5-43f1-a6af-685786955e42', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 10, 'y': 8}": {
+				"id": "be4085ab-cccf-452e-882f-c5e99da77361",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3854,8 +3854,8 @@
 					}
 				]
 			},
-			"{'id': '475cd6d6-6351-4a8c-a3f5-b622385df659', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 11, 'y': 8}": {
-				"id": "e46d94b7-282c-4d09-9cfb-a54f64a6f095",
+			"{'id': '2bfba05c-7494-4ccf-9b5e-7108830eb6c6', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 11, 'y': 8}": {
+				"id": "df2f9195-5762-4833-b705-648658eca8d9",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3869,8 +3869,8 @@
 					}
 				]
 			},
-			"{'id': '2d0387a4-78d6-4884-a684-f5f34bcf97ba', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 12, 'y': 8}": {
-				"id": "449cfe2c-5b60-423b-8632-af044a700932",
+			"{'id': 'bb698b25-1708-457e-9854-3bc8d42932db', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 12, 'y': 8}": {
+				"id": "66c15e83-01f3-4758-a47a-f4cd0ffa1fbc",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3884,8 +3884,8 @@
 					}
 				]
 			},
-			"{'id': '1076ad41-a050-46eb-91de-ef129d54d1bd', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 13, 'y': 8}": {
-				"id": "5acd7d3f-6bf5-4a9f-978d-aa4930d6f8c6",
+			"{'id': '67fd7e3f-fd15-4059-85b5-73fa02ad3c71', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 13, 'y': 8}": {
+				"id": "92414f99-f36f-4484-9844-092605061ce1",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3896,7 +3896,7 @@
 						"state": "idle",
 						"__class__": "Refuge",
 						"vector": {
-							"id": "1076ad41-a050-46eb-91de-ef129d54d1bd",
+							"id": "67fd7e3f-fd15-4059-85b5-73fa02ad3c71",
 							"object_type": 6,
 							"state": "idle",
 							"__class__": "Vector",
@@ -3909,8 +3909,8 @@
 					}
 				]
 			},
-			"{'id': '3c885cbf-8a63-4773-b701-dc60b7f03c99', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 25, 'y': 8}": {
-				"id": "be7837fe-a2ca-4711-a7cf-995bb35a0d36",
+			"{'id': '3932d66f-823c-49fd-91d2-058c6d6faaa5', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 25, 'y': 8}": {
+				"id": "46ff59fb-07ea-46fe-8f94-0518637fc744",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3921,7 +3921,7 @@
 						"state": "idle",
 						"__class__": "Refuge",
 						"vector": {
-							"id": "3c885cbf-8a63-4773-b701-dc60b7f03c99",
+							"id": "3932d66f-823c-49fd-91d2-058c6d6faaa5",
 							"object_type": 6,
 							"state": "idle",
 							"__class__": "Vector",
@@ -3934,8 +3934,8 @@
 					}
 				]
 			},
-			"{'id': '4c130add-87be-42ad-88f9-469882f95d02', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 26, 'y': 8}": {
-				"id": "80347fc4-47f0-4c73-9395-584ed06db60f",
+			"{'id': '5d35b016-7350-407a-8a83-66c83ce83ae6', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 26, 'y': 8}": {
+				"id": "01e952c4-76f0-4392-8c0a-20dfc11c915c",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3946,7 +3946,7 @@
 						"state": "idle",
 						"__class__": "Refuge",
 						"vector": {
-							"id": "4c130add-87be-42ad-88f9-469882f95d02",
+							"id": "5d35b016-7350-407a-8a83-66c83ce83ae6",
 							"object_type": 6,
 							"state": "idle",
 							"__class__": "Vector",
@@ -3959,8 +3959,8 @@
 					}
 				]
 			},
-			"{'id': 'eacb9272-bea6-4c70-b4cd-50e1985a1585', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 1, 'y': 9}": {
-				"id": "b44b9fa2-7109-48ba-980c-c9b86fb9c2bf",
+			"{'id': 'c63522eb-9e1e-4974-beb3-0af71ab8e7cf', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 1, 'y': 9}": {
+				"id": "cb6565e8-6854-41ed-a4fe-d26c045c0379",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3974,8 +3974,8 @@
 					}
 				]
 			},
-			"{'id': '46715267-e412-4ae0-997f-26d96c480242', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 2, 'y': 9}": {
-				"id": "f0ab08fb-882b-4b2b-b837-4d5aaf51f571",
+			"{'id': 'a24ef845-326e-4723-8c02-b48d1ae7f51a', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 2, 'y': 9}": {
+				"id": "97e7016c-804f-4a37-9a9f-f0cd276a4472",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -3989,8 +3989,8 @@
 					}
 				]
 			},
-			"{'id': '35e73171-de33-4000-a69e-33a92c2288b6', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 3, 'y': 9}": {
-				"id": "b448cad9-ba51-497f-a2d5-9ea946e46e64",
+			"{'id': 'a2eb07bb-9ea0-4ca7-a2ea-f0268c6a202f', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 3, 'y': 9}": {
+				"id": "8c7f1faa-6641-4302-8ab9-c7d89b79b54e",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -4004,8 +4004,8 @@
 					}
 				]
 			},
-			"{'id': '95943fef-730e-4190-852f-eb2987988b49', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 4, 'y': 9}": {
-				"id": "f4a28d6d-5050-47a4-a380-2d9550ac06fd",
+			"{'id': 'de076d0b-ef25-4499-963c-0941f83c040d', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 4, 'y': 9}": {
+				"id": "4f61ee51-9a07-4ff6-9b4a-b11fad795461",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -4019,8 +4019,8 @@
 					}
 				]
 			},
-			"{'id': '5afa33ce-69d6-4e7c-97ac-7872aa46f1d5', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 5, 'y': 9}": {
-				"id": "58100286-ad0f-484c-af7f-91219ef63877",
+			"{'id': 'aa9d4499-cc61-4183-b60f-024ebc5d0981', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 5, 'y': 9}": {
+				"id": "32919d92-dd62-43dc-a7ad-1208ced78e41",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -4034,8 +4034,8 @@
 					}
 				]
 			},
-			"{'id': '8b609aff-c0dc-4730-a454-b356047f9383', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 6, 'y': 9}": {
-				"id": "57a5af74-eff3-4afb-8d48-0380ad07f116",
+			"{'id': '1005d4f6-7e13-411a-9365-52a359ec6c13', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 6, 'y': 9}": {
+				"id": "3cb6258e-b1f2-4e11-9a1d-e6438b63338c",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -4049,8 +4049,8 @@
 					}
 				]
 			},
-			"{'id': '9a2b653e-186e-4681-b43a-4288a7c9256f', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 7, 'y': 9}": {
-				"id": "37345df1-68fd-462f-a7be-77bc784a8ce1",
+			"{'id': '61fd3c3c-4251-4bb9-88f5-b6eb70379b93', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 7, 'y': 9}": {
+				"id": "da0e6975-fc47-4925-86c5-a5432f9c4009",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -4064,8 +4064,8 @@
 					}
 				]
 			},
-			"{'id': 'fc883cc5-c6a8-4d32-85d5-f5cfe68de505', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 8, 'y': 9}": {
-				"id": "4ff616dc-26d3-4a71-ac44-80cbbc6c00bd",
+			"{'id': 'bba979e9-f280-40d8-ab11-73f2d4b46bd4', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 8, 'y': 9}": {
+				"id": "d2742203-6505-459e-b429-511a54c15fea",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -4079,8 +4079,8 @@
 					}
 				]
 			},
-			"{'id': '6d2d519d-d01c-45bc-9fdc-def9980a9e76', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 9, 'y': 9}": {
-				"id": "bb2b59c4-abb6-4318-9e4a-fbaeb23dc1bb",
+			"{'id': '00768c38-dbf3-44cc-a94d-e190c202b55c', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 9, 'y': 9}": {
+				"id": "c2b2f9c7-3d75-42a7-8da9-93e4e45a0688",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -4094,8 +4094,8 @@
 					}
 				]
 			},
-			"{'id': '3097189b-ec03-49eb-b235-23c6d731327e', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 10, 'y': 9}": {
-				"id": "09aa1ab9-cdf9-4404-be74-c78b578200a0",
+			"{'id': 'c443e34c-1d28-417e-bb4e-f15ce954ed18', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 10, 'y': 9}": {
+				"id": "abf0ed54-58a1-4dc5-9eb9-cb8609e23589",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -4109,8 +4109,8 @@
 					}
 				]
 			},
-			"{'id': 'be68c090-63ed-4a5a-9866-677b19a3b051', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 11, 'y': 9}": {
-				"id": "f6a6938e-4618-4a1a-a877-96e071b2409c",
+			"{'id': '66d49856-e672-4db7-9025-d71384846c4b', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 11, 'y': 9}": {
+				"id": "94e12c95-deae-45f7-a6ff-7931d2a52980",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -4124,8 +4124,8 @@
 					}
 				]
 			},
-			"{'id': '267b7929-be35-4806-8261-e6b8c8aded47', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 12, 'y': 9}": {
-				"id": "726cbc6c-0b8f-4bed-a5d5-d00ec768af78",
+			"{'id': 'b26871c5-55da-460b-86f5-81ac984c3836', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 12, 'y': 9}": {
+				"id": "ef4f6530-cc32-4cd3-9d0a-06842dfaf3b6",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -4139,8 +4139,8 @@
 					}
 				]
 			},
-			"{'id': 'a37ba92b-1ddb-4a8d-b5e6-41162378cb02', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 13, 'y': 9}": {
-				"id": "dfa70dcd-dbc2-452f-b7e4-7e2be2c797eb",
+			"{'id': '5a668720-b64b-43ef-b9a2-ac0f24719b06', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 13, 'y': 9}": {
+				"id": "e8c776b2-f796-41d4-ba0a-ee06d7d948ba",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -4151,7 +4151,7 @@
 						"state": "idle",
 						"__class__": "Refuge",
 						"vector": {
-							"id": "a37ba92b-1ddb-4a8d-b5e6-41162378cb02",
+							"id": "5a668720-b64b-43ef-b9a2-ac0f24719b06",
 							"object_type": 6,
 							"state": "idle",
 							"__class__": "Vector",
@@ -4164,8 +4164,8 @@
 					}
 				]
 			},
-			"{'id': '9403799d-997e-4a59-a21b-b624869c4ac8', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 21, 'y': 9}": {
-				"id": "b5ab7469-4a4b-47bc-875a-6f0d3c278dfa",
+			"{'id': '4f4536c0-958f-4b93-a08d-675c8b47b087', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 21, 'y': 9}": {
+				"id": "1928b07e-8751-4f52-97fb-7af80d6a05ac",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -4179,8 +4179,8 @@
 					}
 				]
 			},
-			"{'id': '29277a1a-1161-4fe4-83b6-de53d8ff697c', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 22, 'y': 9}": {
-				"id": "45124aff-d59f-41ae-abcb-9cf3c18d9fb5",
+			"{'id': '9e0ba57b-8771-4484-a6d8-8ffc462d960f', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 22, 'y': 9}": {
+				"id": "55424984-bc8f-41a3-a3b8-67f06a9975c3",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -4194,8 +4194,8 @@
 					}
 				]
 			},
-			"{'id': '37a31abd-144d-4dd0-bc49-ca2974a210af', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 23, 'y': 9}": {
-				"id": "1893e41c-7bc9-41d3-8c9e-10367918a43e",
+			"{'id': 'f3b988f4-25e3-4557-a279-1ba5304f404a', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 23, 'y': 9}": {
+				"id": "0f93bd9b-6fb6-481b-b06c-c40377af12c3",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -4209,8 +4209,8 @@
 					}
 				]
 			},
-			"{'id': '51cf9e04-25d7-4c92-bc0d-21dc6620804d', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 24, 'y': 9}": {
-				"id": "3ffa4d95-3371-4227-928f-cb72db1fedd6",
+			"{'id': 'a39c4660-2ab9-447a-b235-ff4221308997', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 24, 'y': 9}": {
+				"id": "f3545384-a5d8-4c3a-8547-0ded997379a3",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -4224,8 +4224,8 @@
 					}
 				]
 			},
-			"{'id': '60ef4844-11b5-4364-aa72-3970c6d2f6ad', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 25, 'y': 9}": {
-				"id": "7f22e555-8f91-42be-adeb-82a849bfe550",
+			"{'id': '138f9714-2906-4139-b358-2d8e52afbef5', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 25, 'y': 9}": {
+				"id": "cfb83ab7-8ced-4a05-a4ce-0949394e0070",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -4239,8 +4239,8 @@
 					}
 				]
 			},
-			"{'id': '5454f5ae-23ce-4113-b9a1-63bac53862da', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 26, 'y': 9}": {
-				"id": "3fc99f6e-cfb6-42bf-8ad9-035537c70024",
+			"{'id': 'cdc81756-9283-4603-8fa6-93142c67e74a', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 26, 'y': 9}": {
+				"id": "5375c096-8388-4ae6-a062-d1b97aee4e40",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -4254,8 +4254,8 @@
 					}
 				]
 			},
-			"{'id': '1c73dda1-afe3-47bf-9e96-10ba9df3e703', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 27, 'y': 9}": {
-				"id": "46a999ab-2dec-4dac-bcd8-ce6d5f422061",
+			"{'id': '9191b6da-7494-4b1c-8def-f1a55b089011', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 27, 'y': 9}": {
+				"id": "7bfdf01b-2393-4682-bc11-c1a4dd0ef2d5",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -4269,8 +4269,8 @@
 					}
 				]
 			},
-			"{'id': 'f1471a00-803f-4115-87e1-3072f7898cae', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 32, 'y': 9}": {
-				"id": "7edd69e9-065a-4ffe-bfdc-1c9985144b8b",
+			"{'id': '19f000ab-5e7d-4edf-a20e-0e611162e579', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 32, 'y': 9}": {
+				"id": "2931993c-cf38-4122-8f96-6011992fb9e5",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -4284,8 +4284,8 @@
 					}
 				]
 			},
-			"{'id': 'd37fdd6e-2cda-47f7-b0e8-1038432bb633', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 33, 'y': 9}": {
-				"id": "93c0f295-7cb0-4744-a4fb-26fe009f6b31",
+			"{'id': 'c53ffa98-c0e3-4239-8a85-aceb094062ea', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 33, 'y': 9}": {
+				"id": "112d89af-8036-4951-98ae-27eb5e2cee4b",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -4299,8 +4299,8 @@
 					}
 				]
 			},
-			"{'id': 'd2d98138-9d89-499c-aeba-97585d49e95c', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 34, 'y': 9}": {
-				"id": "88f6b0d2-d433-4726-9a78-5d899599f544",
+			"{'id': '3b87dbcc-150c-4e15-883d-1a3cd62c7936', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 34, 'y': 9}": {
+				"id": "6ae9b16e-3ad2-4695-99d4-7790054ebafd",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -4314,8 +4314,8 @@
 					}
 				]
 			},
-			"{'id': 'd30aaebc-9e0c-4804-8d09-56576e4a2c3f', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 35, 'y': 9}": {
-				"id": "002f2414-3761-4d11-8525-81258c2feb7f",
+			"{'id': '433a1ac5-48e3-485b-a33c-183a861d8d4e', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 35, 'y': 9}": {
+				"id": "8feb4e4b-09de-41b2-a0d7-a6eddde26202",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -4329,8 +4329,8 @@
 					}
 				]
 			},
-			"{'id': '1d90ef2e-ca1c-4093-990b-82ac71576e48', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 36, 'y': 9}": {
-				"id": "472f9303-c740-4387-9ba8-659d6817cfca",
+			"{'id': 'e555f4de-21de-414a-bfa5-7e7845749e87', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 36, 'y': 9}": {
+				"id": "79f80aa3-799b-4491-8111-d457b7a13989",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -4344,8 +4344,8 @@
 					}
 				]
 			},
-			"{'id': '6f69a51a-8e86-449b-9edb-112b00c3f3f0', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 12, 'y': 10}": {
-				"id": "11dd61d7-0bce-4f55-ac62-d187603dbba0",
+			"{'id': '8d46f5d1-507b-46af-8e98-55868be761b5', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 12, 'y': 10}": {
+				"id": "573a4d05-e7ee-411b-a95d-892e506f87d6",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -4359,8 +4359,8 @@
 					}
 				]
 			},
-			"{'id': '54696308-d019-4aa9-b150-600314155acc', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 21, 'y': 10}": {
-				"id": "8eb34ab4-e2a3-48c1-894b-28ec0b4dc4e8",
+			"{'id': '4383ca3b-66df-4e8b-9c44-67b47eacade5', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 21, 'y': 10}": {
+				"id": "f78e2af0-cf96-42ba-9e81-356778c8aef0",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -4374,8 +4374,8 @@
 					}
 				]
 			},
-			"{'id': '40b4f31e-fe74-4bde-a36d-3d026450d557', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 22, 'y': 10}": {
-				"id": "9c349b6d-2d2d-4858-bcea-b57a54953302",
+			"{'id': '488a6d7f-33fc-42e5-8ef0-8dbcda6436ce', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 22, 'y': 10}": {
+				"id": "4c24d3e2-6b23-4c8d-95e0-857d6c8b0fe3",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -4389,8 +4389,8 @@
 					}
 				]
 			},
-			"{'id': '5a4ac1bf-0073-4932-8e7e-a7af35267fa2', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 23, 'y': 10}": {
-				"id": "083cc8d8-3081-4c61-91c9-ebef9dd0e4f9",
+			"{'id': '7918cdc2-802d-4b60-be3d-7f9239ea42f0', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 23, 'y': 10}": {
+				"id": "c4f1d427-9ef9-4364-abe6-eb472b3811ef",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -4404,8 +4404,8 @@
 					}
 				]
 			},
-			"{'id': '7e4c06f1-08ce-45d4-a70b-e448bbaf5fe6', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 24, 'y': 10}": {
-				"id": "ae946e94-4ad0-4d71-b0f2-a67864518c70",
+			"{'id': '4d6a3f38-7b0f-4466-8c37-8883c18cf6f1', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 24, 'y': 10}": {
+				"id": "e0854280-1a4b-4f85-9990-bee1f30640ef",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -4419,8 +4419,8 @@
 					}
 				]
 			},
-			"{'id': '02b0f300-aba6-4f3d-8543-bc50a7eebd3a', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 25, 'y': 10}": {
-				"id": "75ec2252-d735-4467-af9b-04a836656acf",
+			"{'id': '35ca7e72-b31b-4262-9e2b-8a7513d4a3cf', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 25, 'y': 10}": {
+				"id": "b493b98d-78bc-4d48-a0fa-4c0d0bfc1aae",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -4434,8 +4434,8 @@
 					}
 				]
 			},
-			"{'id': 'cbe7336b-b6a5-465c-9c14-42eb29da1cfb', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 26, 'y': 10}": {
-				"id": "5bd3e265-896e-444a-9381-d610fd09d38e",
+			"{'id': 'e08cdeb2-327e-453d-ae7c-3aa603b515e9', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 26, 'y': 10}": {
+				"id": "20be7192-0c7a-4f07-a6c2-0acb9cd4a62f",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -4449,8 +4449,8 @@
 					}
 				]
 			},
-			"{'id': '6ef9e063-b3a0-4e93-8362-3329aaaa9092', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 27, 'y': 10}": {
-				"id": "5a81aee1-04ea-4d4b-a4d1-26548ee1fe37",
+			"{'id': 'd7f6451f-e4eb-43b9-955a-bf779b747699', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 27, 'y': 10}": {
+				"id": "5f8e2d29-cd00-4f67-87e4-1c71770b4d94",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -4464,8 +4464,8 @@
 					}
 				]
 			},
-			"{'id': '59bcf7e8-5032-4d1e-8601-163f775645ab', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 32, 'y': 10}": {
-				"id": "db4f36f5-882b-4019-9dab-2b2edfb8ef6e",
+			"{'id': 'b5d2b577-917f-4b7f-af00-a0f1e8959ce9', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 32, 'y': 10}": {
+				"id": "bf01e446-b027-4818-b3a8-bd539d82b5e4",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -4479,8 +4479,8 @@
 					}
 				]
 			},
-			"{'id': '7296fc7f-a304-4c73-a041-e1d31de35715', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 33, 'y': 10}": {
-				"id": "0f91c056-7de4-46e4-b06a-97ca11ef9649",
+			"{'id': '8b10c229-cbd5-44db-b43a-a829b2dc72ed', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 33, 'y': 10}": {
+				"id": "838be8a0-a8e6-4be0-b32c-fa0235b2bb6f",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -4494,8 +4494,8 @@
 					}
 				]
 			},
-			"{'id': 'c7920bbd-3187-4dcd-bf28-efa2aca094ec', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 34, 'y': 10}": {
-				"id": "76c80170-10d0-4eb3-b054-b04527b153d7",
+			"{'id': '5988f233-bd48-451a-b6c6-62a1229957e0', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 34, 'y': 10}": {
+				"id": "8eda2098-6731-434f-bcb3-ce7c982a3d11",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -4509,8 +4509,8 @@
 					}
 				]
 			},
-			"{'id': '6dbbf49e-1bf0-4a90-a5b2-1c3e20cb3609', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 35, 'y': 10}": {
-				"id": "af47a530-c77f-4717-b9fb-3b084e4bdc73",
+			"{'id': '89529262-1ff0-4097-9b89-3a53fddd3c91', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 35, 'y': 10}": {
+				"id": "b87c3b24-b21c-478b-ad20-41cade40db88",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -4524,8 +4524,8 @@
 					}
 				]
 			},
-			"{'id': '6e7cdbc9-b11c-4577-b3a2-d2868f1f91b0', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 36, 'y': 10}": {
-				"id": "04e71906-aa6b-4dda-89a7-816b00b57c6a",
+			"{'id': 'a208609e-e336-43a3-b6e2-f4e7c81825f5', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 36, 'y': 10}": {
+				"id": "34991c71-0b15-42cd-b450-a0b7c074194c",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -4539,8 +4539,8 @@
 					}
 				]
 			},
-			"{'id': '58c82934-45d1-485a-b7d5-f42ccb7b346d', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 4, 'y': 11}": {
-				"id": "43e54f04-c7fb-4039-bee9-bb99266466ce",
+			"{'id': '72244314-639e-4fcd-8bbe-4889a0322848', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 4, 'y': 11}": {
+				"id": "27865966-ef40-4154-8b04-b4b912e0d82c",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -4551,7 +4551,7 @@
 						"state": "idle",
 						"__class__": "Refuge",
 						"vector": {
-							"id": "58c82934-45d1-485a-b7d5-f42ccb7b346d",
+							"id": "72244314-639e-4fcd-8bbe-4889a0322848",
 							"object_type": 6,
 							"state": "idle",
 							"__class__": "Vector",
@@ -4564,8 +4564,8 @@
 					}
 				]
 			},
-			"{'id': 'cdb69e33-26ca-4751-9a92-49780413e5f7', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 5, 'y': 11}": {
-				"id": "d638daba-9255-4b14-bdbc-ab4af2353b5e",
+			"{'id': '128f30bb-1cba-416f-a99c-7d550cdc8bb5', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 5, 'y': 11}": {
+				"id": "85880a18-935d-4995-b4bf-01e35ea80cd0",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -4576,7 +4576,7 @@
 						"state": "idle",
 						"__class__": "Refuge",
 						"vector": {
-							"id": "cdb69e33-26ca-4751-9a92-49780413e5f7",
+							"id": "128f30bb-1cba-416f-a99c-7d550cdc8bb5",
 							"object_type": 6,
 							"state": "idle",
 							"__class__": "Vector",
@@ -4589,8 +4589,8 @@
 					}
 				]
 			},
-			"{'id': 'd6955e56-5f62-4bd0-a97f-65ef7193ca8c', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 6, 'y': 11}": {
-				"id": "a3d69205-6987-4b8a-adeb-1283fe21fecd",
+			"{'id': '44a7dc54-84d1-403a-a9b3-308ac542b5a2', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 6, 'y': 11}": {
+				"id": "7b475444-ee3c-47e2-8d81-6a388439a076",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -4601,7 +4601,7 @@
 						"state": "idle",
 						"__class__": "Refuge",
 						"vector": {
-							"id": "d6955e56-5f62-4bd0-a97f-65ef7193ca8c",
+							"id": "44a7dc54-84d1-403a-a9b3-308ac542b5a2",
 							"object_type": 6,
 							"state": "idle",
 							"__class__": "Vector",
@@ -4614,8 +4614,8 @@
 					}
 				]
 			},
-			"{'id': 'cdeab718-d803-40d3-b293-f0cd7673035e', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 7, 'y': 11}": {
-				"id": "3f81fb90-23c4-4e7c-bced-762abb6f11bd",
+			"{'id': 'ea72c809-184a-4c6e-ae37-b8edf2306f51', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 7, 'y': 11}": {
+				"id": "b0c5b14b-0b11-45f7-85a0-1c0030e9101b",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -4626,7 +4626,7 @@
 						"state": "idle",
 						"__class__": "Refuge",
 						"vector": {
-							"id": "cdeab718-d803-40d3-b293-f0cd7673035e",
+							"id": "ea72c809-184a-4c6e-ae37-b8edf2306f51",
 							"object_type": 6,
 							"state": "idle",
 							"__class__": "Vector",
@@ -4639,8 +4639,8 @@
 					}
 				]
 			},
-			"{'id': 'bcf2b8c7-b85f-4954-9fd8-b18c13558bf9', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 12, 'y': 11}": {
-				"id": "a2744de4-ca76-4328-a9b1-4e78925555ef",
+			"{'id': 'ae6fc4ef-6ec7-417a-a841-d0723f9a8133', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 12, 'y': 11}": {
+				"id": "13becf1d-b144-4ba0-8e71-5760d13d1daf",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -4654,8 +4654,8 @@
 					}
 				]
 			},
-			"{'id': '31a98bee-6f01-4ae3-8604-f9adac7cb70f', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 13, 'y': 11}": {
-				"id": "4f79d715-1ce9-4ca9-9527-688b34f1f4ee",
+			"{'id': '7e7200da-e24e-44f4-8c3a-7e348e44b44d', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 13, 'y': 11}": {
+				"id": "3c0cccf6-d212-4e15-a3e4-6a37af6f7fde",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -4666,7 +4666,7 @@
 						"state": "idle",
 						"__class__": "Refuge",
 						"vector": {
-							"id": "31a98bee-6f01-4ae3-8604-f9adac7cb70f",
+							"id": "7e7200da-e24e-44f4-8c3a-7e348e44b44d",
 							"object_type": 6,
 							"state": "idle",
 							"__class__": "Vector",
@@ -4679,8 +4679,8 @@
 					}
 				]
 			},
-			"{'id': '2ff723c6-2fc1-4c57-a760-679cbf7e5b51', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 21, 'y': 11}": {
-				"id": "f3f4b5a3-e6a2-4571-838d-82804d85d1c9",
+			"{'id': 'd2262cce-f5ac-4843-99fa-73e354008575', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 21, 'y': 11}": {
+				"id": "12613544-dbf5-4d2d-8718-9485c6cdf394",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -4694,8 +4694,8 @@
 					}
 				]
 			},
-			"{'id': 'bd7634f6-ccc7-49e9-bef9-09aa11c1a520', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 22, 'y': 11}": {
-				"id": "0c3bb0d7-af3d-4eb6-b695-7a5fb8d1d99a",
+			"{'id': '82ecc20f-564a-4bcb-962a-6f69ab64cf24', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 22, 'y': 11}": {
+				"id": "d6c3ea2a-61b3-4624-9bd0-4fd4f4727e44",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -4709,8 +4709,8 @@
 					}
 				]
 			},
-			"{'id': '6ec999ab-bd89-4fec-bd9e-15fad3536af3', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 23, 'y': 11}": {
-				"id": "b285b150-6a33-4b81-9ca5-34cdb07e9b1c",
+			"{'id': '18d505f3-c883-48d6-9cae-60fb300635f1', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 23, 'y': 11}": {
+				"id": "e4dc0994-7858-4fdc-816e-ab47f31c5855",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -4724,8 +4724,8 @@
 					}
 				]
 			},
-			"{'id': '049bb7c3-7b21-4cd7-a36e-361bd45a849d', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 24, 'y': 11}": {
-				"id": "5b612010-9180-4d1e-bd54-aefde537160a",
+			"{'id': 'eebe059e-99c8-4ae5-969d-15866a3cd400', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 24, 'y': 11}": {
+				"id": "b3dbde9b-4340-4056-9cf5-c98a7b971087",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -4739,8 +4739,8 @@
 					}
 				]
 			},
-			"{'id': '83fdf5dc-53f7-4d5c-a813-44caff8e414c', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 25, 'y': 11}": {
-				"id": "0413c0f0-ca7b-4a69-831b-deaa7079627d",
+			"{'id': '6690edee-6c12-47a7-a208-e5a7e1f5fde1', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 25, 'y': 11}": {
+				"id": "efb6cdcc-5d86-4080-b12b-8f9715a5da48",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -4754,8 +4754,8 @@
 					}
 				]
 			},
-			"{'id': '43fb9bff-1b5c-42bf-99fe-bd4cb9042a7e', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 26, 'y': 11}": {
-				"id": "6a494048-7a47-4c0e-a79d-fdf838a65988",
+			"{'id': '437953cd-58f1-4e64-b42b-18fd3255988a', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 26, 'y': 11}": {
+				"id": "77a423ac-9a53-4408-99b1-b6082188c491",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -4769,8 +4769,8 @@
 					}
 				]
 			},
-			"{'id': 'e1682d8d-b769-4754-93a3-d52fd166b60e', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 27, 'y': 11}": {
-				"id": "374dbfd1-d3cb-48f5-8788-dd276ce9c745",
+			"{'id': '1f29f3c3-dd9f-4549-8dff-a4702809494c', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 27, 'y': 11}": {
+				"id": "3aac07cb-2ed3-4dd1-b4b5-efbb1f5aa3c0",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -4784,8 +4784,8 @@
 					}
 				]
 			},
-			"{'id': 'e435b37a-9c19-4fdb-8097-5fe8b6c305ae', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 32, 'y': 11}": {
-				"id": "3cf5c3e3-b953-4b51-9c54-99d66ed5c812",
+			"{'id': 'd07f8e76-f5ad-46a2-8b9a-ba66148a0cf8', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 32, 'y': 11}": {
+				"id": "a5a57656-ccea-491f-8943-6f1078c5467a",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -4799,8 +4799,8 @@
 					}
 				]
 			},
-			"{'id': '4d318122-b817-4995-9186-83ac5b69f55a', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 33, 'y': 11}": {
-				"id": "35d97216-a022-4b47-a6ff-87b40dd1ec51",
+			"{'id': 'a18bb6a3-b5ad-4c51-a812-6dfe34302ef6', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 33, 'y': 11}": {
+				"id": "a154fefc-b5e3-40f9-b5e9-52773935e1eb",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -4814,8 +4814,8 @@
 					}
 				]
 			},
-			"{'id': '36c74897-c17d-4a22-b1a1-a13e87f224cd', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 34, 'y': 11}": {
-				"id": "da5d2fc8-403e-4727-b97d-8e05750d833f",
+			"{'id': '70c18097-605c-48ae-afb7-2415c2cfb47c', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 34, 'y': 11}": {
+				"id": "ed78a6bb-4c9c-4dbc-9ae2-ae34340aafd2",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -4829,8 +4829,8 @@
 					}
 				]
 			},
-			"{'id': 'b36425b7-05a1-4ebf-9973-e8ccd1f9ad92', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 35, 'y': 11}": {
-				"id": "badb354e-0395-421b-968c-22df97faad45",
+			"{'id': 'ec454310-a0c8-4817-887c-700557f82e3a', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 35, 'y': 11}": {
+				"id": "7afee6ec-1dd0-4663-ad11-a8c89802fa15",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -4844,8 +4844,8 @@
 					}
 				]
 			},
-			"{'id': 'db241bbb-4f50-471e-b287-9eb6b2df8f6b', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 36, 'y': 11}": {
-				"id": "496dee87-657a-4e1d-9085-bc4d7b238bc8",
+			"{'id': '98b419fc-a909-4f38-a0cc-e1e470110ef5', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 36, 'y': 11}": {
+				"id": "c7bd34b4-ccc1-4bfb-a1b6-505bf6165a06",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -4859,8 +4859,8 @@
 					}
 				]
 			},
-			"{'id': '1831c4a2-fa7d-4e11-a382-25ad93815a51', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 4, 'y': 12}": {
-				"id": "6bcee23e-b6a9-44a3-8356-cdffbdace9d0",
+			"{'id': 'e8639240-1108-4b66-a816-f7f3b67b480a', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 4, 'y': 12}": {
+				"id": "1e90da69-3a54-4ba2-9628-2ef5c78f7ca4",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -4871,7 +4871,7 @@
 						"state": "idle",
 						"__class__": "Refuge",
 						"vector": {
-							"id": "1831c4a2-fa7d-4e11-a382-25ad93815a51",
+							"id": "e8639240-1108-4b66-a816-f7f3b67b480a",
 							"object_type": 6,
 							"state": "idle",
 							"__class__": "Vector",
@@ -4884,8 +4884,8 @@
 					}
 				]
 			},
-			"{'id': '2527fb14-b597-4631-8976-0a8997358988', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 5, 'y': 12}": {
-				"id": "f32a454f-d2c1-4c82-a8bc-6f7d1d894553",
+			"{'id': '11e04c9d-635c-4db8-99a1-00c606613b20', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 5, 'y': 12}": {
+				"id": "1ad665e4-391f-4b39-ab07-986ea7475449",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -4896,7 +4896,7 @@
 						"state": "idle",
 						"__class__": "Refuge",
 						"vector": {
-							"id": "2527fb14-b597-4631-8976-0a8997358988",
+							"id": "11e04c9d-635c-4db8-99a1-00c606613b20",
 							"object_type": 6,
 							"state": "idle",
 							"__class__": "Vector",
@@ -4909,8 +4909,8 @@
 					}
 				]
 			},
-			"{'id': '20ab6c84-9762-44f1-8114-3d445e7617c8', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 6, 'y': 12}": {
-				"id": "be70dd21-fce4-49d0-8928-8f3c01217985",
+			"{'id': 'e8894d2e-0628-4ad1-a158-4c1bc4f76dcb', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 6, 'y': 12}": {
+				"id": "f396ad2c-f4fa-4fc5-a4bd-d71b16264cdb",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -4921,7 +4921,7 @@
 						"state": "idle",
 						"__class__": "Refuge",
 						"vector": {
-							"id": "20ab6c84-9762-44f1-8114-3d445e7617c8",
+							"id": "e8894d2e-0628-4ad1-a158-4c1bc4f76dcb",
 							"object_type": 6,
 							"state": "idle",
 							"__class__": "Vector",
@@ -4934,8 +4934,8 @@
 					}
 				]
 			},
-			"{'id': 'b50f0198-17cb-440c-9e7c-2bdde4f498ff', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 7, 'y': 12}": {
-				"id": "23e374b8-e199-455a-904d-d6cfe60ab432",
+			"{'id': '04e08546-807d-4168-a743-a00b82953da9', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 7, 'y': 12}": {
+				"id": "c4b57fb5-94e4-4278-bff6-7c47f0f4c83f",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -4946,7 +4946,7 @@
 						"state": "idle",
 						"__class__": "Refuge",
 						"vector": {
-							"id": "b50f0198-17cb-440c-9e7c-2bdde4f498ff",
+							"id": "04e08546-807d-4168-a743-a00b82953da9",
 							"object_type": 6,
 							"state": "idle",
 							"__class__": "Vector",
@@ -4959,8 +4959,8 @@
 					}
 				]
 			},
-			"{'id': 'b7383a0e-f8e5-4aff-90fa-d033eb78fe17', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 12, 'y': 12}": {
-				"id": "7db146ab-a521-4774-9745-b7fd0a23c7b3",
+			"{'id': 'b77d1e62-74a4-46b1-af67-bc4a2596315c', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 12, 'y': 12}": {
+				"id": "74059a2c-2fff-4dbc-8bf7-1b0c7945b0fe",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -4974,8 +4974,8 @@
 					}
 				]
 			},
-			"{'id': '4cfe2111-3b34-40ad-8f85-46554929c263', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 13, 'y': 12}": {
-				"id": "74bd39fe-ad2d-4ca2-8e97-5c1032a1e5c7",
+			"{'id': 'ce0535cb-671c-4e2b-9deb-f5efa124425c', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 13, 'y': 12}": {
+				"id": "47a9813f-adba-47c2-88a4-5fe276492926",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -4986,7 +4986,7 @@
 						"state": "idle",
 						"__class__": "Refuge",
 						"vector": {
-							"id": "4cfe2111-3b34-40ad-8f85-46554929c263",
+							"id": "ce0535cb-671c-4e2b-9deb-f5efa124425c",
 							"object_type": 6,
 							"state": "idle",
 							"__class__": "Vector",
@@ -4999,8 +4999,8 @@
 					}
 				]
 			},
-			"{'id': '2edca243-4d53-4de0-b828-2a0ff1d12648', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 21, 'y': 12}": {
-				"id": "06e0f4de-a0a3-4b3d-96ff-9e6c1598b299",
+			"{'id': 'b3e0e0f7-21a2-40c9-a787-630ccc60690e', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 21, 'y': 12}": {
+				"id": "1762e791-8acf-43be-b74d-6a8c08b91565",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5014,8 +5014,8 @@
 					}
 				]
 			},
-			"{'id': '56898bac-e753-4686-8016-5aa3cfaebdde', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 22, 'y': 12}": {
-				"id": "b18f5f59-82de-45a8-a035-17ac92bbfafb",
+			"{'id': '99436f8a-b86e-484e-8302-58bb80e096ac', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 22, 'y': 12}": {
+				"id": "03810c82-07dc-42a3-9bcb-978814354247",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5029,8 +5029,8 @@
 					}
 				]
 			},
-			"{'id': '878a01a7-f4d0-4afc-ad41-d2c4278e0e82', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 23, 'y': 12}": {
-				"id": "47cf2046-a049-4eca-801b-0e96507396f2",
+			"{'id': 'ec6f1c8c-7442-445e-8a75-5fad0cea9a17', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 23, 'y': 12}": {
+				"id": "a7e15aac-672a-443f-b0eb-8e246eb72401",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5044,8 +5044,8 @@
 					}
 				]
 			},
-			"{'id': '16a5bd67-df9e-4993-a5fc-cb134d7331b8', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 24, 'y': 12}": {
-				"id": "27a55585-32fb-4e2a-bdcc-61660716dcd0",
+			"{'id': '2f15fa22-2b29-4d6a-8b7d-e3068d46bf05', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 24, 'y': 12}": {
+				"id": "791c0525-19b9-417e-b5d3-45f8594b87bd",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5059,8 +5059,8 @@
 					}
 				]
 			},
-			"{'id': '88e059d8-e184-45d1-8788-6f6b83ad9b7a', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 25, 'y': 12}": {
-				"id": "a97bc456-7819-443f-8171-cba7c510adbb",
+			"{'id': 'b27f73f6-9b23-4978-96d3-dfdf8b8eac28', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 25, 'y': 12}": {
+				"id": "8f16732b-c732-4c79-8d83-a0d354f681a6",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5074,8 +5074,8 @@
 					}
 				]
 			},
-			"{'id': '93abc3c7-1d86-4d79-aa3a-33487b79ba61', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 26, 'y': 12}": {
-				"id": "2d871dc5-4c8b-4348-81fd-d67ec94a5a0e",
+			"{'id': 'ae643c6a-0b7e-480a-a766-2f7ffb3f6c1c', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 26, 'y': 12}": {
+				"id": "b1238936-b99a-4197-9638-bf608f227706",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5089,8 +5089,8 @@
 					}
 				]
 			},
-			"{'id': '29e87eb2-2294-49b1-ac91-4adb12f0150b', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 27, 'y': 12}": {
-				"id": "94d0ffda-2583-48df-a8ba-6a8319acf278",
+			"{'id': '1dda6c50-04ca-4d9f-8d6c-f16b6c347b27', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 27, 'y': 12}": {
+				"id": "4163bcbc-c41c-4a43-8937-090bdedb71bc",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5104,8 +5104,8 @@
 					}
 				]
 			},
-			"{'id': '7ff97dd7-0f4b-4c99-9441-a3d76f5fd219', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 32, 'y': 12}": {
-				"id": "1dab07f5-8b0f-4682-8f8f-6206a87bdf89",
+			"{'id': 'e14eb976-b063-4ce5-998a-aca9d4c3ceb7', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 32, 'y': 12}": {
+				"id": "ded50f17-2137-49ee-910a-57e84f4b52a8",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5119,8 +5119,8 @@
 					}
 				]
 			},
-			"{'id': 'a7559ad2-b58a-4b1d-b50b-fe694061455d', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 33, 'y': 12}": {
-				"id": "65e504be-274a-4a23-a1cf-ca8ef098b188",
+			"{'id': '7a7940ab-f71c-43e4-9bb2-2b5b0fe84c99', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 33, 'y': 12}": {
+				"id": "e6d639a9-6e95-4a88-8774-10199496d95a",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5134,8 +5134,8 @@
 					}
 				]
 			},
-			"{'id': 'af111ae1-ba0f-455f-aef4-294877d0481f', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 34, 'y': 12}": {
-				"id": "b28944ec-10e9-4c96-8fea-a78b0055d0d0",
+			"{'id': '056ca198-0f31-404e-a990-7201ad648124', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 34, 'y': 12}": {
+				"id": "5228afb3-432f-49e8-ad6d-873ca326fd3f",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5149,8 +5149,8 @@
 					}
 				]
 			},
-			"{'id': '0898c567-a5ec-4010-8268-335823ff5c0d', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 35, 'y': 12}": {
-				"id": "15a4d9f1-3a8c-46f5-81bc-18076743b9e1",
+			"{'id': '9a1c11fc-0ded-41fc-8c92-8049e165488b', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 35, 'y': 12}": {
+				"id": "6fe68816-18a3-45d5-a439-411887ed6e10",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5164,8 +5164,8 @@
 					}
 				]
 			},
-			"{'id': '90711f40-bf1e-4688-8dfe-b524b7a1f9b2', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 36, 'y': 12}": {
-				"id": "204a9f75-93a2-4156-99c7-ddea6c119dc1",
+			"{'id': '602a2df2-19a4-4e65-893f-9c739da23b5c', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 36, 'y': 12}": {
+				"id": "da314e78-0284-4267-9d05-4df8fd906cf3",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5179,8 +5179,8 @@
 					}
 				]
 			},
-			"{'id': '2e87d750-34ae-4546-ab30-2db5f0396916', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 12, 'y': 13}": {
-				"id": "98b6205d-d851-4633-bd64-2a25080fc029",
+			"{'id': '3d1cf207-2c61-45c5-9d42-978bf99edae8', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 12, 'y': 13}": {
+				"id": "3b946f83-5c4e-4e13-843d-ea0bf1c213db",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5194,8 +5194,8 @@
 					}
 				]
 			},
-			"{'id': 'f60787c5-3f56-4ab3-8402-88e2f95fb22a', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 21, 'y': 13}": {
-				"id": "88a1f244-ce93-413a-8c9d-2d3f8a211236",
+			"{'id': '2c963094-6c8a-4b66-a002-d7daaec654e8', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 21, 'y': 13}": {
+				"id": "c37df814-6169-4495-b69e-c7a98ad44afb",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5209,8 +5209,8 @@
 					}
 				]
 			},
-			"{'id': '46aa3ed3-053d-4a97-8116-0d15229e9f38', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 22, 'y': 13}": {
-				"id": "645ed93a-be8f-41dc-8fc1-2c1f979d6c18",
+			"{'id': '04e9b320-ca2a-405e-8ba6-c03f29804396', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 22, 'y': 13}": {
+				"id": "c2ffa8eb-ed75-4aba-a989-2a355c69b31d",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5224,8 +5224,8 @@
 					}
 				]
 			},
-			"{'id': '126a900c-e130-42e6-8189-e97192c95f10', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 23, 'y': 13}": {
-				"id": "10f7f12b-eacb-4111-8ce3-41daa5faf9ea",
+			"{'id': '6459f10b-17b2-4a53-b92d-16e634deea39', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 23, 'y': 13}": {
+				"id": "8741c838-96fc-45ad-b5d3-d891db03e7eb",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5239,8 +5239,8 @@
 					}
 				]
 			},
-			"{'id': '0591f922-4239-42e7-8229-80615ff00cdc', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 24, 'y': 13}": {
-				"id": "5eda8697-295e-46e5-807a-26471659d621",
+			"{'id': 'b9d5440a-31fd-41e1-a005-b981309ac269', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 24, 'y': 13}": {
+				"id": "874f4f62-d496-43c0-82e1-526ce63c6fd6",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5254,8 +5254,8 @@
 					}
 				]
 			},
-			"{'id': 'ee4f89e2-5ebf-4274-8061-e9d58a59fe66', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 25, 'y': 13}": {
-				"id": "bd23034c-69f2-440e-a816-82670e047d51",
+			"{'id': '59c60010-5943-4768-9694-8eadc5204a7d', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 25, 'y': 13}": {
+				"id": "e7c62f56-69e4-4eef-8627-e9e2844a157f",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5269,8 +5269,8 @@
 					}
 				]
 			},
-			"{'id': '6b93b9d1-ceb1-4359-a7ae-405ab9f408e5', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 26, 'y': 13}": {
-				"id": "2f9b12d8-b441-40ed-9b9a-0790b5214c9f",
+			"{'id': '44554d7a-f8d5-453d-80c2-4d56a6038af1', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 26, 'y': 13}": {
+				"id": "1d2afde0-68a3-43d7-9b0b-c0b82caed70f",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5284,8 +5284,8 @@
 					}
 				]
 			},
-			"{'id': 'e5bd0e5e-fb8c-4712-ac31-ed4ec9e60e29', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 27, 'y': 13}": {
-				"id": "0eb376b8-ac19-4f63-aba0-8f33a236bfa7",
+			"{'id': '7a52e8a5-c1af-462e-8b3b-0cb610877815', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 27, 'y': 13}": {
+				"id": "7eeabf21-b027-4477-8082-dfcdb0624bad",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5299,8 +5299,8 @@
 					}
 				]
 			},
-			"{'id': '865e562b-cf82-4cbf-a1e7-9ee23932c41d', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 32, 'y': 13}": {
-				"id": "0a6adab5-cb9e-4449-95ae-04f9031b9452",
+			"{'id': '12eced25-fd9a-45c8-acae-ffd6b3a19c36', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 32, 'y': 13}": {
+				"id": "792a0c01-c35d-41c4-9435-ab5bd7b199ab",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5314,8 +5314,8 @@
 					}
 				]
 			},
-			"{'id': 'b780e276-696e-40cb-b292-e6e02a9f926f', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 33, 'y': 13}": {
-				"id": "0f170bcf-d180-4be8-afc0-a9491fa2a6b1",
+			"{'id': '82180c8f-f762-4f58-aa1d-bce1f78870c1', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 33, 'y': 13}": {
+				"id": "e503888d-b162-4af1-9983-bf7a8c7fc714",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5329,8 +5329,8 @@
 					}
 				]
 			},
-			"{'id': 'd6a07876-4f8d-488d-99b7-653d6a0aa711', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 34, 'y': 13}": {
-				"id": "2a2a4fe1-485d-4275-b0b0-eb1b5a200ff1",
+			"{'id': '5f53ff28-6707-4006-9417-893b2d74af93', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 34, 'y': 13}": {
+				"id": "1cf5220d-e9b5-47a5-b308-718df878d20a",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5344,8 +5344,8 @@
 					}
 				]
 			},
-			"{'id': '041f6bbe-d03d-4af2-80d8-03f82d24413a', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 35, 'y': 13}": {
-				"id": "bc8e076b-ac04-41ed-98b8-610d48d161fc",
+			"{'id': 'de2592fb-f309-4a71-b6cb-e7b8039722d9', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 35, 'y': 13}": {
+				"id": "0631b6c4-ac57-4ed4-bd92-a398de3abb20",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5359,8 +5359,8 @@
 					}
 				]
 			},
-			"{'id': 'e4d50cbb-159a-4c1a-a5b9-a3b13215a20e', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 36, 'y': 13}": {
-				"id": "84a67b39-3efc-4193-9436-2295b1e97b11",
+			"{'id': '74df441c-1591-4b36-b522-78ee197efb77', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 36, 'y': 13}": {
+				"id": "e4170e34-c8b4-4c64-a58c-fcc9c6a240dd",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5374,8 +5374,8 @@
 					}
 				]
 			},
-			"{'id': '9aa8cb42-e090-4e7a-a8d2-91dc5ba55b4e', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 1, 'y': 14}": {
-				"id": "84dd6aca-5776-44bf-8aad-df87d6222a19",
+			"{'id': 'c65d1966-9a49-4a3b-bc5e-e95e850ee716', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 1, 'y': 14}": {
+				"id": "ea982e84-844c-4c69-a9a1-fa4071b1d34a",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5389,8 +5389,8 @@
 					}
 				]
 			},
-			"{'id': '2812da61-249b-41ad-a0a2-e746ba0565be', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 2, 'y': 14}": {
-				"id": "0a112bb6-4b16-4ef7-b27a-59858a848afd",
+			"{'id': 'c145b3b7-b9ab-42e1-a41b-648ab7f8af83', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 2, 'y': 14}": {
+				"id": "ec799d06-d409-4722-b018-adbadbd85efd",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5404,8 +5404,8 @@
 					}
 				]
 			},
-			"{'id': '83956747-e1aa-49c8-aace-04303a093c53', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 4, 'y': 14}": {
-				"id": "6c46ea5d-40ab-4fce-a3f8-0ac201cea2a4",
+			"{'id': '3c7a62c3-7050-43a5-ab5b-01cdf90f939a', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 4, 'y': 14}": {
+				"id": "634a9eee-e8d6-40ad-8755-0468044a0fef",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5419,8 +5419,8 @@
 					}
 				]
 			},
-			"{'id': '71e58fad-9c74-4810-8481-00b8e346e4b2', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 5, 'y': 14}": {
-				"id": "e793c6b3-82e9-4b75-bf4c-f2ef7327203f",
+			"{'id': '1963ea6f-c9cc-4232-b280-79533104aac7', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 5, 'y': 14}": {
+				"id": "a36b6c61-929d-46df-a037-ec42139485fd",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5434,8 +5434,8 @@
 					}
 				]
 			},
-			"{'id': 'ea87c336-6fb3-4319-b741-d3dd40f1b5f4', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 6, 'y': 14}": {
-				"id": "ba224792-e245-47b9-b174-79933ebe9b3d",
+			"{'id': '843c638c-14cd-406c-ae01-d0e66c4a21b4', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 6, 'y': 14}": {
+				"id": "5ddeb919-45d9-4a30-95e2-08d3c761d606",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5449,8 +5449,8 @@
 					}
 				]
 			},
-			"{'id': 'ec5bd5ed-805c-4739-9599-e7d3f1039782', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 7, 'y': 14}": {
-				"id": "30e238a8-552c-40a0-9441-1049bf37a840",
+			"{'id': 'ee98f116-ad4e-4750-92c8-b39aa378e6d5', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 7, 'y': 14}": {
+				"id": "6f472355-ee54-4f4e-aed7-945b2c379dd5",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5464,8 +5464,8 @@
 					}
 				]
 			},
-			"{'id': 'b4f30156-3667-477c-875b-43cb9beea2b3', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 8, 'y': 14}": {
-				"id": "59a3f412-43bd-45b3-9ffa-145d02bb6154",
+			"{'id': '717f292b-470e-4151-bacf-07e6d0f08213', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 8, 'y': 14}": {
+				"id": "35666451-ae08-40c6-9192-3ed300143355",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5479,8 +5479,8 @@
 					}
 				]
 			},
-			"{'id': '7d0139ec-95df-47ba-a69c-e01c03220d83', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 9, 'y': 14}": {
-				"id": "8d3e90cf-a1c1-470f-a932-48b0e3ed7b0f",
+			"{'id': '92f6ca30-7e5d-4b41-96e0-9954730a0f57', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 9, 'y': 14}": {
+				"id": "940db3e1-7221-4640-93ea-21296b112a43",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5494,8 +5494,8 @@
 					}
 				]
 			},
-			"{'id': '43e130d7-16cc-431d-82ce-9eb7e8064247', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 11, 'y': 14}": {
-				"id": "1752da5b-2948-490b-84c6-93e57e12b736",
+			"{'id': '89cc6aed-a493-44aa-81a8-29c956f1c66d', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 11, 'y': 14}": {
+				"id": "312179d2-e167-4110-92a5-5f6d791eef6b",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5509,8 +5509,8 @@
 					}
 				]
 			},
-			"{'id': '4c4203e2-0303-41ca-92f1-b760cc5ca8ff', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 12, 'y': 14}": {
-				"id": "ad6725b8-ecb8-47e0-8c3f-4596997cf749",
+			"{'id': '7289c31d-3fdc-45c2-b258-235ddf84d703', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 12, 'y': 14}": {
+				"id": "1c97bafc-a9f6-47e2-acda-f5c662e0e3e0",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5524,8 +5524,8 @@
 					}
 				]
 			},
-			"{'id': 'cab1b1cd-19a5-4843-9ee2-67236749a751', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 21, 'y': 14}": {
-				"id": "3a0db0b6-8bd2-44d4-a6e6-fb129cac913c",
+			"{'id': '8f90cde6-f5cb-48fc-847e-f16ad90d3be7', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 21, 'y': 14}": {
+				"id": "363fae89-6d41-4926-82b0-7045496c43e1",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5539,8 +5539,8 @@
 					}
 				]
 			},
-			"{'id': '65f01ef5-0911-4b6f-a1b7-c95bb653df90', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 22, 'y': 14}": {
-				"id": "bb597ac1-c6e0-4ae3-85ba-31f7fcc4d427",
+			"{'id': '9fa02caa-3611-4431-abec-a75fd60623d9', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 22, 'y': 14}": {
+				"id": "dd8684f2-db07-4247-9809-9d2fb9cf3d95",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5554,8 +5554,8 @@
 					}
 				]
 			},
-			"{'id': '42a58801-a75f-46c7-be42-57672118716a', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 23, 'y': 14}": {
-				"id": "07a8f9fc-1082-45d2-a4b9-c19029d952df",
+			"{'id': '89d427d1-8335-44ab-9dda-a12c2f99cf61', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 23, 'y': 14}": {
+				"id": "f507e38b-6394-45c3-b610-e4d0fdb689dd",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5569,8 +5569,8 @@
 					}
 				]
 			},
-			"{'id': '44b8774c-6223-4f3a-83ee-b70cb570fac9', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 24, 'y': 14}": {
-				"id": "3ce33198-d2ba-4aca-a18b-1585cff27e5d",
+			"{'id': 'd0eb5e5b-eab9-4672-a2c4-adc41ada0d96', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 24, 'y': 14}": {
+				"id": "f97ca526-728a-4724-9a1c-e268544d0ce8",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5584,8 +5584,8 @@
 					}
 				]
 			},
-			"{'id': '6caa9dcc-02d6-4017-8c29-62e73efb592e', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 25, 'y': 14}": {
-				"id": "0979cf46-99f1-4e89-b82f-bfeeb3d27514",
+			"{'id': '8e649ad5-ce4e-4155-837f-51c141997c01', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 25, 'y': 14}": {
+				"id": "3893eea9-71b5-40e5-9083-3f0c69b28985",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5599,8 +5599,8 @@
 					}
 				]
 			},
-			"{'id': 'da608be5-1ec2-402f-93d7-1ff712eafec5', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 26, 'y': 14}": {
-				"id": "13cfba82-0e9d-44a1-8a13-d502d72571ca",
+			"{'id': '1f97eb9a-818f-40d9-9379-553daa8fbe6d', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 26, 'y': 14}": {
+				"id": "e9d5bad4-393c-418f-8bab-fccd8508d0bf",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5614,8 +5614,8 @@
 					}
 				]
 			},
-			"{'id': '3ad32350-2020-4b6d-97a1-79c1f091dde9', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 27, 'y': 14}": {
-				"id": "f76c505a-acfd-4b52-a041-3a0a35c3b8bc",
+			"{'id': '05d02443-1618-4979-b1d3-788076414f92', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 27, 'y': 14}": {
+				"id": "2e06cad1-add7-49bc-a40a-a0f21cb5981c",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5629,8 +5629,8 @@
 					}
 				]
 			},
-			"{'id': '63181730-1ba1-4ce6-9876-44e8a30e9fb4', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 31, 'y': 14}": {
-				"id": "59a5d861-eb13-42e3-9fda-37a6b1844939",
+			"{'id': '3869f262-6d87-4f32-b118-ebe33ba528c6', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 31, 'y': 14}": {
+				"id": "c5ffc714-b883-41e1-bb5d-5c504dc32685",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5641,7 +5641,7 @@
 						"state": "idle",
 						"__class__": "Refuge",
 						"vector": {
-							"id": "63181730-1ba1-4ce6-9876-44e8a30e9fb4",
+							"id": "3869f262-6d87-4f32-b118-ebe33ba528c6",
 							"object_type": 6,
 							"state": "idle",
 							"__class__": "Vector",
@@ -5654,8 +5654,8 @@
 					}
 				]
 			},
-			"{'id': '6cd2c25f-05f1-45c9-9148-b315633cee86', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 32, 'y': 14}": {
-				"id": "b36b816f-9ede-4f12-9870-8cafb27abf68",
+			"{'id': '6a6ead56-e610-4fcf-8bde-f89dd5167e1a', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 32, 'y': 14}": {
+				"id": "73855d84-fd83-434b-9656-1504701b3e07",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5669,8 +5669,8 @@
 					}
 				]
 			},
-			"{'id': '311c4250-ea80-4c52-a33f-1cbeefcb36be', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 33, 'y': 14}": {
-				"id": "70e23c6c-bffc-473d-b84a-46b07b6e4cec",
+			"{'id': '6153b568-a896-405d-b1c8-7a6380462623', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 33, 'y': 14}": {
+				"id": "34a1f2ac-12fd-48bd-84ae-3e4c96149028",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5684,8 +5684,8 @@
 					}
 				]
 			},
-			"{'id': '10ead309-ec0e-4357-bbae-c4a3cf632365', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 34, 'y': 14}": {
-				"id": "2021fde7-dd8b-49bc-84f8-04f1760f3f40",
+			"{'id': 'abae8962-bfbc-4bf5-8f1f-ab36a59ed4b5', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 34, 'y': 14}": {
+				"id": "e39649c8-2e79-45a5-b2cf-a2088b753124",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5699,8 +5699,8 @@
 					}
 				]
 			},
-			"{'id': '463dea85-7748-4003-9667-07a74ecb9fff', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 35, 'y': 14}": {
-				"id": "f73f71f0-f114-4c7c-9a1e-77b84bfdaa02",
+			"{'id': 'f253a2d1-522b-49ea-9215-8bd05aa78d07', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 35, 'y': 14}": {
+				"id": "efbe32c5-7354-4d0b-ac1b-b2e467aa8f69",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5714,8 +5714,8 @@
 					}
 				]
 			},
-			"{'id': '3d577820-ac06-4101-bda2-fbf8d96c4c04', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 36, 'y': 14}": {
-				"id": "b6878d5d-0b1f-4970-82e4-3c82a207493a",
+			"{'id': 'd7989b53-803b-4ae3-9a72-620b1f46937c', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 36, 'y': 14}": {
+				"id": "00e597e5-a0d5-419d-b70a-2964b1b55819",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5729,8 +5729,8 @@
 					}
 				]
 			},
-			"{'id': 'b524a339-b3d3-42fa-91c2-0e8f049a40e1', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 12, 'y': 15}": {
-				"id": "f8ff364f-1cfd-48db-a324-5eba49ac58bc",
+			"{'id': '5f43369d-a532-41ea-a1a2-986205c79d74', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 12, 'y': 15}": {
+				"id": "e2996ab9-5ed8-4f60-90db-8e3063013bca",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5744,8 +5744,8 @@
 					}
 				]
 			},
-			"{'id': '1def3c8d-357f-472a-b3e6-27857ad1aebb', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 13, 'y': 15}": {
-				"id": "cbc57dc4-5f66-4eb2-a5ca-1b6e09198007",
+			"{'id': '82e8609c-ddbd-4efb-bded-77f8450e59c2', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 13, 'y': 15}": {
+				"id": "a306a86f-7129-4a9e-a335-5010ada55e1a",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5759,8 +5759,8 @@
 					}
 				]
 			},
-			"{'id': '32cdebae-64f2-4b79-a549-e96a96c327ec', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 16, 'y': 15}": {
-				"id": "f043e628-b025-4d55-a935-dcceb4f4bf1c",
+			"{'id': '469dffd5-5469-481b-a16f-c1f01713fc67', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 16, 'y': 15}": {
+				"id": "120b0a39-bfc9-4c10-adb1-9cf4b6179d9d",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5774,8 +5774,8 @@
 					}
 				]
 			},
-			"{'id': 'eb75c442-59b9-42f0-951d-12e6e6dd7f44', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 17, 'y': 15}": {
-				"id": "d86e7e47-0552-4314-9370-127a0e469418",
+			"{'id': '8c6b8bf4-c29e-49f0-aa1f-6012bf6592a1', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 17, 'y': 15}": {
+				"id": "36d818c5-745d-471d-bd71-c134b9ffb216",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5789,8 +5789,8 @@
 					}
 				]
 			},
-			"{'id': '406b29b0-1410-4d1c-a4ca-70725db16639', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 18, 'y': 15}": {
-				"id": "f0693f4e-c1ca-40ff-a145-574262437705",
+			"{'id': '09663e01-20d1-4b89-9b08-1300b218868a', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 18, 'y': 15}": {
+				"id": "e42eec57-78e8-488b-836f-a7c71677c269",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5804,8 +5804,8 @@
 					}
 				]
 			},
-			"{'id': 'a312b257-2c11-4380-a32a-e0fe2bd65962', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 19, 'y': 15}": {
-				"id": "9ad67e9a-2999-40fc-8df9-ba8fe7185723",
+			"{'id': '7aa97387-587e-4b75-b16b-d3e83f3579a5', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 19, 'y': 15}": {
+				"id": "cd8d5242-c755-40f2-9d08-d79e6180f71c",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5819,8 +5819,8 @@
 					}
 				]
 			},
-			"{'id': '9f634598-a036-4eaa-abbf-8a8f44fa6813', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 20, 'y': 15}": {
-				"id": "28e9a140-5562-459d-91da-955058a25c85",
+			"{'id': '6d04321e-b90f-4880-a763-d1d79a29c14f', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 20, 'y': 15}": {
+				"id": "f8620c7b-198a-4048-9941-75b69072ab53",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5834,8 +5834,8 @@
 					}
 				]
 			},
-			"{'id': 'ebcf3a5b-ff01-45bc-88c4-a0a701701525', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 21, 'y': 15}": {
-				"id": "4f2ef121-135a-4570-9f82-4f7451535c06",
+			"{'id': 'd75c7dcf-4e29-42e0-adab-c975bb1c3bf4', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 21, 'y': 15}": {
+				"id": "a98244b7-f86d-4f7b-a4b8-8778b40ecc33",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5849,8 +5849,8 @@
 					}
 				]
 			},
-			"{'id': '317fa8d4-e598-46f4-954f-308553afb18e', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 22, 'y': 15}": {
-				"id": "aea40595-28a5-4e2b-8477-d4acd8a456a7",
+			"{'id': '9e78bf9f-90d8-454d-a2c3-768d722e3c03', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 22, 'y': 15}": {
+				"id": "9c754afa-e5bf-4b05-8f3e-0ca6b3dbc7a8",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5864,8 +5864,8 @@
 					}
 				]
 			},
-			"{'id': '79cc5aa0-22af-4e9d-8173-c689d375a922', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 23, 'y': 15}": {
-				"id": "1be751ac-10fc-4ddb-a598-a0dbaf90401b",
+			"{'id': 'b4096079-212d-40ef-9cf0-15ea3f9b96f3', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 23, 'y': 15}": {
+				"id": "f53b2ccb-20fb-4f74-bac2-7e9f7bbf709c",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5879,8 +5879,8 @@
 					}
 				]
 			},
-			"{'id': '1d31cc46-7e96-406d-8858-331e9e932c1e', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 24, 'y': 15}": {
-				"id": "a1c99c5b-b449-4e54-bed4-e557ed65caa4",
+			"{'id': 'ae932ea0-0c75-42c0-b619-fd2cc4b49d27', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 24, 'y': 15}": {
+				"id": "b915a53c-de73-47e3-a2f2-ce4b18075eb6",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5894,8 +5894,8 @@
 					}
 				]
 			},
-			"{'id': 'c489a076-732a-48d9-8982-472a321901ac', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 25, 'y': 15}": {
-				"id": "7c07a121-8369-405b-b690-4d131fbebcaa",
+			"{'id': '5d79cdc4-fe45-4e7c-bb82-caab159498a5', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 25, 'y': 15}": {
+				"id": "b4d4074a-62f6-4e65-804c-a8a0328442ac",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5909,8 +5909,8 @@
 					}
 				]
 			},
-			"{'id': 'cfc91c2b-3faf-4c2e-af55-ae818b313946', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 26, 'y': 15}": {
-				"id": "bcde3074-552d-4444-b681-d3aeab636ec3",
+			"{'id': '0ff6b6aa-c0ae-4a07-a39b-bb3107d199d8', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 26, 'y': 15}": {
+				"id": "5a5fe8cd-180b-4e84-bfe1-adf97dffa4f4",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5924,8 +5924,8 @@
 					}
 				]
 			},
-			"{'id': '7efecec1-97b4-4e78-8976-fa9a4cd2d87c', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 27, 'y': 15}": {
-				"id": "056d0d67-7488-4f79-8ad4-7bca47bb82c4",
+			"{'id': '32b78d3c-13e6-4a10-90d5-eb9a6028279b', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 27, 'y': 15}": {
+				"id": "3d876103-6796-4c8a-99e2-c03b266ef0ef",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5939,8 +5939,8 @@
 					}
 				]
 			},
-			"{'id': '63039fb1-eecc-4d82-b785-666c9cd7a03a', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 31, 'y': 15}": {
-				"id": "debda681-973d-4c0e-9b0e-09b89a09b6ee",
+			"{'id': '958da10e-c817-401a-b29b-d81ca3ab18db', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 31, 'y': 15}": {
+				"id": "d46c8d2e-91fd-4436-9fe4-e4174479cc2d",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5951,7 +5951,7 @@
 						"state": "idle",
 						"__class__": "Refuge",
 						"vector": {
-							"id": "63039fb1-eecc-4d82-b785-666c9cd7a03a",
+							"id": "958da10e-c817-401a-b29b-d81ca3ab18db",
 							"object_type": 6,
 							"state": "idle",
 							"__class__": "Vector",
@@ -5964,8 +5964,8 @@
 					}
 				]
 			},
-			"{'id': '6348ba28-4638-4f6b-a141-1b8a45690e00', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 32, 'y': 15}": {
-				"id": "2a19ff18-41d1-40e8-9f45-6fd9d06df524",
+			"{'id': 'f2a254cc-3ef5-47ed-8a4f-0b7cfa242011', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 32, 'y': 15}": {
+				"id": "a801bbd7-ca77-4dcc-a7a1-4f3f94d0884c",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5979,8 +5979,8 @@
 					}
 				]
 			},
-			"{'id': '77d5d16a-688b-4acb-af24-6ecb72f7f9c7', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 33, 'y': 15}": {
-				"id": "cae7f022-e9cd-43dd-a5e0-d5e60c55684d",
+			"{'id': 'c911dd02-3851-471f-aa62-a385e80151f4', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 33, 'y': 15}": {
+				"id": "51fec442-179e-425f-9b61-50137d2916c2",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -5994,8 +5994,8 @@
 					}
 				]
 			},
-			"{'id': 'ba54b00e-5293-4c44-bcd3-04ec8f6ab22f', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 34, 'y': 15}": {
-				"id": "fffcbaa9-d809-4166-8226-7b51c636c82f",
+			"{'id': '48b08109-2ead-40bb-bbf4-ce8e17ebdeee', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 34, 'y': 15}": {
+				"id": "1f7596f1-2373-4b80-a383-0ad7894f6ebd",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -6009,8 +6009,8 @@
 					}
 				]
 			},
-			"{'id': '9cad42f1-d079-4a06-bf8f-8d0ced81f3a9', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 35, 'y': 15}": {
-				"id": "36b820c9-c94c-4502-b471-815415e3b699",
+			"{'id': '63b711df-534a-4e74-a9bd-a34c4a9b77bf', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 35, 'y': 15}": {
+				"id": "5619b81e-cb92-43e8-98d5-3f30c0d259be",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -6024,8 +6024,8 @@
 					}
 				]
 			},
-			"{'id': '21138e74-6553-4dbd-867f-7e560b9d4c4e', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 36, 'y': 15}": {
-				"id": "bbd9457e-8bcb-4317-ab90-d5253b3a9f7b",
+			"{'id': '07b1e652-f442-418f-92b6-6b233e9662cd', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 36, 'y': 15}": {
+				"id": "ee23ab61-5692-4a9d-b20d-048463dac0a0",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -6039,8 +6039,8 @@
 					}
 				]
 			},
-			"{'id': '3e8592f9-4189-4cb2-b770-5640c2e9282f', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 12, 'y': 16}": {
-				"id": "e970cdd8-afa3-407c-9246-dd01ada4d1e0",
+			"{'id': '4bfa16a7-9676-4943-9648-d27a15dc6cb8', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 12, 'y': 16}": {
+				"id": "2693f652-cf1c-4fbf-93ac-91d9c1c1b35f",
 				"object_type": 16,
 				"state": "idle",
 				"__class__": "GameObjectContainer",
@@ -6055,7 +6055,7 @@
 				]
 			}
 		},
-		"seed": 250848032,
+		"seed": 26858145,
 		"map_size": {
 			"id": "49d3531f-4fa2-4809-b793-00842b28cf75",
 			"object_type": 6,
@@ -6067,7 +6067,7 @@
 		"walled": true,
 		"event_active": null,
 		"generators": {
-			"{'id': 'b458112b-ea44-499d-8dcc-ee66f3b4a7f0', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 1, 'y': 8}": {
+			"{'id': 'b5322cbc-c4f5-46dd-8c7b-cdb7a253dfd9', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 1, 'y': 8}": {
 				"id": "bb00658f-c15f-400e-a903-bced85463802",
 				"object_type": 17,
 				"state": "idle",
@@ -6095,7 +6095,7 @@
 				"multiplier_bonus": 0.15,
 				"bonus_collected": false
 			},
-			"{'id': '46b185c9-dc6f-4ee0-8e1f-59e139d7db6c', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 3, 'y': 18}": {
+			"{'id': '4a8e1160-ab1a-4363-9d10-920c1d8f869c', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 3, 'y': 18}": {
 				"id": "9f7acff9-257a-4b5f-be9b-67e80d8a48ec",
 				"object_type": 17,
 				"state": "idle",
@@ -6123,7 +6123,7 @@
 				"multiplier_bonus": 1,
 				"bonus_collected": false
 			},
-			"{'id': '5c56333e-1efa-4e45-96a4-af2c5c83c95c', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 29, 'y': 18}": {
+			"{'id': 'a3824592-3556-4849-a648-29e7f1a298b9', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 29, 'y': 18}": {
 				"id": "247ef940-aec1-4dcd-86db-0eb871a5080e",
 				"object_type": 17,
 				"state": "idle",
@@ -6165,7 +6165,7 @@
 				"multiplier_bonus": 0.35,
 				"bonus_collected": false
 			},
-			"{'id': '14d870c8-0c81-4750-93a5-7e600a7b99a4', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 36, 'y': 2}": {
+			"{'id': 'e0df6610-2e3e-4c4d-af52-e194e408c425', 'object_type': 6, 'state': 'idle', '__class__': 'Vector', 'x': 36, 'y': 2}": {
 				"id": "34614b92-fdcb-4ab4-987e-dfda465fdd03",
 				"object_type": 17,
 				"state": "idle",
@@ -6195,7 +6195,7 @@
 			}
 		},
 		"battery_spawners": {
-			"id": "08b4a8b8-7c15-491f-963f-75922a4781d0",
+			"id": "acbf11e3-00a2-4422-8f28-21de022774aa",
 			"object_type": 1,
 			"state": "idle",
 			"__class__": "BatterySpawnerList",
@@ -6215,7 +6215,7 @@
 						"turns_left": 0
 					},
 					"position": {
-						"id": "271dbf8e-ef82-4d57-9c1a-5fc99c978cda",
+						"id": "da21ee98-9784-43a7-9d6f-c19ceac43ddd",
 						"object_type": 6,
 						"state": "idle",
 						"__class__": "Vector",
@@ -6239,7 +6239,7 @@
 						"turns_left": 0
 					},
 					"position": {
-						"id": "0bb73945-f0c9-493f-bd7a-9890732ebd75",
+						"id": "30d63a78-13ac-44f0-ac9a-6eaed0c1fbba",
 						"object_type": 6,
 						"state": "idle",
 						"__class__": "Vector",
@@ -6263,7 +6263,7 @@
 						"turns_left": 0
 					},
 					"position": {
-						"id": "d6fbf70e-f7c5-431a-9043-54ed35ffbd2b",
+						"id": "40d7e3c7-6a71-4c7b-8758-54599b8cfaa0",
 						"object_type": 6,
 						"state": "idle",
 						"__class__": "Vector",
@@ -6287,7 +6287,7 @@
 						"turns_left": 0
 					},
 					"position": {
-						"id": "0f17d1dc-83f4-4db5-9a25-e93952ffbc26",
+						"id": "3ee5296e-c480-4fde-ae95-ccced260ae4b",
 						"object_type": 6,
 						"state": "idle",
 						"__class__": "Vector",
@@ -6299,7 +6299,7 @@
 			]
 		},
 		"scrap_spawners": {
-			"id": "ad962a90-b8be-4424-81d0-fe0c1b56cc24",
+			"id": "bb45c0d2-019c-4ba6-9864-771b49b5b6fc",
 			"object_type": 1,
 			"state": "idle",
 			"__class__": "ScrapSpawnerList",
@@ -6318,7 +6318,7 @@
 						"turns_left": 0
 					},
 					"position": {
-						"id": "92e6c38b-d576-45ce-9210-855c3fa12c45",
+						"id": "572e4ce2-80e9-4523-a718-03330ec96a89",
 						"object_type": 6,
 						"state": "idle",
 						"__class__": "Vector",
@@ -6341,7 +6341,7 @@
 						"turns_left": 0
 					},
 					"position": {
-						"id": "12f1d197-f911-4527-bb80-f1956c9f0d60",
+						"id": "875ef976-1202-4ecb-b504-5111cf6e037f",
 						"object_type": 6,
 						"state": "idle",
 						"__class__": "Vector",
@@ -6364,7 +6364,7 @@
 						"turns_left": 0
 					},
 					"position": {
-						"id": "31191812-d460-48e4-8d0d-f47d194a1044",
+						"id": "5c40d66b-cabe-43da-9850-e6d03f00f037",
 						"object_type": 6,
 						"state": "idle",
 						"__class__": "Vector",
@@ -6387,7 +6387,7 @@
 						"turns_left": 0
 					},
 					"position": {
-						"id": "6bd17ee7-9dc9-4bc3-89b9-9f862c709580",
+						"id": "65227843-75b4-4282-b967-ff09e54c32b3",
 						"object_type": 6,
 						"state": "idle",
 						"__class__": "Vector",
@@ -6399,7 +6399,7 @@
 			]
 		},
 		"coin_spawners": {
-			"id": "dbd552aa-0beb-413e-8aa8-a1eb2bf662c4",
+			"id": "d348b59c-ecc3-4e51-adc4-c196463ade3a",
 			"object_type": 1,
 			"state": "idle",
 			"__class__": "CoinSpawnerList",
@@ -6418,7 +6418,7 @@
 						"turns_left": 0
 					},
 					"position": {
-						"id": "421cd128-95a7-4d26-8f54-0bc30540c76e",
+						"id": "e04811f6-e7ba-4e78-ace7-d2a67fe18768",
 						"object_type": 6,
 						"state": "idle",
 						"__class__": "Vector",
@@ -6441,7 +6441,7 @@
 						"turns_left": 0
 					},
 					"position": {
-						"id": "dd300dc0-0847-43f6-b7fe-890fc6297c3e",
+						"id": "dcdb2abb-b4f0-4985-8166-6bc6c0b825ff",
 						"object_type": 6,
 						"state": "idle",
 						"__class__": "Vector",
@@ -6464,7 +6464,7 @@
 						"turns_left": 0
 					},
 					"position": {
-						"id": "4ec57938-a973-427b-85f8-04b3d80dd362",
+						"id": "71ed7514-16b6-4e1b-aef3-d93dec9e947d",
 						"object_type": 6,
 						"state": "idle",
 						"__class__": "Vector",
@@ -6487,7 +6487,7 @@
 						"turns_left": 0
 					},
 					"position": {
-						"id": "988511fc-03de-4a7a-9392-9c9e54e97938",
+						"id": "19fedd1b-d122-4c98-9410-9d92771725a5",
 						"object_type": 6,
 						"state": "idle",
 						"__class__": "Vector",
@@ -6510,7 +6510,7 @@
 						"turns_left": 0
 					},
 					"position": {
-						"id": "41b71b02-4f4d-4937-88cc-0c17d0eef740",
+						"id": "468f14cc-91ed-4a96-a76c-8e9737a46d61",
 						"object_type": 6,
 						"state": "idle",
 						"__class__": "Vector",
@@ -6533,7 +6533,7 @@
 						"turns_left": 0
 					},
 					"position": {
-						"id": "126c997a-5b39-4670-b6c1-f0243799b5f1",
+						"id": "5f268d4c-8a65-4a6e-9a27-6fefa776100a",
 						"object_type": 6,
 						"state": "idle",
 						"__class__": "Vector",
@@ -6556,7 +6556,7 @@
 						"turns_left": 0
 					},
 					"position": {
-						"id": "07dc389a-b101-4ccf-8d1d-712f7388fb1f",
+						"id": "0731772b-0396-498a-9eca-d3ab3b12b51d",
 						"object_type": 6,
 						"state": "idle",
 						"__class__": "Vector",
@@ -6579,7 +6579,7 @@
 						"turns_left": 0
 					},
 					"position": {
-						"id": "3403ba31-560b-41f2-b4f3-7206750149be",
+						"id": "91beb72a-6898-4cc9-9eaf-b200e69985bc",
 						"object_type": 6,
 						"state": "idle",
 						"__class__": "Vector",
@@ -6602,7 +6602,7 @@
 						"turns_left": 0
 					},
 					"position": {
-						"id": "83c455fa-b44f-425c-a090-b938fd0d1be9",
+						"id": "d8d51a0e-e760-4144-8f97-7fc75c6c8268",
 						"object_type": 6,
 						"state": "idle",
 						"__class__": "Vector",
@@ -6625,7 +6625,7 @@
 						"turns_left": 0
 					},
 					"position": {
-						"id": "499a6023-acac-4129-b8c5-7adbe1e301e0",
+						"id": "32053330-b1e0-4a29-8aa9-e4a0e2880bfa",
 						"object_type": 6,
 						"state": "idle",
 						"__class__": "Vector",

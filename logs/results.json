@@ -1,33 +1,30 @@
 {
 	"players": [
 		{
-			"id": "f7bd45cf-e99a-4a06-961c-6ca93b50ee0e",
+			"id": "b58e592a-baac-4c44-8b09-46430f5339ed",
 			"object_type": 3,
 			"state": "idle",
 			"__class__": "Player",
-			"functional": true,
-			"error": null,
+			"functional": false,
+			"error": "b58e592a-baac-4c44-8b09-46430f5339ed failed to reply in time and has been dropped.",
 			"team_name": "Participation Trophy",
 			"file_name": "base_client",
-			"actions": [
-				3,
-				3
-			],
+			"actions": [],
 			"avatar": {
 				"id": "a5ef28bb-e0c0-4f92-98f2-18cac23a5614",
 				"object_type": 4,
-				"state": "hurt",
+				"state": "idle",
 				"__class__": "Avatar",
 				"held_index": 0,
 				"held_item": null,
-				"score": 2800,
+				"score": 1300,
 				"position": {
-					"id": "bc5f1430-653d-468f-aa37-10a8cf84a475",
+					"id": "d8ec2bb8-7db9-4e67-b20a-977747fcb368",
 					"object_type": 6,
 					"state": "idle",
 					"__class__": "Vector",
 					"x": 16,
-					"y": 7
+					"y": 9
 				},
 				"inventory": [
 					null,
@@ -43,10 +40,11 @@
 				],
 				"max_inventory_size": 10,
 				"scrap": 0,
-				"health": 0,
-				"power": 96,
+				"health": 3,
+				"power": 95,
 				"direction": "down"
 			}
 		}
-	]
+	],
+	"reason": "Client_error (Number of clients is not the set value.\nNumber of clients: 0  |  Set number: 1)"
 }
