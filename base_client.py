@@ -1,10 +1,8 @@
-
 from game.client.user_client import UserClient
 from game.common.avatar import Avatar
 from game.common.enums import ObjectType#, ActionType
 from game.common.map.game_board import GameBoard
 from game.constants import *
-
 # Sample custom imports
 import heapq
 from typing import List, Tuple, Optional, Any, Literal#, Dict
@@ -12,15 +10,15 @@ from game.common.game_object import GameObject
 from game.common.map.occupiable import Occupiable
 from game.utils.vector import Vector
 
-
-# Custom imports
-#import math
-
 class Client(UserClient):
-
     def __init__(self):
         super().__init__()
         self.goal = None
+        self.positions_battery = None
+        self.positions_coins = None
+        self.positions_scrap = None
+        self.positions_generators = None
+        self.test = 0
 
     def team_name(self) -> str:
         """
@@ -38,33 +36,45 @@ class Client(UserClient):
         :param world:       Generic world information
         """
 
+        # Collect constants
+        if turn == 1:
+            self.positions_battery = list(world.get_objects(ObjectType.BATTERY_SPAWNER))
+            self.positions_coins = list(world.get_objects(ObjectType.COIN_SPAWNER))
+            self.positions_scrap = list(world.get_objects(ObjectType.SCRAP_SPAWNER))
+            self.positions_generators = list(world.get_objects(ObjectType.GENERATOR))
+
         # Setup vars
         position = avatar.position
 
         # Calc goal
         if self.goal is None or len(world.get(position).get_objects(ObjectType.BATTERY_SPAWNER)) > 0:
-            positions_battery = world.get_objects(ObjectType.BATTERY_SPAWNER)
+            #self.goal = self.positions_battery[0]
 
-            self.goal = next(iter(positions_battery))
-            for i in positions_battery:
+
+
+            self.goal = self.positions_battery[self.test]
+            self.test += 1
+            if self.test >= len(self.positions_battery):
+                self.test = 0
+
+            """
+            for i in self.positions_battery:
                 distance_i = position.distance(i)
-                distance_goal = position.distance(self.goal)
-                if distance_i < distance_goal and distance_i != 0:
+                if distance_i < position.distance(self.goal) and distance_i != 0:
                     self.goal = i
+            """
+
+
 
         # Calc action1
         action1, position = a_star_move(position, self.goal, world, game_object=avatar)
-
         # Calc action2
         action2, position = a_star_move(position, self.goal, world, game_object=avatar)
-
         return [action1, action2]
 
 
 Position = Tuple[int, int]
-
 DIRECTIONS = [(1,0), (-1,0), (0,1), (0,-1)]
-
 
 def a_star_move(start: Vector, goal: Vector, world, allow_vents: bool = True, game_object: GameObject | None = None) -> \
 tuple[Literal[ActionType.INTERACT_CENTER], Vector] | tuple[Any, Vector]:
@@ -126,6 +136,20 @@ def a_star_path(start: Vector, goal: Vector, world, allow_vents = True, game_obj
                 # can't pass through non-occupiable
                 if not isinstance(top, Occupiable):
                     continue
+
+
+                # Get dictionary of objects to avoid
+                """
+                objects = {}
+                for i in [ObjectType.IAN_BOT, ObjectType.JUMPER_BOT,
+                                            ObjectType.DUMB_BOT, ObjectType.CRAWLER_BOT]:
+                    objects.update(world.get_objects(i))
+
+                # Can't pass through if bot surrounds this space
+                for x in objects:
+                    if vec.distance(x) <= 2:
+                        continue
+                """
 
             new_cost = cost[current] + 1
             if nxt not in cost or new_cost < cost[nxt]:
