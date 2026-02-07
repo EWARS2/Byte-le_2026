@@ -14,7 +14,7 @@ class Client(UserClient):
         Allows the team to set a team name.
         :return: Your team name
         """
-        return "Participation Trophy"
+        return "William Afton"
 
     def take_turn(self, turn: int, world: GameBoard, avatar: Avatar) -> list[ActionType]:
         """
@@ -23,6 +23,5 @@ class Client(UserClient):
         :param actions:     This is the actions object that you will add effort allocations or decrees to.
         :param world:       Generic world information
         """
-
         return []
 
