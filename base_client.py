@@ -4,6 +4,24 @@ from game.common.enums import ObjectType, ActionType
 from game.common.map.game_board import GameBoard
 from game.constants import *
 
+# all allowed imports
+import game.common.enums
+import math
+import numpy
+import scipy
+import pandas
+import itertools
+import functools
+import random
+import game.constants
+import game.common.avatar
+import game.common.map.game_board
+import game.common.map.occupiable
+import game.fnaacm.stations.generator
+import game.utils.vector
+
+
+
 class Client(UserClient):
 
     def __init__(self):
@@ -23,5 +41,37 @@ class Client(UserClient):
         :param actions:     This is the actions object that you will add effort allocations or decrees to.
         :param world:       Generic world information
         """
-        return []
+        actions = [ActionType.NONE, ActionType.NONE]
+        # How far is <here> from <there>?
+        # distance: int = here.distance(there)
+
+
+        # Thundar moves every turn
+        if 250 <= turn <= 300:
+            # logic for when the computer is active
+            computer_active = True
+        else:
+            computer_active = False
+
+        if turn % 2 == 0:
+            # true if ian is going to move the next turn
+            ian_moves = True
+        else:
+            ian_moves = False
+
+        if turn % 3 == 0:
+            # when doe is going to move
+            doe_moves = True
+        else:
+            doe_moves = False
+
+        if turn % 4 == 0:
+            # When Crawler is going to move
+            crawler_moves = True
+        else:
+            crawler_moves = False
+
+
+
+        return actions
 
