@@ -5,15 +5,21 @@ from game.common.enums import ObjectType, ActionType
 from game.common.map.game_board import GameBoard
 from game.constants import *
 
+# Sample custom imports
+import heapq
+from typing import Dict, List, Tuple, Optional
+from game.common.game_object import GameObject
+from game.common.map.occupiable import Occupiable
+
 # Custom imports
-import math
-import pathfinding
+#import math
 
 class Client(UserClient):
 
     def __init__(self):
         super().__init__()
         self.called = 0
+        self.goal = None
 
     def team_name(self) -> str:
         """
@@ -30,24 +36,29 @@ class Client(UserClient):
         :param world:       Generic world information
         """
 
+        # Setup vars
         self.called += 1
-        action1 = action2 = None
+        action1 = action2 = None # Yes this is needed
+        position = avatar.position
 
+        # Calc goal
+        if self.goal is None or len(world.get(position).get_objects(ObjectType.BATTERY_SPAWNER)) > 0:
+            positions_battery = world.get_objects(ObjectType.BATTERY_SPAWNER)
 
-        # What's over <there>?
-        #game_objects: GameObjectContainer | None = world.get(there)
+            self.goal = next(iter(positions_battery))
+            for i in positions_battery:
+                distance_i = position.distance(i)
+                distance_goal = position.distance(self.goal)
+                if distance_i < distance_goal and distance_i != 0:
+                    self.goal = i
 
-        #goal_position = world.get_objects(ObjectType.BATTERY_SPAWNER)
+        # Calc action1
+        action1, position = a_star_move(position, self.goal, world, game_object=avatar)
 
+        # Calc action2
+        action2, position = a_star_move(position, self.goal, world, game_object=avatar)
 
-
-        #print(goal_position)
-        #action1 = pathfinding.a_star_move(avatar.position, goal_position, world, game_object=avatar)
-        #action2 = pathfinding.a_star_move(avatar.position, goal_position, world, game_object=avatar)
-
-
-
-        return [] #[action1, action2]
+        return [action1, action2]
 
 
 Position = Tuple[int, int]
@@ -65,12 +76,12 @@ def a_star_move(start: Vector, goal: Vector, world, allow_vents: bool = True, ga
     )
 
     if not path or len(path) < 2:
-        return None
+        return ActionType.INTERACT_CENTER, start
 
     next_step: Vector = path[1]
     direction = next_step - start
     action = DIRECTION_TO_MOVE.get(direction)
-    return action
+    return action, start + direction
 
 def a_star_path(start: Vector, goal: Vector, world, allow_vents = True, game_object: GameObject | None = None) -> Optional[List[Vector]]:
     start_p = (start.x, start.y)
