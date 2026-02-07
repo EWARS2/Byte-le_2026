@@ -148,7 +148,7 @@ def a_star_path(start: Vector, goal: Vector, world, allow_vents = True, game_obj
                         continue
                 """
 
-            new_cost = cost[current] + 1 + ()
+            new_cost = cost[current] + 1
             if nxt not in cost or new_cost < cost[nxt]:
                 cost[nxt] = new_cost
                 priority = new_cost + vec.distance(goal)

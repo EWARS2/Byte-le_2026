@@ -1,12 +1,12 @@
 {
 	"players": [
 		{
-			"id": "6972d634-58e7-437f-b6c3-21f410d7c713",
+			"id": "62298413-e601-4fb1-9655-29ac3c2721f2",
 			"object_type": 3,
 			"state": "idle",
 			"__class__": "Player",
 			"functional": false,
-			"error": "6972d634-58e7-437f-b6c3-21f410d7c713 failed to reply in time and has been dropped.",
+			"error": "62298413-e601-4fb1-9655-29ac3c2721f2 failed to reply in time and has been dropped.",
 			"team_name": "Participation Trophy",
 			"file_name": "base_client",
 			"actions": [],
@@ -17,9 +17,9 @@
 				"__class__": "Avatar",
 				"held_index": 0,
 				"held_item": null,
-				"score": 10450,
+				"score": 10350,
 				"position": {
-					"id": "4ad5309f-4104-41bb-a6e6-c8e25d8f3048",
+					"id": "e2a69021-012e-4db9-9bff-c0cf78fe65ff",
 					"object_type": 6,
 					"state": "idle",
 					"__class__": "Vector",
