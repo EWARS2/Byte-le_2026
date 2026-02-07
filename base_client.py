@@ -14,7 +14,7 @@ class Client(UserClient):
         Allows the team to set a team name.
         :return: Your team name
         """
-        return "William Afton"
+        return "Participation Trophy"
 
     def take_turn(self, turn: int, world: GameBoard, avatar: Avatar) -> list[ActionType]:
         """
