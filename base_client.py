@@ -1,15 +1,17 @@
 
 from game.client.user_client import UserClient
 from game.common.avatar import Avatar
-from game.common.enums import ObjectType, ActionType
+from game.common.enums import ObjectType#, ActionType
 from game.common.map.game_board import GameBoard
 from game.constants import *
 
 # Sample custom imports
 import heapq
-from typing import Dict, List, Tuple, Optional
+from typing import List, Tuple, Optional, Any, Literal#, Dict
 from game.common.game_object import GameObject
 from game.common.map.occupiable import Occupiable
+from game.utils.vector import Vector
+
 
 # Custom imports
 #import math
@@ -18,7 +20,6 @@ class Client(UserClient):
 
     def __init__(self):
         super().__init__()
-        self.called = 0
         self.goal = None
 
     def team_name(self) -> str:
@@ -31,13 +32,13 @@ class Client(UserClient):
     def take_turn(self, turn: int, world: GameBoard, avatar: Avatar) -> list[ActionType]:
         """
         This is where your AI will decide what to do.
+        :param avatar:
         :param turn:        The current turn of the game.
         :param actions:     This is the actions object that you will add effort allocations or decrees to.
         :param world:       Generic world information
         """
 
         # Setup vars
-        self.called += 1
         action1 = action2 = None # Yes this is needed
         position = avatar.position
 
@@ -66,7 +67,8 @@ Position = Tuple[int, int]
 DIRECTIONS = [(1,0), (-1,0), (0,1), (0,-1)]
 
 
-def a_star_move(start: Vector, goal: Vector, world, allow_vents: bool = True, game_object: GameObject | None = None) -> ActionType | None:
+def a_star_move(start: Vector, goal: Vector, world, allow_vents: bool = True, game_object: GameObject | None = None) -> \
+tuple[Literal[ActionType.INTERACT_CENTER], Vector] | tuple[Any, Vector]:
     path = a_star_path(
         start=start,
         goal=goal,
