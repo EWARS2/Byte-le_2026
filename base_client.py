@@ -23,5 +23,21 @@ class Client(UserClient):
         :param actions:     This is the actions object that you will add effort allocations or decrees to.
         :param world:       Generic world information
         """
-        return []
+        position = avatar.position
+        left = position.add_x(-1)
+        right = position.add_x(1)
+        up = position.add_y(-1)
+        down = position.add_y(1)
+        action1 = ActionType.INTERACT_DOWN
+        action2 = ActionType.INTERACT_UP
+        if world.can_object_occupy(right, avatar):
+            action2 = ActionType.MOVE_RIGHT
+        if world.can_object_occupy(down, avatar):
+            action2 = ActionType.MOVE_DOWN
+        if world.can_object_occupy(left, avatar):
+            action2 = ActionType.MOVE_LEFT
+        if world.can_object_occupy(up, avatar):
+            action2 = ActionType.MOVE_UP
+
+        return [action1, action2]
 
