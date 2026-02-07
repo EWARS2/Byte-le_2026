@@ -1,0 +1,176 @@
+import unittest
+from game.controllers.bot_vision_controller import BotVisionController
+from game.controllers.attack_controller import Attack_Controller
+from game.common.enums import ActionType
+from game.common.avatar import Avatar
+from game.common.player import Player
+from game.common.map.game_board import GameBoard
+from game.fnaacm.bots.bot import Bot
+from game.fnaacm.bots.crawler_bot import CrawlerBot
+from game.fnaacm.map.vent import Vent
+from game.common.stations.refuge import Refuge
+from game.common.stations.station import Station
+from game.fnaacm.stations.generator import Generator
+from game.utils.vector import Vector
+from game.common.game_object import GameObject
+
+class TestAttackController(unittest.TestCase):
+    def setUp(self):
+        self.vision_controller = BotVisionController()
+        self.attack_controller = Attack_Controller()
+        self.attacking_bot = Bot()
+        self.crawler = CrawlerBot()
+        self.player_avatar = Avatar(position=Vector(0, 0))
+        self.target_player = Player(avatar=self.player_avatar)
+        Bot.reset_global_state()
+
+    def build_board(self, objects: dict[Vector, list[GameObject]]):
+        gb = GameBoard(0, Vector(4, 4), objects)
+        gb.generate_map()
+        return gb
+
+    def test_crawler_attacks_while_in_vent(self):
+        self.crawler.position = Vector(0, 1)
+
+        board = self.build_board({
+            Vector(0, 0): [Vent(), self.player_avatar],
+            Vector(0, 1): [Vent(), self.crawler]
+        })
+
+        self.vision_controller.handle_actions(self.player_avatar, self.crawler, board)
+        self.attack_controller.handle_actions(
+            ActionType.ATTACK_UP,
+            self.target_player,
+            board,
+            self.crawler
+        )
+
+        self.assertTrue(self.crawler.has_attacked)
+
+    def test_attack_hits_player_up(self):
+        self.attacking_bot.position = Vector(0, 1)
+        gen1 = Generator()
+        gen1.activate()
+        gen2 = Generator()
+        gen2.activate()
+
+        board = self.build_board({
+            Vector(0, 0): [self.player_avatar],
+            Vector(0, 1): [self.attacking_bot],
+            Vector(1, 0): [gen1],
+            Vector(1, 1): [gen2],
+        })
+
+        self.vision_controller.handle_actions(self.player_avatar, self.attacking_bot, board)
+        self.attack_controller.handle_actions(
+            ActionType.ATTACK_UP,
+            self.target_player,
+            board,
+            self.attacking_bot
+        )
+
+        self.assertTrue(self.attacking_bot.has_attacked)
+
+    def test_attack_does_not_hit_bot(self):
+        other_bot = Bot()
+        self.attacking_bot.position = Vector(0, 1)
+
+        board = self.build_board({
+            Vector(0, 0): [other_bot],
+            Vector(0, 1): [self.attacking_bot]
+        })
+
+        self.vision_controller.handle_actions(self.player_avatar, self.attacking_bot, board)
+        self.attack_controller.handle_actions(
+            ActionType.ATTACK_UP,
+            Player(avatar=Avatar(Vector(1, 1))),
+            board,
+            self.attacking_bot
+        )
+
+        self.assertFalse(self.attacking_bot.has_attacked)
+
+    def test_attack_does_not_hit_station(self):
+        station = Station(position=Vector(0, 0))
+        self.attacking_bot.position = Vector(0, 1)
+
+        board = self.build_board({
+            Vector(0, 0): [station],
+            Vector(0, 1): [self.attacking_bot]
+        })
+
+        self.vision_controller.handle_actions(self.player_avatar, self.attacking_bot, board)
+        self.attack_controller.handle_actions(
+            ActionType.ATTACK_UP,
+            Player(avatar=Avatar(Vector(1, 1))),
+            board,
+            self.attacking_bot
+        )
+
+        self.assertFalse(self.attacking_bot.has_attacked)
+
+    def test_attack_blocked_by_vent(self):
+        self.attacking_bot.position = Vector(0, 1)
+
+        board = self.build_board({
+            Vector(0, 0): [Vent(), self.player_avatar],
+            Vector(0, 1): [self.attacking_bot]
+        })
+
+        self.vision_controller.handle_actions(self.player_avatar, self.attacking_bot, board)
+        self.attack_controller.handle_actions(
+            ActionType.ATTACK_UP,
+            self.target_player,
+            board,
+            self.attacking_bot
+        )
+
+        self.assertFalse(self.attacking_bot.has_attacked)
+
+    def test_attack_blocked_by_refuge(self):
+        self.attacking_bot.position = Vector(0, 1)
+
+        board = self.build_board({
+            Vector(0, 0): [Refuge(), self.player_avatar],
+            self.attacking_bot.position: [self.attacking_bot]
+        })
+
+        self.vision_controller.handle_actions(self.player_avatar, self.attacking_bot, board)
+        self.attack_controller.handle_actions(
+            ActionType.ATTACK_UP,
+            self.target_player,
+            board,
+            self.attacking_bot
+        )
+
+        self.assertFalse(self.attacking_bot.has_attacked)
+
+    def test_attack_turns_generators_off_when_avatar_hit(self):
+        self.attacking_bot.position = Vector(0, 1)
+
+        gen1 = Generator()
+        gen2 = Generator()
+        gen1.activate()
+        gen2.activate()
+
+        board = self.build_board({
+            Vector(0, 0): [self.player_avatar],
+            Vector(0, 1): [self.attacking_bot],
+            Vector(1, 0): [gen1],
+            Vector(1, 1): [gen2]
+        })
+
+    def test_attack_does_damage(self):
+        board = self.build_board({
+            Vector(0, 0): [self.player_avatar],
+            Vector(1, 0): [self.attacking_bot],
+        })
+        old_health = self.player_avatar.health
+        self.vision_controller.handle_actions(self.player_avatar, self.attacking_bot, board)
+        self.attack_controller.handle_actions(
+            ActionType.ATTACK_LEFT,
+            self.target_player,
+            board,
+            self.attacking_bot,
+        )
+        self.assertLess(self.player_avatar.health, old_health)
