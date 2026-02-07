@@ -39,7 +39,6 @@ class Client(UserClient):
         """
 
         # Setup vars
-        action1 = action2 = None # Yes this is needed
         position = avatar.position
 
         # Calc goal
