@@ -1,52 +1,17 @@
 {
 	"players": [
 		{
-			"id": "1c85c613-0065-4914-9d73-09f38c0774f0",
+			"id": "c7ede85a-a45f-4c01-8e31-85d04117d84c",
 			"object_type": 3,
 			"state": "idle",
 			"__class__": "Player",
-			"functional": true,
-			"error": null,
+			"functional": false,
+			"error": "Player has attempted illegal imports: ['pathfinding']",
 			"team_name": "Participation Trophy",
 			"file_name": "base_client",
-			"actions": [
-				3,
-				5
-			],
-			"avatar": {
-				"id": "dbb7c1f7-7e4a-4689-81af-31ad74fc2c9d",
-				"object_type": 4,
-				"state": "idle",
-				"__class__": "Avatar",
-				"held_index": 0,
-				"held_item": null,
-				"score": 10000,
-				"position": {
-					"id": "1b0d3142-5a05-4e10-8831-033846db6d64",
-					"object_type": 6,
-					"state": "idle",
-					"__class__": "Vector",
-					"x": 8,
-					"y": 8
-				},
-				"inventory": [
-					null,
-					null,
-					null,
-					null,
-					null,
-					null,
-					null,
-					null,
-					null,
-					null
-				],
-				"max_inventory_size": 10,
-				"scrap": 0,
-				"health": 3,
-				"power": 0,
-				"direction": "right"
-			}
+			"actions": [],
+			"avatar": null
 		}
-	]
+	],
+	"reason": "Client_error (Number of clients is not the set value.\nNumber of clients: 0  |  Set number: 1)"
 }
