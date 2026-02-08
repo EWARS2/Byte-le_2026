@@ -61,6 +61,7 @@ class Client(UserClient):
             #                 + self.positions_generators
 
             # Get POI
+            self.poi.append(self.find_closest(self.positions_battery, avatar))
             self.poi.append(self.find_closest(self.positions_coins, avatar))
             self.poi.append(self.find_closest(self.positions_scrap, avatar))
             self.poi.append(self.find_closest(self.positions_generators, avatar))
@@ -82,7 +83,7 @@ class Client(UserClient):
             else:
                 self.goal = self.poi[self.cycle]
                 self.cycle += 1
-                if self.cycle >= 3: # TODO: Hardcoded
+                if self.cycle >= 4: # TODO: Hardcoded
                     self.cycle = 0
 
 
