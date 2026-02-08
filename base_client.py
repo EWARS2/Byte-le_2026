@@ -78,13 +78,13 @@ class Client(UserClient):
             retarget = False
             self.keepalive = 25
 
-            if avatar.power < 35:
-                self.goal = self.find_closest(self.positions_battery, avatar)
-            else:
-                self.goal = self.poi[self.cycle]
-                self.cycle += 1
-                if self.cycle >= 4: # TODO: Hardcoded
-                    self.cycle = 0
+            #if avatar.power < 35:
+            #    self.goal = self.find_closest(self.positions_battery, avatar)
+            #else:
+            self.goal = self.poi[self.cycle]
+            self.cycle += 1
+            if self.cycle >= 4: # TODO: Hardcoded
+                self.cycle = 0
 
 
 
