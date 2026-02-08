@@ -21,14 +21,16 @@ retarget = True
 class Client(UserClient):
     def __init__(self):
         super().__init__()
-        self.goal = None
-        self.positions = []
+        self.goal = Vector(0,0)
+        #self.positions = []
         self.positions_battery = None
         self.positions_coins = None
         self.positions_scrap = None
         self.positions_generators = None
         self.positions_refuges = None
         self.keepalive = 25
+        self.cycle = 0
+        self.poi = []
 
     def team_name(self) -> str:
         """
@@ -49,13 +51,20 @@ class Client(UserClient):
 
         # Collect constants
         if turn == 1:
+            # Get lists
             self.positions_battery = list(world.get_objects(ObjectType.BATTERY_SPAWNER))
             self.positions_coins = list(world.get_objects(ObjectType.COIN_SPAWNER))
             self.positions_scrap = list(world.get_objects(ObjectType.SCRAP_SPAWNER))
             self.positions_generators = list(world.get_objects(ObjectType.GENERATOR))
             #self.positions_refuges = list(world.get_objects(ObjectType.REFUGE))
-            self.positions = self.positions_battery + self.positions_coins + self.positions_scrap\
-                             + self.positions_generators
+            #self.positions = self.positions_battery + self.positions_coins + self.positions_scrap\
+            #                 + self.positions_generators
+
+            # Get POI
+            self.poi.append(self.find_closest(self.positions_coins, avatar))
+            self.poi.append(self.find_closest(self.positions_scrap, avatar))
+            self.poi.append(self.find_closest(self.positions_generators, avatar))
+
 
         # Setup vars
         position = avatar.position
@@ -69,9 +78,14 @@ class Client(UserClient):
             self.keepalive = 25
 
             if avatar.power < 35:
-                self.update_target(self.positions_battery, avatar)
+                self.goal = self.find_closest(self.positions_battery, avatar)
             else:
-                self.goal = random.choice(self.positions)
+                self.goal = self.poi[self.cycle]
+                self.cycle += 1
+                if self.cycle >= 3: # TODO: Hardcoded
+                    self.cycle = 0
+
+
 
 
 
@@ -82,14 +96,15 @@ class Client(UserClient):
         action2, position = a_star_move(position, self.goal, world, game_object=avatar)
         return [action1, action2]
 
-    def update_target(self, positions, avatar: Avatar):
+    def find_closest(self, positions, avatar: Avatar):
         position = avatar.position
-        self.goal = positions[0]
+        closest = positions[0]
         for i in positions:
             distance_i = position.distance(i)
-            if distance_i < position.distance(self.goal) and distance_i != 0:
-                self.goal = i
-        return
+            if distance_i < position.distance(closest) and distance_i != 0:
+                closest = i
+        return closest
+
 
 def a_star_move(start: Vector, goal: Vector, world, allow_vents: bool = True, game_object: GameObject | None = None) -> \
 tuple[Literal[ActionType.INTERACT_CENTER], Vector] | tuple[Any, Vector]:
