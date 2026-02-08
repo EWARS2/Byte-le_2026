@@ -57,13 +57,15 @@ class Client(UserClient):
         position = avatar.position
 
         # Calc goal
-        if retarget or len(world.get(position).get_objects(ObjectType.BATTERY_SPAWNER)) > 0:
+        top = world.get_top(position)
+        if retarget or self.goal == position:
+            # top.object_type in [ObjectType.BATTERY_SPAWNER]
             retarget = False
-            self.goal = self.positions_battery[0]
-            for i in self.positions_battery:
-                distance_i = position.distance(i)
-                if distance_i < position.distance(self.goal) and distance_i != 0:
-                    self.goal = i
+
+            targets = [self.positions_battery, self.positions_coins, self.positions_scrap, self.positions_generators]
+
+            positions = self.positions_battery
+            self.update_target(positions, avatar)
 
 
 
@@ -73,6 +75,15 @@ class Client(UserClient):
         # Calc action2
         action2, position = a_star_move(position, self.goal, world, game_object=avatar)
         return [action1, action2]
+
+    def update_target(self, positions, avatar: Avatar):
+        position = avatar.position
+        self.goal = positions[0]
+        for i in positions:
+            distance_i = position.distance(i)
+            if distance_i < position.distance(self.goal) and distance_i != 0:
+                self.goal = i
+        return
 
 def a_star_move(start: Vector, goal: Vector, world, allow_vents: bool = True, game_object: GameObject | None = None) -> \
 tuple[Literal[ActionType.INTERACT_CENTER], Vector] | tuple[Any, Vector]:
@@ -99,19 +110,20 @@ tuple[Literal[ActionType.INTERACT_CENTER], Vector] | tuple[Any, Vector]:
             closest = i
 
     # Get distance
-    dist = start.add_to_vector(closest.negative())
-    abs_dist = sqrt(dist.as_tuple()[0] ** 2 + dist.as_tuple()[1] ** 2)
+    #dist = start.add_to_vector(closest.negative())
+    #abs_dist = sqrt(dist.as_tuple()[0] ** 2 + dist.as_tuple()[1] ** 2)
     # TODO : This potentially can be sped up
+    dist = start.distance(closest)
 
-    if abs_dist <= _tol: # Avoid enemy
-        direction = (start - closest) - (goal - start)
+    if dist <= _tol: # Avoid enemy
+        direction = (start - closest) #+ (goal - start)
         my_x, my_y = direction.as_tuple()
         abs_x = abs(my_x)
         abs_y = abs(my_y)
         if abs_x > abs_y:
-            direction = Vector(int(my_x/abs_x), 0)
+            direction = Vector(0, int(my_x/abs_x))
         else:
-            direction = Vector(0, int(my_y/abs_y))
+            direction = Vector(int(my_y/abs_y), 0)
         action = DIRECTION_TO_MOVE.get(direction)
         return action, start + direction
     elif not path or len(path) < 2: # Reached goal
@@ -154,8 +166,8 @@ def a_star_path(start: Vector, goal: Vector, world, allow_vents = True, game_obj
             top = world.get_top(vec)
             if top and top.object_type != ObjectType.AVATAR:
                 # vents block unless allowed
-                #if top.object_type == ObjectType.VENT and not allow_vents:
-                #    continue
+                if top.object_type == ObjectType.VENT and not allow_vents:
+                    continue
 
                 # can't pass through non-occupiable
                 if not isinstance(top, Occupiable):
