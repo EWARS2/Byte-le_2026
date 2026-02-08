@@ -1,256 +1,197 @@
 from game.client.user_client import UserClient
 from game.common.avatar import Avatar
-from game.common.enums import ObjectType#, ActionType
+from game.common.enums import ObjectType, ActionType
 from game.common.map.game_board import GameBoard
-from game.constants import *
-# Sample custom imports
-import heapq
-from typing import List, Tuple, Optional, Any, Literal#, Dict
 from game.common.game_object import GameObject
 from game.common.map.occupiable import Occupiable
+from game.constants import DIRECTION_TO_MOVE
 from game.utils.vector import Vector
-# Custom imports
-from math import sqrt
-import random
 
-Position = Tuple[int, int]
+import heapq
+from typing import List, Tuple, Optional
+
+# -------------------------
+# CONFIG
+# -------------------------
+
+LOW_POWER = 30
+OPPORTUNITY_RADIUS = 3
+
+BASE_VALUES = {
+    ObjectType.BATTERY: 1200,
+    ObjectType.COIN: 500,
+    ObjectType.SCRAP: 800,
+    ObjectType.GENERATOR: 2000
+}
+
 DIRECTIONS = [(1,0), (-1,0), (0,1), (0,-1)]
-_tol = 4
-retarget = True
+
+# -------------------------
+# CLIENT
+# -------------------------
 
 class Client(UserClient):
-    def __init__(self):
-        super().__init__()
-        self.goal = Vector(0,0)
-        self.positions = []
-        self.positions_battery = None
-        self.positions_coins = None
-        self.positions_scrap = None
-        self.positions_generators = None
-        self.positions_refuges = None
-        self.keepalive = 25
-        self.cycle = 0
-        self.poi = []
 
-    def team_name(self) -> str:
-        """
-        Allows the team to set a team name.
-        :return: Your team name
-        """
-        return "Participation Trophy"
+    def team_name(self):
+        return "Strategic Survivors"
 
-    def take_turn(self, turn: int, world: GameBoard, avatar: Avatar) -> list[ActionType]:
-        """
-        This is where your AI will decide what to do.
-        :param avatar:
-        :param turn:        The current turn of the game.
-        :param actions:     This is the actions object that you will add effort allocations or decrees to.
-        :param world:       Generic world information
-        """
-        global retarget
+    def take_turn(self, turn: int, world: GameBoard, avatar: Avatar):
 
-        # Collect constants
-        if turn == 1:
-            # Get lists
-            self.positions_battery = list(world.get_objects(ObjectType.BATTERY_SPAWNER))
-            self.positions_coins = list(world.get_objects(ObjectType.COIN_SPAWNER))
-            self.positions_scrap = list(world.get_objects(ObjectType.SCRAP_SPAWNER))
-            self.positions_generators = list(world.get_objects(ObjectType.GENERATOR))
-            #self.positions_refuges = list(world.get_objects(ObjectType.REFUGE))
-            self.positions = self.positions_battery + self.positions_coins + self.positions_scrap\
-                             + self.positions_generators
+        self.avatar = avatar
+        self.world = world
 
-            # Get POI
-            self.poi.append(self.find_closest(self.positions_battery, avatar))
-            self.poi.append(self.find_closest(self.positions_coins, avatar))
-            self.poi.append(self.find_closest(self.positions_scrap, avatar))
-            self.poi.append(self.find_closest(self.positions_generators, avatar))
-            for i in self.poi:
-                print(i)
+        self.scan_world()
+        goal = self.choose_goal()
 
+        # Opportunistic coin grab
+        micro = self.find_nearby(ObjectType.COIN, OPPORTUNITY_RADIUS)
+        if micro:
+            goal = micro
 
-        # Setup vars
-        position = avatar.position
-        self.keepalive -= 1
+        action1, pos = a_star_move(avatar.position, goal, world, avatar)
+        action2, pos = a_star_move(pos, goal, world, avatar)
 
-
-        # Calc goal
-        #top = world.get_top(position)
-        if retarget or self.goal == position or self.keepalive <= 1:
-            retarget = False
-            self.keepalive = 25
-            """
-            if self.cycle == 3: # If goal was generator
-                top = world.get_top(position.add_y(-1))
-                if top.object_type == ObjectType.GENERATOR:
-                    action1 = ActionType.INTERACT_UP
-                top = world.get_top(position.add_y(1))
-                if top.object_type == ObjectType.GENERATOR:
-                    action1 = ActionType.INTERACT_DOWN
-                top = world.get_top(position.add_x(1))
-                if top.object_type == ObjectType.GENERATOR:
-                    action1 = ActionType.INTERACT_RIGHT
-                top = world.get_top(position.add_x(-1))
-                if top.object_type == ObjectType.GENERATOR:
-                    action1 = ActionType.INTERACT_LEFT
-                action2, position = a_star_move(position, self.goal, world, game_object=avatar)
-                return [action1, action2]
-            """
-            #if avatar.power < 35:
-            #    self.goal = self.find_closest(self.positions_battery, avatar)
-            #else:
-            self.goal = self.poi[self.cycle]
-            self.cycle += 1
-            if self.cycle >= 4: # TODO: Hardcoded
-                self.goal = self.find_closest(self.positions, avatar)
-                self.cycle = 0
-
-
-
-
-        if turn in [1, 2, 3, 4, 5, 6]:
-            action1 = ActionType.MOVE_DOWN
-            action2 = ActionType.MOVE_RIGHT
-        elif turn == 7:
-            action1 = ActionType.MOVE_DOWN
-            action2 = ActionType.INTERACT_CENTER
-        elif turn in [8, 9]:
-            action1 = ActionType.MOVE_LEFT
-            action2 = ActionType.MOVE_LEFT
-        elif turn == 10:
-            action1 = ActionType.MOVE_LEFT
-            action2 = ActionType.INTERACT_LEFT
-        elif turn in [11, 12]:
-            action1 = ActionType.MOVE_RIGHT
-            action2 = ActionType.MOVE_UP
-
-        elif turn in [13,14, 15, 16]: # TO COLLECT SECOND COIN, CONSIDERED UNSAFE
-            action1 = ActionType.MOVE_RIGHT
-            action2 = ActionType.MOVE_UP
-        elif turn in [17, 18, 19]:
-            action1 = ActionType.MOVE_RIGHT
-            action2 = ActionType.MOVE_RIGHT
-        else:
-            # Calc action1
-            action1, position = a_star_move(position, self.goal, world, game_object=avatar)
-            # Calc action2
-            action2, position = a_star_move(position, self.goal, world, game_object=avatar)
         return [action1, action2]
 
-    def find_closest(self, positions, avatar: Avatar):
-        position = avatar.position
-        closest = positions[0]
-        for i in positions:
-            distance_i = position.distance(i)
-            if distance_i < position.distance(closest) and distance_i != 0:
-                closest = i
-        return closest
+    # -------------------------
+    # WORLD SCAN
+    # -------------------------
 
+    def scan_world(self):
+        self.batteries = list(self.world.get_objects(ObjectType.BATTERY))
+        self.coins = list(self.world.get_objects(ObjectType.COIN))
+        self.scrap = list(self.world.get_objects(ObjectType.SCRAP))
+        self.generators = list(self.world.get_objects(ObjectType.GENERATOR))
+        self.enemies = []
+        self.enemies += list(self.world.get_objects(ObjectType.IAN_BOT))
+        self.enemies += list(self.world.get_objects(ObjectType.JUMPER_BOT))
+        self.enemies += list(self.world.get_objects(ObjectType.CRAWLER_BOT))
+        self.enemies += list(self.world.get_objects(ObjectType.DUMB_BOT))
 
-def a_star_move(start: Vector, goal: Vector, world, allow_vents: bool = True, game_object: GameObject | None = None) -> \
-tuple[Literal[ActionType.INTERACT_CENTER], Vector] | tuple[Any, Vector]:
-    path = a_star_path(
-        start=start,
-        goal=goal,
-        world=world,
-        allow_vents=allow_vents,
-        game_object=game_object
-    )
+    # -------------------------
+    # GOAL SELECTION
+    # -------------------------
 
-    # Get list of objects to avoid
-    enemies = world.get_objects(ObjectType.IAN_BOT)
-    enemies.update(world.get_objects(ObjectType.JUMPER_BOT))
-    enemies.update(world.get_objects(ObjectType.DUMB_BOT))
-    enemies.update(world.get_objects(ObjectType.CRAWLER_BOT))
-    enemies = list(enemies)
+    def choose_goal(self):
 
-    # Find closest enemy
-    closest = enemies[0]
-    for i in enemies:
-        distance_i = start.distance(i)
-        if distance_i < start.distance(closest):
-            closest = i
+        candidates = []
 
-    # Get distance
-    #dist = start.add_to_vector(closest.negative())
-    #abs_dist = sqrt(dist.as_tuple()[0] ** 2 + dist.as_tuple()[1] ** 2)
-    # TODO : This potentially can be sped up
-    dist = start.distance(closest)
+        if self.avatar.power < LOW_POWER:
+            candidates += self.batteries
 
-    if dist <= _tol: # Avoid enemy
-        direction = (start - closest) - (goal - start)
-        my_x, my_y = direction.as_tuple()
-        abs_x = abs(my_x)
-        abs_y = abs(my_y)
-        if abs_x > abs_y:
-            direction = Vector(int(my_x/abs_x), 0)
-        else:
-            direction = Vector(0, int(my_y/abs_y))
-        action = DIRECTION_TO_MOVE.get(direction)
+        candidates += self.scrap
+        candidates += self.generators
+        candidates += self.coins
+        candidates += self.batteries
 
-        # If cornered, strafe
-        top = world.get_top(start + direction)
-        if not isinstance(top, Occupiable):
-            if abs_x < abs_y:
-                direction = Vector(int(my_x / abs_x), 0)
-            else:
-                direction = Vector(0, int(my_y / abs_y))
-            action = DIRECTION_TO_MOVE.get(direction)
+        best = None
+        best_score = -999999
 
-        return action, start + direction
-    elif not path or len(path) < 2: # Reached goal
+        for obj in candidates:
+            dist = self.avatar.position.distance(obj)
+            value = BASE_VALUES[obj.object_type]
+
+            # Dynamic weights
+            if obj.object_type == ObjectType.BATTERY and self.avatar.power < LOW_POWER:
+                value *= 3
+
+            if obj.object_type == ObjectType.GENERATOR:
+                value *= 2
+
+            score = value / (dist + 1)
+
+            if score > best_score:
+                best_score = score
+                best = obj
+
+        return best
+
+    # -------------------------
+    # MICRO TARGET
+    # -------------------------
+
+    def find_nearby(self, obj_type, radius):
+        for obj in self.world.get_objects(obj_type):
+            if self.avatar.position.distance(obj) <= radius:
+                return obj
+        return None
+
+# -------------------------
+# PATHFINDING
+# -------------------------
+
+def a_star_move(start, goal, world, avatar):
+
+    path = danger_a_star(start, goal, world, avatar)
+
+    if not path or len(path) < 2:
         return ActionType.INTERACT_CENTER, start
-    else: # Take step
-        next_step: Vector = path[1]
-        direction = next_step - start
-        action = DIRECTION_TO_MOVE.get(direction)
-        return action, start + direction
 
-def a_star_path(start: Vector, goal: Vector, world, allow_vents = True, game_object: GameObject | None = None) -> Optional[List[Vector]]:
-    start_p = (start.x, start.y)
-    goal_p = (goal.x, goal.y)
+    step = path[1]
+    direction = step - start
+    return DIRECTION_TO_MOVE[direction], step
+
+
+def danger_a_star(start, goal, world, avatar):
+
+    start_p = start.as_tuple()
+    goal_p = goal.as_tuple()
 
     frontier = [(0, start_p)]
     came_from = {start_p: None}
     cost = {start_p: 0}
 
+    enemies = []
+    enemies += list(world.get_objects(ObjectType.IAN_BOT))
+    enemies += list(world.get_objects(ObjectType.JUMPER_BOT))
+    enemies += list(world.get_objects(ObjectType.CRAWLER_BOT))
+    enemies += list(world.get_objects(ObjectType.DUMB_BOT))
+
     while frontier:
         _, current = heapq.heappop(frontier)
 
         if current == goal_p:
-            path = []
-            while current is not None:
-                x, y = current
-                path.insert(0, Vector(x, y))
-                current = came_from[current]
-            return path
+            return reconstruct(came_from, current)
 
-        for dx, dy in DIRECTIONS:
-            nxt = (current[0] + dx, current[1] + dy)
-            vec = Vector(nxt[0], nxt[1])
-
-            if game_object is not None and not world.can_object_occupy(vec, game_object):
-                continue
+        for dx,dy in DIRECTIONS:
+            nx,ny = current[0]+dx, current[1]+dy
+            vec = Vector(nx,ny)
 
             if not world.is_valid_coords(vec):
                 continue
 
+            if not world.can_object_occupy(vec, avatar):
+                continue
+
             top = world.get_top(vec)
-            if top and top.object_type != ObjectType.AVATAR:
-                # vents block unless allowed
-                if top.object_type == ObjectType.VENT and not allow_vents:
-                    continue
+            if top and not isinstance(top, Occupiable):
+                continue
 
-                # can't pass through non-occupiable
-                if not isinstance(top, Occupiable):
-                    continue
+            danger = danger_cost(vec, enemies)
+            new_cost = cost[current] + 1 + danger
 
-
-            new_cost = cost[current] + 1
-            if nxt not in cost or new_cost < cost[nxt]:
-                cost[nxt] = new_cost
+            if (nx,ny) not in cost or new_cost < cost[(nx,ny)]:
+                cost[(nx,ny)] = new_cost
                 priority = new_cost + vec.distance(goal)
-                heapq.heappush(frontier, (priority, nxt))
-                came_from[nxt] = current
+                heapq.heappush(frontier,(priority,(nx,ny)))
+                came_from[(nx,ny)] = current
 
     return None
+
+
+def danger_cost(tile, enemies):
+    cost = 0
+    for e in enemies:
+        d = tile.distance(e)
+        if d <= 1: cost += 50
+        elif d <= 3: cost += 10
+    return cost
+
+
+def reconstruct(came_from, cur):
+    path=[]
+    while cur:
+        path.append(Vector(cur[0],cur[1]))
+        cur=came_from[cur]
+    path.reverse()
+    return path
