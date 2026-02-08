@@ -12,7 +12,10 @@ from game.utils.vector import Vector
 # Custom imports
 from math import sqrt
 
-_tol = 3 * sqrt(2)
+Position = Tuple[int, int]
+DIRECTIONS = [(1,0), (-1,0), (0,1), (0,-1)]
+_tol = 3
+retarget = True
 
 class Client(UserClient):
     def __init__(self):
@@ -51,22 +54,11 @@ class Client(UserClient):
         position = avatar.position
 
         # Calc goal
-        if self.goal is None or len(world.get(position).get_objects(ObjectType.BATTERY_SPAWNER)) > 0:
-            #self.goal = self.positions_battery[0]
-
-
-
-            self.goal = self.positions_battery[self.test]
-            self.test += 1
-            if self.test >= len(self.positions_battery):
-                self.test = 0
-
-            """
+        if retarget or len(world.get(position).get_objects(ObjectType.BATTERY_SPAWNER)) > 0:
             for i in self.positions_battery:
                 distance_i = position.distance(i)
                 if distance_i < position.distance(self.goal) and distance_i != 0:
                     self.goal = i
-            """
 
 
 
@@ -76,10 +68,6 @@ class Client(UserClient):
         # Calc action2
         action2, position = a_star_move(position, self.goal, world, game_object=avatar)
         return [action1, action2]
-
-
-Position = Tuple[int, int]
-DIRECTIONS = [(1,0), (-1,0), (0,1), (0,-1)]
 
 def a_star_move(start: Vector, goal: Vector, world, allow_vents: bool = True, game_object: GameObject | None = None) -> \
 tuple[Literal[ActionType.INTERACT_CENTER], Vector] | tuple[Any, Vector]:
@@ -108,24 +96,22 @@ tuple[Literal[ActionType.INTERACT_CENTER], Vector] | tuple[Any, Vector]:
     # Get distance
     dist = start.add_to_vector(closest.negative())
     abs_dist = sqrt(dist.as_tuple()[0] ** 2 + dist.as_tuple()[1] ** 2)
-    # TODO : This can be sped up
+    # TODO : This potentially can be sped up
 
-    if abs_dist <= _tol:
-
-        direction = ((goal - start) + (start - closest))
-
+    if abs_dist <= _tol: # Avoid enemy
+        direction = (start - closest) - (goal - start)
         myX, myY = direction.as_tuple()
-        absX = abs(myX) / 2
-        absY = abs(myY) / 2
+        absX = abs(myX)
+        absY = abs(myY)
         if absX > absY:
             direction = Vector(int(myX/absX), 0)
         else:
             direction = Vector(0, int(myY/absY))
         action = DIRECTION_TO_MOVE.get(direction)
         return action, start + direction
-    if not path or len(path) < 2: # Reached goal
+    elif not path or len(path) < 2: # Reached goal
         return ActionType.INTERACT_CENTER, start
-    else:
+    else: # Take step
         next_step: Vector = path[1]
         direction = next_step - start
         action = DIRECTION_TO_MOVE.get(direction)

@@ -1,29 +1,32 @@
 {
 	"players": [
 		{
-			"id": "7b1adc21-599e-4361-b5eb-f9e7bbe5c047",
+			"id": "8ed64ef3-b37d-428c-90ae-1b36bc2a79b2",
 			"object_type": 3,
 			"state": "idle",
 			"__class__": "Player",
-			"functional": false,
-			"error": "Traceback (most recent call last):\n  File \"C:\\Users\\EWARS_2\\Documents\\Projects\\Byte-le_2026\\launcher.pyz\\game\\utils\\thread.py\", line 25, in run\n    self.result = self.func(*self.args)\n                  ~~~~~~~~~^^^^^^^^^^^^\n  File \"C:\\Users\\EWARS_2\\Documents\\Projects\\Byte-le_2026/.\\base_client.py\", line 77, in take_turn\n    action2, position = a_star_move(position, self.goal, world, game_object=avatar)\n                        ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\EWARS_2\\Documents\\Projects\\Byte-le_2026/.\\base_client.py\", line 115, in a_star_move\n    direction = ((goal - start) + (start - closest)) / 2\n                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\nTypeError: unsupported operand type(s) for /: 'Vector' and 'int'\n",
+			"functional": true,
+			"error": null,
 			"team_name": "Participation Trophy",
 			"file_name": "base_client",
-			"actions": [],
+			"actions": [
+				4,
+				4
+			],
 			"avatar": {
 				"id": "a5ef28bb-e0c0-4f92-98f2-18cac23a5614",
 				"object_type": 4,
-				"state": "idle",
+				"state": "hurt",
 				"__class__": "Avatar",
 				"held_index": 0,
 				"held_item": null,
-				"score": 1200,
+				"score": 4900,
 				"position": {
-					"id": "35541f0d-c114-4bd8-95cf-80cc68b2bf98",
+					"id": "db9fe8a1-6f03-45af-8786-853375803a3f",
 					"object_type": 6,
 					"state": "idle",
 					"__class__": "Vector",
-					"x": 24,
+					"x": 22,
 					"y": 6
 				},
 				"inventory": [
@@ -40,11 +43,10 @@
 				],
 				"max_inventory_size": 10,
 				"scrap": 0,
-				"health": 3,
-				"power": 86,
-				"direction": "right"
+				"health": 0,
+				"power": 49,
+				"direction": "left"
 			}
 		}
-	],
-	"reason": "Client_error (Number of clients is not the set value.\nNumber of clients: 0  |  Set number: 1)"
+	]
 }
