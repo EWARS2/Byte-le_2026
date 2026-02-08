@@ -65,6 +65,8 @@ class Client(UserClient):
             self.poi.append(self.find_closest(self.positions_coins, avatar))
             self.poi.append(self.find_closest(self.positions_scrap, avatar))
             self.poi.append(self.find_closest(self.positions_generators, avatar))
+            for i in self.poi:
+                print(i)
 
 
         # Setup vars
@@ -89,12 +91,34 @@ class Client(UserClient):
 
 
 
+        if turn in [1, 2, 3, 4, 5, 6]:
+            action1 = ActionType.MOVE_DOWN
+            action2 = ActionType.MOVE_RIGHT
+        elif turn == 7:
+            action1 = ActionType.MOVE_DOWN
+            action2 = ActionType.INTERACT_CENTER
+        elif turn in [8, 9]:
+            action1 = ActionType.MOVE_LEFT
+            action2 = ActionType.MOVE_LEFT
+        elif turn == 10:
+            action1 = ActionType.MOVE_LEFT
+            action2 = ActionType.INTERACT_LEFT
+        elif turn in [11, 12]:
+            action1 = ActionType.MOVE_RIGHT
+            action2 = ActionType.MOVE_UP
 
-
-        # Calc action1
-        action1, position = a_star_move(position, self.goal, world, game_object=avatar)
-        # Calc action2
-        action2, position = a_star_move(position, self.goal, world, game_object=avatar)
+        # TO COLLECT SECOND COIN, CONSIDERED UNSAFE
+        elif turn in [13,14, 15, 16]:
+            action1 = ActionType.MOVE_RIGHT
+            action2 = ActionType.MOVE_UP
+        elif turn in [17, 18, 19]:
+            action1 = ActionType.MOVE_RIGHT
+            action2 = ActionType.MOVE_RIGHT
+        else:
+            # Calc action1
+            action1, position = a_star_move(position, self.goal, world, game_object=avatar)
+            # Calc action2
+            action2, position = a_star_move(position, self.goal, world, game_object=avatar)
         return [action1, action2]
 
     def find_closest(self, positions, avatar: Avatar):
