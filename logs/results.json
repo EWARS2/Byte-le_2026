@@ -1,7 +1,7 @@
 {
 	"players": [
 		{
-			"id": "5e8f973f-24f2-40c6-9716-9007c4517037",
+			"id": "de952cc9-6c84-4056-a2c5-def61588ccd5",
 			"object_type": 3,
 			"state": "idle",
 			"__class__": "Player",
@@ -10,8 +10,8 @@
 			"team_name": "Participation Trophy",
 			"file_name": "base_client",
 			"actions": [
-				4,
-				4
+				2,
+				2
 			],
 			"avatar": {
 				"id": "a5ef28bb-e0c0-4f92-98f2-18cac23a5614",
@@ -19,36 +19,18 @@
 				"state": "hurt",
 				"__class__": "Avatar",
 				"held_index": 0,
-				"held_item": {
-					"id": "2a5ad436-3744-4241-90b1-0c4306f06147",
-					"object_type": 18,
-					"state": "idle",
-					"__class__": "Scrap",
-					"stack_size": 10,
-					"durability": null,
-					"value": 1,
-					"quantity": 3
-				},
-				"score": 6800,
+				"held_item": null,
+				"score": 5100,
 				"position": {
-					"id": "bb29b6e1-29ba-4d01-9faf-c1e1e6c627a5",
+					"id": "9a3d7622-422e-4c6f-83f5-b9e6366295ba",
 					"object_type": 6,
 					"state": "idle",
 					"__class__": "Vector",
-					"x": 13,
-					"y": 10
+					"x": 19,
+					"y": 6
 				},
 				"inventory": [
-					{
-						"id": "2a5ad436-3744-4241-90b1-0c4306f06147",
-						"object_type": 18,
-						"state": "idle",
-						"__class__": "Scrap",
-						"stack_size": 10,
-						"durability": null,
-						"value": 1,
-						"quantity": 3
-					},
+					null,
 					null,
 					null,
 					null,
@@ -60,10 +42,10 @@
 					null
 				],
 				"max_inventory_size": 10,
-				"scrap": 3,
+				"scrap": 0,
 				"health": 0,
-				"power": 43,
-				"direction": "left"
+				"power": 76,
+				"direction": "up"
 			}
 		}
 	]

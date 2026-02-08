@@ -25,6 +25,7 @@ class Client(UserClient):
         self.positions_coins = None
         self.positions_scrap = None
         self.positions_generators = None
+        self.positions_refuges = None
         self.test = 0
 
     def team_name(self) -> str:
@@ -50,6 +51,7 @@ class Client(UserClient):
             self.positions_coins = list(world.get_objects(ObjectType.COIN_SPAWNER))
             self.positions_scrap = list(world.get_objects(ObjectType.SCRAP_SPAWNER))
             self.positions_generators = list(world.get_objects(ObjectType.GENERATOR))
+            self.positions_refuges = list(world.get_objects(ObjectType.REFUGE))
 
         # Setup vars
         position = avatar.position
