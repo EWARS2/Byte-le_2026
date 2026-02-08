@@ -116,15 +116,23 @@ tuple[Literal[ActionType.INTERACT_CENTER], Vector] | tuple[Any, Vector]:
     dist = start.distance(closest)
 
     if dist <= _tol: # Avoid enemy
-        direction = (start - closest) #+ (goal - start)
+        direction = (start - closest) - (goal - start)
         my_x, my_y = direction.as_tuple()
         abs_x = abs(my_x)
         abs_y = abs(my_y)
         if abs_x > abs_y:
-            direction = Vector(0, -int(my_x/abs_x))
+            direction = Vector(int(my_x/abs_x), 0)
         else:
-            direction = Vector(-int(my_y/abs_y), 0)
+            direction = Vector(0, int(my_y/abs_y))
         action = DIRECTION_TO_MOVE.get(direction)
+
+        # If cornered, strafe
+        top = world.get_top(start + direction)
+        if not isinstance(top, Occupiable):
+            my_x, my_y = direction.as_tuple()
+            direction = Vector(my_y, my_x)
+            action = DIRECTION_TO_MOVE.get(direction)
+
         return action, start + direction
     elif not path or len(path) < 2: # Reached goal
         return ActionType.INTERACT_CENTER, start
