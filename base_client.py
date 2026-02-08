@@ -53,9 +53,9 @@ class Client(UserClient):
             self.positions_coins = list(world.get_objects(ObjectType.COIN_SPAWNER))
             self.positions_scrap = list(world.get_objects(ObjectType.SCRAP_SPAWNER))
             self.positions_generators = list(world.get_objects(ObjectType.GENERATOR))
-            self.positions_refuges = list(world.get_objects(ObjectType.REFUGE))
+            #self.positions_refuges = list(world.get_objects(ObjectType.REFUGE))
             self.positions = self.positions_battery + self.positions_coins + self.positions_scrap\
-                             + self.positions_generators + self.positions_refuges
+                             + self.positions_generators
 
         # Setup vars
         position = avatar.position
@@ -63,9 +63,8 @@ class Client(UserClient):
 
 
         # Calc goal
-        top = world.get_top(position)
+        #top = world.get_top(position)
         if retarget or self.goal == position or self.keepalive <= 1:
-            # top.object_type in [ObjectType.BATTERY_SPAWNER]
             retarget = False
             self.keepalive = 25
 
