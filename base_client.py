@@ -112,11 +112,11 @@ tuple[Literal[ActionType.INTERACT_CENTER], Vector] | tuple[Any, Vector]:
 
     if abs_dist <= _tol:
 
-        direction = ((goal - start) + (start - closest)) / 2
+        direction = ((goal - start) + (start - closest))
 
         myX, myY = direction.as_tuple()
-        absX = abs(myX)
-        absY = abs(myY)
+        absX = abs(myX) / 2
+        absY = abs(myY) / 2
         if absX > absY:
             direction = Vector(int(myX/absX), 0)
         else:

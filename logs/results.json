@@ -1,12 +1,12 @@
 {
 	"players": [
 		{
-			"id": "0a0d2e5d-1975-49b1-a36f-ad8da6983e58",
+			"id": "7b1adc21-599e-4361-b5eb-f9e7bbe5c047",
 			"object_type": 3,
 			"state": "idle",
 			"__class__": "Player",
 			"functional": false,
-			"error": "0a0d2e5d-1975-49b1-a36f-ad8da6983e58 failed to reply in time and has been dropped.",
+			"error": "Traceback (most recent call last):\n  File \"C:\\Users\\EWARS_2\\Documents\\Projects\\Byte-le_2026\\launcher.pyz\\game\\utils\\thread.py\", line 25, in run\n    self.result = self.func(*self.args)\n                  ~~~~~~~~~^^^^^^^^^^^^\n  File \"C:\\Users\\EWARS_2\\Documents\\Projects\\Byte-le_2026/.\\base_client.py\", line 77, in take_turn\n    action2, position = a_star_move(position, self.goal, world, game_object=avatar)\n                        ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\EWARS_2\\Documents\\Projects\\Byte-le_2026/.\\base_client.py\", line 115, in a_star_move\n    direction = ((goal - start) + (start - closest)) / 2\n                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\nTypeError: unsupported operand type(s) for /: 'Vector' and 'int'\n",
 			"team_name": "Participation Trophy",
 			"file_name": "base_client",
 			"actions": [],
@@ -17,9 +17,9 @@
 				"__class__": "Avatar",
 				"held_index": 0,
 				"held_item": null,
-				"score": 4900,
+				"score": 1200,
 				"position": {
-					"id": "c2e14d7f-cb25-453e-b738-f0ac0d438b32",
+					"id": "35541f0d-c114-4bd8-95cf-80cc68b2bf98",
 					"object_type": 6,
 					"state": "idle",
 					"__class__": "Vector",
@@ -41,8 +41,8 @@
 				"max_inventory_size": 10,
 				"scrap": 0,
 				"health": 3,
-				"power": 49,
-				"direction": "left"
+				"power": 86,
+				"direction": "right"
 			}
 		}
 	],
