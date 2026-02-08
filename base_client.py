@@ -7,6 +7,7 @@ from game.common.map.occupiable import Occupiable
 from game.constants import DIRECTION_TO_MOVE
 from game.utils.vector import Vector
 
+import random
 import heapq
 from typing import List, Tuple, Optional
 
@@ -18,9 +19,9 @@ LOW_POWER = 30
 OPPORTUNITY_RADIUS = 3
 
 BASE_VALUES = {
-    ObjectType.BATTERY: 1200,
-    ObjectType.COIN: 500,
-    ObjectType.SCRAP: 800,
+    ObjectType.BATTERY_SPAWNER: 1200,
+    ObjectType.COIN_SPAWNER: 500,
+    ObjectType.SCRAP_SPAWNER: 800,
     ObjectType.GENERATOR: 2000
 }
 
@@ -35,6 +36,12 @@ class Client(UserClient):
     def team_name(self):
         return "Strategic Survivors"
 
+    def spawner_has_item(self, spawner):
+        top = self.world.get_top(spawner)
+        if not top:
+            return False
+        return top.object_type != ObjectType.AVATAR
+
     def take_turn(self, turn: int, world: GameBoard, avatar: Avatar):
 
         self.avatar = avatar
@@ -42,25 +49,36 @@ class Client(UserClient):
 
         self.scan_world()
         goal = self.choose_goal()
+        if goal is None:
+            goal = avatar.position
 
         # Opportunistic coin grab
-        micro = self.find_nearby(ObjectType.COIN, OPPORTUNITY_RADIUS)
+        micro = self.find_nearby(ObjectType.COIN_SPAWNER, OPPORTUNITY_RADIUS)
         if micro:
             goal = micro
 
-        action1, pos = a_star_move(avatar.position, goal, world, avatar)
-        action2, pos = a_star_move(pos, goal, world, avatar)
-
-        return [action1, action2]
+        action, _ = a_star_move(avatar.position, goal, world, avatar)
+        return [action, ActionType.INTERACT_CENTER]
 
     # -------------------------
     # WORLD SCAN
     # -------------------------
 
     def scan_world(self):
-        self.batteries = list(self.world.get_objects(ObjectType.BATTERY))
-        self.coins = list(self.world.get_objects(ObjectType.COIN))
-        self.scrap = list(self.world.get_objects(ObjectType.SCRAP))
+        self.batteries = [
+            b for b in self.world.get_objects(ObjectType.BATTERY_SPAWNER)
+            if self.spawner_has_item(b)
+        ]
+
+        self.coins = [
+            c for c in self.world.get_objects(ObjectType.COIN_SPAWNER)
+            if self.spawner_has_item(c)
+        ]
+
+        self.scrap = [
+            s for s in self.world.get_objects(ObjectType.SCRAP_SPAWNER)
+            if self.spawner_has_item(s)
+        ]
         self.generators = list(self.world.get_objects(ObjectType.GENERATOR))
         self.enemies = []
         self.enemies += list(self.world.get_objects(ObjectType.IAN_BOT))
@@ -74,20 +92,20 @@ class Client(UserClient):
 
     def choose_goal(self):
 
-        candidates = []
-
-        if self.avatar.power < LOW_POWER:
-            candidates += self.batteries
-
-        candidates += self.scrap
-        candidates += self.generators
-        candidates += self.coins
-        candidates += self.batteries
+        candidates = (
+                self.batteries +
+                self.coins +
+                self.scrap +
+                self.generators
+        )
 
         best = None
         best_score = -999999
 
         for obj in candidates:
+            if obj.object_type not in BASE_VALUES:
+                continue
+
             dist = self.avatar.position.distance(obj)
             value = BASE_VALUES[obj.object_type]
 
@@ -103,7 +121,8 @@ class Client(UserClient):
             if score > best_score:
                 best_score = score
                 best = obj
-
+        if best is None:
+            return self.avatar.position
         return best
 
     # -------------------------
@@ -125,7 +144,9 @@ def a_star_move(start, goal, world, avatar):
     path = danger_a_star(start, goal, world, avatar)
 
     if not path or len(path) < 2:
-        return ActionType.INTERACT_CENTER, start
+        # small random walk so we don't freeze
+        direction = random.choice(list(DIRECTION_TO_MOVE.keys()))
+        return DIRECTION_TO_MOVE[direction], start + direction
 
     step = path[1]
     direction = step - start
@@ -160,8 +181,8 @@ def danger_a_star(start, goal, world, avatar):
             if not world.is_valid_coords(vec):
                 continue
 
-            if not world.can_object_occupy(vec, avatar):
-                continue
+            #if not world.can_object_occupy(vec, avatar):
+            #    continue
 
             top = world.get_top(vec)
             if top and not isinstance(top, Occupiable):

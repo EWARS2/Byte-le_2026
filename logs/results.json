@@ -1,51 +1,36 @@
 {
 	"players": [
 		{
-			"id": "43de9d0b-9832-413c-b355-ac39bae696d4",
+			"id": "e0932f6d-2d48-4313-bb6b-820bd46b762c",
 			"object_type": 3,
 			"state": "idle",
 			"__class__": "Player",
-			"functional": false,
-			"error": "Traceback (most recent call last):\n  File \"C:\\Users\\EWARS_2\\Documents\\Projects\\Byte-le_2026\\launcher.pyz\\game\\utils\\thread.py\", line 25, in run\n    self.result = self.func(*self.args)\n                  ~~~~~~~~~^^^^^^^^^^^^\n  File \"C:\\Users\\EWARS_2\\Documents\\Projects\\Byte-le_2026/.\\base_client.py\", line 85, in take_turn\n    if top.object_type == ObjectType.GENERATOR:\n       ^^^^^^^^^^^^^^^\nAttributeError: 'NoneType' object has no attribute 'object_type'\n",
-			"team_name": "Participation Trophy",
+			"functional": true,
+			"error": null,
+			"team_name": "Strategic Survivors",
 			"file_name": "base_client",
-			"actions": [],
+			"actions": [
+				4,
+				10
+			],
 			"avatar": {
 				"id": "a5ef28bb-e0c0-4f92-98f2-18cac23a5614",
 				"object_type": 4,
 				"state": "idle",
 				"__class__": "Avatar",
 				"held_index": 0,
-				"held_item": {
-					"id": "0f20f65f-467b-4f60-a33b-56dea02eaa2a",
-					"object_type": 18,
-					"state": "idle",
-					"__class__": "Scrap",
-					"stack_size": 10,
-					"durability": null,
-					"value": 1,
-					"quantity": 1
-				},
-				"score": 5960,
+				"held_item": null,
+				"score": 11500,
 				"position": {
-					"id": "8ba13d58-1a72-4a81-b626-6fb55c1faf73",
+					"id": "4204a3cd-3590-4c15-80b9-342dcd55daad",
 					"object_type": 6,
 					"state": "idle",
 					"__class__": "Vector",
-					"x": 7,
-					"y": 8
+					"x": 3,
+					"y": 6
 				},
 				"inventory": [
-					{
-						"id": "0f20f65f-467b-4f60-a33b-56dea02eaa2a",
-						"object_type": 18,
-						"state": "idle",
-						"__class__": "Scrap",
-						"stack_size": 10,
-						"durability": null,
-						"value": 1,
-						"quantity": 1
-					},
+					null,
 					null,
 					null,
 					null,
@@ -57,12 +42,11 @@
 					null
 				],
 				"max_inventory_size": 10,
-				"scrap": 1,
+				"scrap": 0,
 				"health": 3,
-				"power": 87,
-				"direction": "right"
+				"power": 0,
+				"direction": "left"
 			}
 		}
-	],
-	"reason": "Client_error (Number of clients is not the set value.\nNumber of clients: 0  |  Set number: 1)"
+	]
 }
