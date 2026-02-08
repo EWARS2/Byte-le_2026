@@ -182,19 +182,26 @@ tuple[Literal[ActionType.INTERACT_CENTER], Vector] | tuple[Any, Vector]:
         my_x, my_y = direction.as_tuple()
         abs_x = abs(my_x)
         abs_y = abs(my_y)
+        s_x = int(my_x/abs_x)
+        s_y = int(my_y/abs_y)
         if abs_x > abs_y:
-            direction = Vector(int(my_x/abs_x), 0)
+            direction = Vector(s_x, 0)
+        elif abs_x == abs_y:
+           if random.random() < 0.5:
+               direction = Vector(s_x, 0)
+           else:
+               direction = Vector(0, s_y)
         else:
-            direction = Vector(0, int(my_y/abs_y))
+            direction = Vector(0, s_y)
         action = DIRECTION_TO_MOVE.get(direction)
 
         # If cornered, strafe
         top = world.get_top(start + direction)
         if not isinstance(top, Occupiable):
             if abs_x < abs_y:
-                direction = Vector(int(my_x / abs_x), 0)
+                direction = Vector(s_x, 0)
             else:
-                direction = Vector(0, int(my_y / abs_y))
+                direction = Vector(0, s_y)
             action = DIRECTION_TO_MOVE.get(direction)
 
         return action, start + direction

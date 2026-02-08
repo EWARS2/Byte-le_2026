@@ -1,52 +1,64 @@
 {
 	"players": [
 		{
-			"id": "43de9d0b-9832-413c-b355-ac39bae696d4",
+			"id": "b0936039-6a02-4c5e-a5aa-6a375f743138",
 			"object_type": 3,
 			"state": "idle",
 			"__class__": "Player",
-			"functional": false,
-			"error": "Traceback (most recent call last):\n  File \"C:\\Users\\EWARS_2\\Documents\\Projects\\Byte-le_2026\\launcher.pyz\\game\\utils\\thread.py\", line 25, in run\n    self.result = self.func(*self.args)\n                  ~~~~~~~~~^^^^^^^^^^^^\n  File \"C:\\Users\\EWARS_2\\Documents\\Projects\\Byte-le_2026/.\\base_client.py\", line 85, in take_turn\n    if top.object_type == ObjectType.GENERATOR:\n       ^^^^^^^^^^^^^^^\nAttributeError: 'NoneType' object has no attribute 'object_type'\n",
+			"functional": true,
+			"error": null,
 			"team_name": "Participation Trophy",
 			"file_name": "base_client",
-			"actions": [],
+			"actions": [
+				2,
+				2
+			],
 			"avatar": {
 				"id": "a5ef28bb-e0c0-4f92-98f2-18cac23a5614",
 				"object_type": 4,
-				"state": "idle",
+				"state": "hurt",
 				"__class__": "Avatar",
 				"held_index": 0,
 				"held_item": {
-					"id": "0f20f65f-467b-4f60-a33b-56dea02eaa2a",
+					"id": "93879683-43f9-4cd9-a225-5f6da72d9fe5",
 					"object_type": 18,
 					"state": "idle",
 					"__class__": "Scrap",
 					"stack_size": 10,
 					"durability": null,
 					"value": 1,
-					"quantity": 1
+					"quantity": 10
 				},
-				"score": 5960,
+				"score": 62330,
 				"position": {
-					"id": "8ba13d58-1a72-4a81-b626-6fb55c1faf73",
+					"id": "0ae38472-feed-41bc-9c53-0a7bb9db2836",
 					"object_type": 6,
 					"state": "idle",
 					"__class__": "Vector",
-					"x": 7,
-					"y": 8
+					"x": 16,
+					"y": 1
 				},
 				"inventory": [
 					{
-						"id": "0f20f65f-467b-4f60-a33b-56dea02eaa2a",
+						"id": "93879683-43f9-4cd9-a225-5f6da72d9fe5",
 						"object_type": 18,
 						"state": "idle",
 						"__class__": "Scrap",
 						"stack_size": 10,
 						"durability": null,
 						"value": 1,
-						"quantity": 1
+						"quantity": 10
 					},
-					null,
+					{
+						"id": "d228a3b2-9149-4550-9ba5-4fd5c703d683",
+						"object_type": 18,
+						"state": "idle",
+						"__class__": "Scrap",
+						"stack_size": 10,
+						"durability": null,
+						"value": 1,
+						"quantity": 7
+					},
 					null,
 					null,
 					null,
@@ -57,12 +69,11 @@
 					null
 				],
 				"max_inventory_size": 10,
-				"scrap": 1,
-				"health": 3,
-				"power": 87,
-				"direction": "right"
+				"scrap": 17,
+				"health": 0,
+				"power": 96,
+				"direction": "up"
 			}
 		}
-	],
-	"reason": "Client_error (Number of clients is not the set value.\nNumber of clients: 0  |  Set number: 1)"
+	]
 }
