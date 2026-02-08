@@ -9,6 +9,10 @@ from typing import List, Tuple, Optional, Any, Literal#, Dict
 from game.common.game_object import GameObject
 from game.common.map.occupiable import Occupiable
 from game.utils.vector import Vector
+# Custom imports
+from math import sqrt
+
+tol = 3 * sqrt(2)
 
 class Client(UserClient):
     def __init__(self):
@@ -64,10 +68,44 @@ class Client(UserClient):
                     self.goal = i
             """
 
-        # Calc action1
-        action1, position = a_star_move(position, self.goal, world, game_object=avatar)
-        # Calc action2
-        action2, position = a_star_move(position, self.goal, world, game_object=avatar)
+        # Get list of objects to avoid
+        enemies = world.get_objects(ObjectType.IAN_BOT)
+        enemies.update(world.get_objects(ObjectType.JUMPER_BOT))
+        enemies.update(world.get_objects(ObjectType.DUMB_BOT))
+        enemies.update(world.get_objects(ObjectType.CRAWLER_BOT))
+        enemies = list(enemies)
+
+        # Find closest enemy
+        closest = enemies[0]
+        for i in enemies:
+            distance_i = position.distance(i)
+            if distance_i < position.distance(closest):
+                closest = i
+
+        dist = avatar.position.add_to_vector(closest.negative())
+        dist = sqrt(dist.as_tuple()[0] ** 2 + dist.as_tuple()[1] ** 2)
+        if dist <= tol:
+            away = avatar.position.direction_to(closest).negative()
+            if away == Vector(1, 1):
+                action1 = ActionType.MOVE_RIGHT
+                action2 = ActionType.MOVE_DOWN
+            elif away == Vector(-1, 1):
+                action1 = ActionType.MOVE_LEFT
+                action2 = ActionType.MOVE_DOWN
+            elif away == Vector(1, -1):
+                action1 = ActionType.MOVE_RIGHT
+                action2 = ActionType.MOVE_UP
+            elif away == Vector(-1, -1):
+                action1 = ActionType.MOVE_LEFT
+                action2 = ActionType.MOVE_UP
+            else:
+                action1 = convert_vector_to_move(away)
+                action2 = convert_vector_to_interact(away)
+        else:
+            # Calc action1
+            action1, position = a_star_move(position, self.goal, world, game_object=avatar)
+            # Calc action2
+            action2, position = a_star_move(position, self.goal, world, game_object=avatar)
         return [action1, action2]
 
 
@@ -84,13 +122,13 @@ tuple[Literal[ActionType.INTERACT_CENTER], Vector] | tuple[Any, Vector]:
         game_object=game_object
     )
 
-    if not path or len(path) < 2:
+    if not path or len(path) < 2: # Reached goal
         return ActionType.INTERACT_CENTER, start
-
-    next_step: Vector = path[1]
-    direction = next_step - start
-    action = DIRECTION_TO_MOVE.get(direction)
-    return action, start + direction
+    else:
+        next_step: Vector = path[1]
+        direction = next_step - start
+        action = DIRECTION_TO_MOVE.get(direction)
+        return action, start + direction
 
 def a_star_path(start: Vector, goal: Vector, world, allow_vents = True, game_object: GameObject | None = None) -> Optional[List[Vector]]:
     start_p = (start.x, start.y)
@@ -99,19 +137,6 @@ def a_star_path(start: Vector, goal: Vector, world, allow_vents = True, game_obj
     frontier = [(0, start_p)]
     came_from = {start_p: None}
     cost = {start_p: 0}
-
-    # Get list of objects to avoid
-    objects = []
-    for i in [ObjectType.IAN_BOT, ObjectType.JUMPER_BOT,
-              ObjectType.DUMB_BOT, ObjectType.CRAWLER_BOT]:
-        objects.extend(list(world.get_objects(i)))
-
-    # Find closest enemy
-    closest = objects[0]
-    for i in objects:
-        distance_i = start.distance(i)
-        if distance_i < start.distance(closest):
-            closest = i
 
     while frontier:
         _, current = heapq.heappop(frontier)
@@ -136,28 +161,15 @@ def a_star_path(start: Vector, goal: Vector, world, allow_vents = True, game_obj
 
             top = world.get_top(vec)
             if top and top.object_type != ObjectType.AVATAR:
-                # walls block
-                #if top.object_type == ObjectType.WALL:
-                #    continue
-
                 # vents block unless allowed
-                if top.object_type == ObjectType.VENT and not allow_vents:
-                    continue
+                #if top.object_type == ObjectType.VENT and not allow_vents:
+                #    continue
 
                 # can't pass through non-occupiable
                 if not isinstance(top, Occupiable):
                     continue
 
-
-                # Can't pass through if bot surrounds this space
-                #for x in objects:
-                #if vec.distance(closest) <= 2:
-                #    continue
-
-
-
-
-            new_cost = cost[current] + 1 - (4 * vec.distance(closest))
+            new_cost = cost[current] + 1
             if nxt not in cost or new_cost < cost[nxt]:
                 cost[nxt] = new_cost
                 priority = new_cost + vec.distance(goal)
