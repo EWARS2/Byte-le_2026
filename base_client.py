@@ -26,7 +26,7 @@ class Client(UserClient):
         self.positions_scrap = None
         self.positions_generators = None
         self.positions_refuges = None
-        self.test = 0
+        self.keepalive = 25
 
     def team_name(self) -> str:
         """
@@ -55,12 +55,15 @@ class Client(UserClient):
 
         # Setup vars
         position = avatar.position
+        self.keepalive -= 1
+
 
         # Calc goal
         top = world.get_top(position)
-        if retarget or self.goal == position:
+        if retarget or self.goal == position or self.keepalive <= 1:
             # top.object_type in [ObjectType.BATTERY_SPAWNER]
             retarget = False
+            self.keepalive = 25
 
             targets = [self.positions_battery, self.positions_coins, self.positions_scrap, self.positions_generators]
 
