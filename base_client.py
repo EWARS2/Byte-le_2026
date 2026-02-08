@@ -104,7 +104,7 @@ def a_star_path(start: Vector, goal: Vector, world, allow_vents = True, game_obj
     objects = []
     for i in [ObjectType.IAN_BOT, ObjectType.JUMPER_BOT,
               ObjectType.DUMB_BOT, ObjectType.CRAWLER_BOT]:
-        objects + list(world.get_objects(i))
+        objects.extend(list(world.get_objects(i)))
 
     # Find closest enemy
     closest = objects[0]
