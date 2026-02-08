@@ -86,7 +86,7 @@ class Client(UserClient):
             self.goal = self.poi[self.cycle]
             self.cycle += 1
             if self.cycle >= 4: # TODO: Hardcoded
-                self.goal = self.find_closest(self.positions)
+                self.goal = self.find_closest(self.positions, avatar)
                 self.cycle = 0
 
 

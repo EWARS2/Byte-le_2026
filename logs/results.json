@@ -1,12 +1,12 @@
 {
 	"players": [
 		{
-			"id": "8714b069-4363-450e-b0b6-2648d2f9ac2d",
+			"id": "6c494f4a-fb8b-4fd6-909e-a9d73bb9da97",
 			"object_type": 3,
 			"state": "idle",
 			"__class__": "Player",
 			"functional": false,
-			"error": "8714b069-4363-450e-b0b6-2648d2f9ac2d failed to reply in time and has been dropped.",
+			"error": "Traceback (most recent call last):\n  File \"C:\\Users\\EWARS_2\\Documents\\Projects\\Byte-le_2026\\launcher.pyz\\game\\utils\\thread.py\", line 25, in run\n    self.result = self.func(*self.args)\n                  ~~~~~~~~~^^^^^^^^^^^^\n  File \"C:\\Users\\EWARS_2\\Documents\\Projects\\Byte-le_2026/.\\base_client.py\", line 89, in take_turn\n    self.goal = self.find_closest(self.positions)\n                ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^\nTypeError: Client.find_closest() missing 1 required positional argument: 'avatar'\n",
 			"team_name": "Participation Trophy",
 			"file_name": "base_client",
 			"actions": [],
@@ -17,18 +17,18 @@
 				"__class__": "Avatar",
 				"held_index": 0,
 				"held_item": {
-					"id": "ec785916-2f91-4264-bfae-a82b8209f8f9",
+					"id": "f030d13d-930c-4478-b897-42d9446f2c38",
 					"object_type": 18,
 					"state": "idle",
 					"__class__": "Scrap",
 					"stack_size": 10,
 					"durability": null,
 					"value": 1,
-					"quantity": 2
+					"quantity": 1
 				},
-				"score": 6635,
+				"score": 5960,
 				"position": {
-					"id": "3e6c4da7-cd08-4648-802d-5245d1f7e7cb",
+					"id": "8fefcb72-6133-462f-a92f-68a4b3c09de6",
 					"object_type": 6,
 					"state": "idle",
 					"__class__": "Vector",
@@ -37,14 +37,14 @@
 				},
 				"inventory": [
 					{
-						"id": "ec785916-2f91-4264-bfae-a82b8209f8f9",
+						"id": "f030d13d-930c-4478-b897-42d9446f2c38",
 						"object_type": 18,
 						"state": "idle",
 						"__class__": "Scrap",
 						"stack_size": 10,
 						"durability": null,
 						"value": 1,
-						"quantity": 2
+						"quantity": 1
 					},
 					null,
 					null,
@@ -57,9 +57,9 @@
 					null
 				],
 				"max_inventory_size": 10,
-				"scrap": 2,
+				"scrap": 1,
 				"health": 3,
-				"power": 82,
+				"power": 87,
 				"direction": "right"
 			}
 		}
