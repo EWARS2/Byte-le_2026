@@ -12,7 +12,7 @@ from game.utils.vector import Vector
 # Custom imports
 from math import sqrt
 
-tol = 3 * sqrt(2)
+_tol = 3 * sqrt(2)
 
 class Client(UserClient):
     def __init__(self):
@@ -68,44 +68,13 @@ class Client(UserClient):
                     self.goal = i
             """
 
-        # Get list of objects to avoid
-        enemies = world.get_objects(ObjectType.IAN_BOT)
-        enemies.update(world.get_objects(ObjectType.JUMPER_BOT))
-        enemies.update(world.get_objects(ObjectType.DUMB_BOT))
-        enemies.update(world.get_objects(ObjectType.CRAWLER_BOT))
-        enemies = list(enemies)
 
-        # Find closest enemy
-        closest = enemies[0]
-        for i in enemies:
-            distance_i = position.distance(i)
-            if distance_i < position.distance(closest):
-                closest = i
 
-        dist = avatar.position.add_to_vector(closest.negative())
-        dist = sqrt(dist.as_tuple()[0] ** 2 + dist.as_tuple()[1] ** 2)
-        if dist <= tol:
-            away = avatar.position.direction_to(closest).negative()
-            if away == Vector(1, 1):
-                action1 = ActionType.MOVE_RIGHT
-                action2 = ActionType.MOVE_DOWN
-            elif away == Vector(-1, 1):
-                action1 = ActionType.MOVE_LEFT
-                action2 = ActionType.MOVE_DOWN
-            elif away == Vector(1, -1):
-                action1 = ActionType.MOVE_RIGHT
-                action2 = ActionType.MOVE_UP
-            elif away == Vector(-1, -1):
-                action1 = ActionType.MOVE_LEFT
-                action2 = ActionType.MOVE_UP
-            else:
-                action1 = convert_vector_to_move(away)
-                action2 = convert_vector_to_interact(away)
-        else:
-            # Calc action1
-            action1, position = a_star_move(position, self.goal, world, game_object=avatar)
-            # Calc action2
-            action2, position = a_star_move(position, self.goal, world, game_object=avatar)
+
+        # Calc action1
+        action1, position = a_star_move(position, self.goal, world, game_object=avatar)
+        # Calc action2
+        action2, position = a_star_move(position, self.goal, world, game_object=avatar)
         return [action1, action2]
 
 
@@ -122,7 +91,29 @@ tuple[Literal[ActionType.INTERACT_CENTER], Vector] | tuple[Any, Vector]:
         game_object=game_object
     )
 
-    if not path or len(path) < 2: # Reached goal
+    # Get list of objects to avoid
+    enemies = world.get_objects(ObjectType.IAN_BOT)
+    enemies.update(world.get_objects(ObjectType.JUMPER_BOT))
+    enemies.update(world.get_objects(ObjectType.DUMB_BOT))
+    enemies.update(world.get_objects(ObjectType.CRAWLER_BOT))
+    enemies = list(enemies)
+
+    # Find closest enemy
+    closest = enemies[0]
+    for i in enemies:
+        distance_i = start.distance(i)
+        if distance_i < start.distance(closest):
+            closest = i
+
+    # Get distance
+    dist = start.add_to_vector(closest.negative())
+    dist = sqrt(dist.as_tuple()[0] ** 2 + dist.as_tuple()[1] ** 2)
+
+    print(dist)
+    #if dist <= _tol:
+
+
+    elif not path or len(path) < 2: # Reached goal
         return ActionType.INTERACT_CENTER, start
     else:
         next_step: Vector = path[1]
