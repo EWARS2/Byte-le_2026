@@ -11,6 +11,7 @@ from game.common.map.occupiable import Occupiable
 from game.utils.vector import Vector
 # Custom imports
 from math import sqrt
+import random
 
 Position = Tuple[int, int]
 DIRECTIONS = [(1,0), (-1,0), (0,1), (0,-1)]
@@ -68,10 +69,10 @@ class Client(UserClient):
             retarget = False
             self.keepalive = 25
 
-            targets = [self.positions_battery, self.positions_coins, self.positions_scrap, self.positions_generators]
-
-            positions = self.positions
-            self.update_target(positions, avatar)
+            if avatar.power < 35:
+                self.update_target(self.positions_battery, avatar)
+            else:
+                self.goal = random.choice(self.positions)
 
 
 
