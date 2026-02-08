@@ -79,20 +79,23 @@ class Client(UserClient):
         if retarget or self.goal == position or self.keepalive <= 1:
             retarget = False
             self.keepalive = 25
-
+            """
             if self.cycle == 3: # If goal was generator
-
-                if world.get_top(position.add_y(-1)).object_type == ObjectType.GENERATOR:
+                top = world.get_top(position.add_y(-1))
+                if top.object_type == ObjectType.GENERATOR:
                     action1 = ActionType.INTERACT_UP
-                if world.get_top(position.add_y(1)).object_type == ObjectType.GENERATOR:
+                top = world.get_top(position.add_y(1))
+                if top.object_type == ObjectType.GENERATOR:
                     action1 = ActionType.INTERACT_DOWN
-                if world.get_top(position.add_x(1)).object_type == ObjectType.GENERATOR:
+                top = world.get_top(position.add_x(1))
+                if top.object_type == ObjectType.GENERATOR:
                     action1 = ActionType.INTERACT_RIGHT
-                if world.get_top(position.add_x(-1)).object_type == ObjectType.GENERATOR:
+                top = world.get_top(position.add_x(-1))
+                if top.object_type == ObjectType.GENERATOR:
                     action1 = ActionType.INTERACT_LEFT
                 action2, position = a_star_move(position, self.goal, world, game_object=avatar)
                 return [action1, action2]
-
+            """
             #if avatar.power < 35:
             #    self.goal = self.find_closest(self.positions_battery, avatar)
             #else:

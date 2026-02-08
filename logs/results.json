@@ -1,12 +1,12 @@
 {
 	"players": [
 		{
-			"id": "6c494f4a-fb8b-4fd6-909e-a9d73bb9da97",
+			"id": "43de9d0b-9832-413c-b355-ac39bae696d4",
 			"object_type": 3,
 			"state": "idle",
 			"__class__": "Player",
 			"functional": false,
-			"error": "Traceback (most recent call last):\n  File \"C:\\Users\\EWARS_2\\Documents\\Projects\\Byte-le_2026\\launcher.pyz\\game\\utils\\thread.py\", line 25, in run\n    self.result = self.func(*self.args)\n                  ~~~~~~~~~^^^^^^^^^^^^\n  File \"C:\\Users\\EWARS_2\\Documents\\Projects\\Byte-le_2026/.\\base_client.py\", line 89, in take_turn\n    self.goal = self.find_closest(self.positions)\n                ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^\nTypeError: Client.find_closest() missing 1 required positional argument: 'avatar'\n",
+			"error": "Traceback (most recent call last):\n  File \"C:\\Users\\EWARS_2\\Documents\\Projects\\Byte-le_2026\\launcher.pyz\\game\\utils\\thread.py\", line 25, in run\n    self.result = self.func(*self.args)\n                  ~~~~~~~~~^^^^^^^^^^^^\n  File \"C:\\Users\\EWARS_2\\Documents\\Projects\\Byte-le_2026/.\\base_client.py\", line 85, in take_turn\n    if top.object_type == ObjectType.GENERATOR:\n       ^^^^^^^^^^^^^^^\nAttributeError: 'NoneType' object has no attribute 'object_type'\n",
 			"team_name": "Participation Trophy",
 			"file_name": "base_client",
 			"actions": [],
@@ -17,7 +17,7 @@
 				"__class__": "Avatar",
 				"held_index": 0,
 				"held_item": {
-					"id": "f030d13d-930c-4478-b897-42d9446f2c38",
+					"id": "0f20f65f-467b-4f60-a33b-56dea02eaa2a",
 					"object_type": 18,
 					"state": "idle",
 					"__class__": "Scrap",
@@ -28,7 +28,7 @@
 				},
 				"score": 5960,
 				"position": {
-					"id": "8fefcb72-6133-462f-a92f-68a4b3c09de6",
+					"id": "8ba13d58-1a72-4a81-b626-6fb55c1faf73",
 					"object_type": 6,
 					"state": "idle",
 					"__class__": "Vector",
@@ -37,7 +37,7 @@
 				},
 				"inventory": [
 					{
-						"id": "f030d13d-930c-4478-b897-42d9446f2c38",
+						"id": "0f20f65f-467b-4f60-a33b-56dea02eaa2a",
 						"object_type": 18,
 						"state": "idle",
 						"__class__": "Scrap",
