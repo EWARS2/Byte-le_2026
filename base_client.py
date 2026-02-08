@@ -121,9 +121,9 @@ tuple[Literal[ActionType.INTERACT_CENTER], Vector] | tuple[Any, Vector]:
         abs_x = abs(my_x)
         abs_y = abs(my_y)
         if abs_x > abs_y:
-            direction = Vector(0, int(my_x/abs_x))
+            direction = Vector(0, -int(my_x/abs_x))
         else:
-            direction = Vector(int(my_y/abs_y), 0)
+            direction = Vector(-int(my_y/abs_y), 0)
         action = DIRECTION_TO_MOVE.get(direction)
         return action, start + direction
     elif not path or len(path) < 2: # Reached goal
