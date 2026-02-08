@@ -22,7 +22,7 @@ class Client(UserClient):
     def __init__(self):
         super().__init__()
         self.goal = Vector(0,0)
-        #self.positions = []
+        self.positions = []
         self.positions_battery = None
         self.positions_coins = None
         self.positions_scrap = None
@@ -57,8 +57,8 @@ class Client(UserClient):
             self.positions_scrap = list(world.get_objects(ObjectType.SCRAP_SPAWNER))
             self.positions_generators = list(world.get_objects(ObjectType.GENERATOR))
             #self.positions_refuges = list(world.get_objects(ObjectType.REFUGE))
-            #self.positions = self.positions_battery + self.positions_coins + self.positions_scrap\
-            #                 + self.positions_generators
+            self.positions = self.positions_battery + self.positions_coins + self.positions_scrap\
+                             + self.positions_generators
 
             # Get POI
             self.poi.append(self.find_closest(self.positions_battery, avatar))
@@ -86,6 +86,7 @@ class Client(UserClient):
             self.goal = self.poi[self.cycle]
             self.cycle += 1
             if self.cycle >= 4: # TODO: Hardcoded
+                self.goal = self.find_closest(self.positions)
                 self.cycle = 0
 
 
@@ -107,8 +108,7 @@ class Client(UserClient):
             action1 = ActionType.MOVE_RIGHT
             action2 = ActionType.MOVE_UP
 
-        # TO COLLECT SECOND COIN, CONSIDERED UNSAFE
-        elif turn in [13,14, 15, 16]:
+        elif turn in [13,14, 15, 16]: # TO COLLECT SECOND COIN, CONSIDERED UNSAFE
             action1 = ActionType.MOVE_RIGHT
             action2 = ActionType.MOVE_UP
         elif turn in [17, 18, 19]:
