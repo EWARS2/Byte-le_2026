@@ -100,11 +100,18 @@ def a_star_path(start: Vector, goal: Vector, world, allow_vents = True, game_obj
     came_from = {start_p: None}
     cost = {start_p: 0}
 
-    # Get dictionary of objects to avoid
+    # Get list of objects to avoid
     objects = []
     for i in [ObjectType.IAN_BOT, ObjectType.JUMPER_BOT,
               ObjectType.DUMB_BOT, ObjectType.CRAWLER_BOT]:
         objects + list(world.get_objects(i))
+
+    # Find closest enemy
+    closest = objects[0]
+    for i in objects:
+        distance_i = start.distance(i)
+        if distance_i < start.distance(closest):
+            closest = i
 
     while frontier:
         _, current = heapq.heappop(frontier)
@@ -141,12 +148,14 @@ def a_star_path(start: Vector, goal: Vector, world, allow_vents = True, game_obj
                 if not isinstance(top, Occupiable):
                     continue
 
-                """
+
                 # Can't pass through if bot surrounds this space
-                for x in objects:
-                    if vec.distance(x) <= 2:
-                        continue
-                """
+                #for x in objects:
+                if vec.distance(closest) <= 2:
+                    continue
+
+
+
 
             new_cost = cost[current] + 1
             if nxt not in cost or new_cost < cost[nxt]:
