@@ -14,7 +14,7 @@ from math import sqrt
 
 Position = Tuple[int, int]
 DIRECTIONS = [(1,0), (-1,0), (0,1), (0,-1)]
-_tol = 3
+_tol = 4
 retarget = True
 
 class Client(UserClient):
@@ -42,6 +42,7 @@ class Client(UserClient):
         :param actions:     This is the actions object that you will add effort allocations or decrees to.
         :param world:       Generic world information
         """
+        global retarget
 
         # Collect constants
         if turn == 1:
@@ -55,6 +56,8 @@ class Client(UserClient):
 
         # Calc goal
         if retarget or len(world.get(position).get_objects(ObjectType.BATTERY_SPAWNER)) > 0:
+            retarget = False
+            self.goal = self.positions_battery[0]
             for i in self.positions_battery:
                 distance_i = position.distance(i)
                 if distance_i < position.distance(self.goal) and distance_i != 0:
@@ -100,13 +103,13 @@ tuple[Literal[ActionType.INTERACT_CENTER], Vector] | tuple[Any, Vector]:
 
     if abs_dist <= _tol: # Avoid enemy
         direction = (start - closest) - (goal - start)
-        myX, myY = direction.as_tuple()
-        absX = abs(myX)
-        absY = abs(myY)
-        if absX > absY:
-            direction = Vector(int(myX/absX), 0)
+        my_x, my_y = direction.as_tuple()
+        abs_x = abs(my_x)
+        abs_y = abs(my_y)
+        if abs_x > abs_y:
+            direction = Vector(int(my_x/abs_x), 0)
         else:
-            direction = Vector(0, int(myY/absY))
+            direction = Vector(0, int(my_y/abs_y))
         action = DIRECTION_TO_MOVE.get(direction)
         return action, start + direction
     elif not path or len(path) < 2: # Reached goal

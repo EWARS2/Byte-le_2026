@@ -1,7 +1,7 @@
 {
 	"players": [
 		{
-			"id": "8ed64ef3-b37d-428c-90ae-1b36bc2a79b2",
+			"id": "5e8f973f-24f2-40c6-9716-9007c4517037",
 			"object_type": 3,
 			"state": "idle",
 			"__class__": "Player",
@@ -19,18 +19,36 @@
 				"state": "hurt",
 				"__class__": "Avatar",
 				"held_index": 0,
-				"held_item": null,
-				"score": 4900,
+				"held_item": {
+					"id": "2a5ad436-3744-4241-90b1-0c4306f06147",
+					"object_type": 18,
+					"state": "idle",
+					"__class__": "Scrap",
+					"stack_size": 10,
+					"durability": null,
+					"value": 1,
+					"quantity": 3
+				},
+				"score": 6800,
 				"position": {
-					"id": "db9fe8a1-6f03-45af-8786-853375803a3f",
+					"id": "bb29b6e1-29ba-4d01-9faf-c1e1e6c627a5",
 					"object_type": 6,
 					"state": "idle",
 					"__class__": "Vector",
-					"x": 22,
-					"y": 6
+					"x": 13,
+					"y": 10
 				},
 				"inventory": [
-					null,
+					{
+						"id": "2a5ad436-3744-4241-90b1-0c4306f06147",
+						"object_type": 18,
+						"state": "idle",
+						"__class__": "Scrap",
+						"stack_size": 10,
+						"durability": null,
+						"value": 1,
+						"quantity": 3
+					},
 					null,
 					null,
 					null,
@@ -42,9 +60,9 @@
 					null
 				],
 				"max_inventory_size": 10,
-				"scrap": 0,
+				"scrap": 3,
 				"health": 0,
-				"power": 49,
+				"power": 43,
 				"direction": "left"
 			}
 		}
