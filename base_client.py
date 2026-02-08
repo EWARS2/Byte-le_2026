@@ -151,13 +151,13 @@ def a_star_path(start: Vector, goal: Vector, world, allow_vents = True, game_obj
 
                 # Can't pass through if bot surrounds this space
                 #for x in objects:
-                if vec.distance(closest) <= 2:
-                    continue
+                #if vec.distance(closest) <= 2:
+                #    continue
 
 
 
 
-            new_cost = cost[current] + 1
+            new_cost = cost[current] + 1 + 100 - vec.distance(closest)
             if nxt not in cost or new_cost < cost[nxt]:
                 cost[nxt] = new_cost
                 priority = new_cost + vec.distance(goal)
