@@ -21,6 +21,7 @@ class Client(UserClient):
     def __init__(self):
         super().__init__()
         self.goal = None
+        self.positions = []
         self.positions_battery = None
         self.positions_coins = None
         self.positions_scrap = None
@@ -52,6 +53,8 @@ class Client(UserClient):
             self.positions_scrap = list(world.get_objects(ObjectType.SCRAP_SPAWNER))
             self.positions_generators = list(world.get_objects(ObjectType.GENERATOR))
             self.positions_refuges = list(world.get_objects(ObjectType.REFUGE))
+            self.positions = self.positions_battery + self.positions_coins + self.positions_scrap\
+                             + self.positions_generators + self.positions_refuges
 
         # Setup vars
         position = avatar.position
@@ -67,7 +70,7 @@ class Client(UserClient):
 
             targets = [self.positions_battery, self.positions_coins, self.positions_scrap, self.positions_generators]
 
-            positions = self.positions_battery
+            positions = self.positions
             self.update_target(positions, avatar)
 
 
@@ -132,8 +135,10 @@ tuple[Literal[ActionType.INTERACT_CENTER], Vector] | tuple[Any, Vector]:
         # If cornered, strafe
         top = world.get_top(start + direction)
         if not isinstance(top, Occupiable):
-            my_x, my_y = direction.as_tuple()
-            direction = Vector(my_y, my_x)
+            if abs_x < abs_y:
+                direction = Vector(int(my_x / abs_x), 0)
+            else:
+                direction = Vector(0, int(my_y / abs_y))
             action = DIRECTION_TO_MOVE.get(direction)
 
         return action, start + direction
