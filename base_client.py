@@ -107,13 +107,23 @@ tuple[Literal[ActionType.INTERACT_CENTER], Vector] | tuple[Any, Vector]:
 
     # Get distance
     dist = start.add_to_vector(closest.negative())
-    dist = sqrt(dist.as_tuple()[0] ** 2 + dist.as_tuple()[1] ** 2)
+    abs_dist = sqrt(dist.as_tuple()[0] ** 2 + dist.as_tuple()[1] ** 2)
+    # TODO : This can be sped up
 
-    print(dist)
-    #if dist <= _tol:
+    if abs_dist <= _tol:
 
+        direction = start - closest
 
-    elif not path or len(path) < 2: # Reached goal
+        myX, myY = direction.as_tuple()
+        absX = abs(myX)
+        absY = abs(myY)
+        if absX > absY:
+            direction = Vector(int(myX/absX), 0)
+        else:
+            direction = Vector(0, int(myY/absY))
+        action = DIRECTION_TO_MOVE.get(direction)
+        return action, start + direction
+    if not path or len(path) < 2: # Reached goal
         return ActionType.INTERACT_CENTER, start
     else:
         next_step: Vector = path[1]
