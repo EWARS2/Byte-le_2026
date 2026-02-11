@@ -11,7 +11,6 @@ from game.common.map.occupiable import Occupiable
 from game.utils.vector import Vector
 # Custom imports
 from math import sqrt
-import random
 
 Position = Tuple[int, int]
 DIRECTIONS = [(1,0), (-1,0), (0,1), (0,-1)]
@@ -21,16 +20,13 @@ retarget = True
 class Client(UserClient):
     def __init__(self):
         super().__init__()
-        self.goal = Vector(0,0)
-        self.positions = []
+        self.goal = None
         self.positions_battery = None
         self.positions_coins = None
         self.positions_scrap = None
         self.positions_generators = None
         self.positions_refuges = None
-        self.keepalive = 25
-        self.cycle = 0
-        self.poi = []
+        self.test = 0
 
     def team_name(self) -> str:
         """
@@ -51,213 +47,165 @@ class Client(UserClient):
 
         # Collect constants
         if turn == 1:
-            # Get lists
             self.positions_battery = list(world.get_objects(ObjectType.BATTERY_SPAWNER))
             self.positions_coins = list(world.get_objects(ObjectType.COIN_SPAWNER))
             self.positions_scrap = list(world.get_objects(ObjectType.SCRAP_SPAWNER))
             self.positions_generators = list(world.get_objects(ObjectType.GENERATOR))
-            #self.positions_refuges = list(world.get_objects(ObjectType.REFUGE))
-            self.positions = self.positions_battery + self.positions_coins + self.positions_scrap\
-                             + self.positions_generators
+            self.positions_refuges = list(world.get_objects(ObjectType.REFUGE))
+            self.target_coin = None
 
-            # Get POI
-            self.poi.append(self.find_closest(self.positions_battery, avatar))
-            self.poi.append(self.find_closest(self.positions_coins, avatar))
-            self.poi.append(self.find_closest(self.positions_scrap, avatar))
-            self.poi.append(self.find_closest(self.positions_generators, avatar))
-            for i in self.poi:
-                print(i)
-
-
-        # Setup vars
         position = avatar.position
-        self.keepalive -= 1
+        # Locate nearest scrap
+        scrap = world.get_objects(ObjectType.SCRAP_SPAWNER)
+        nearest_scrap = Vector(100, 100)
+        for s in scrap:
+            if s.distance(position) < nearest_scrap.distance(position):
+                nearest_scrap = s
+        direction_to_nearest_scrap = position.direction_to(nearest_scrap)
 
+        # Locate nearest battery
+        battery = world.get_objects(ObjectType.BATTERY_SPAWNER)
+        nearest_battery = Vector(100, 100)
+        backup_battery = Vector(100, 100)
+        for b in battery:
+            if b.distance(position) < nearest_battery.distance(position):
+                backup_battery = nearest_battery
+                nearest_battery = b
+        direction_to_nearest_battery = position.direction_to(nearest_battery)
+        direction_to_backup_battery = position.direction_to(backup_battery)
 
-        # Calc goal
-        #top = world.get_top(position)
-        if retarget or self.goal == position or self.keepalive <= 1:
-            retarget = False
-            self.keepalive = 25
-            """
-            if self.cycle == 3: # If goal was generator
-                top = world.get_top(position.add_y(-1))
-                if top.object_type == ObjectType.GENERATOR:
-                    action1 = ActionType.INTERACT_UP
-                top = world.get_top(position.add_y(1))
-                if top.object_type == ObjectType.GENERATOR:
-                    action1 = ActionType.INTERACT_DOWN
-                top = world.get_top(position.add_x(1))
-                if top.object_type == ObjectType.GENERATOR:
-                    action1 = ActionType.INTERACT_RIGHT
-                top = world.get_top(position.add_x(-1))
-                if top.object_type == ObjectType.GENERATOR:
-                    action1 = ActionType.INTERACT_LEFT
-                action2, position = a_star_move(position, self.goal, world, game_object=avatar)
-                return [action1, action2]
-            """
-            #if avatar.power < 35:
-            #    self.goal = self.find_closest(self.positions_battery, avatar)
-            #else:
-            self.goal = self.poi[self.cycle]
-            self.cycle += 1
-            if self.cycle >= 4: # TODO: Hardcoded
-                self.goal = self.find_closest(self.positions, avatar)
-                self.cycle = 0
+        # Locate nearest gen
+        gen = world.get_objects(ObjectType.GENERATOR)
+        nearest_gen = Vector(100, 100)
+        for g in gen:
+            if g.distance(position) < nearest_gen.distance(position):
+                nearest_gen = g
+        direction_to_nearest_gen = position.direction_to(nearest_gen)
 
+        # Locate nearest coin
+        coin = world.get_objects(ObjectType.COIN_SPAWNER)
+        nearest_coin = Vector(100, 100)
+        backup_coin = Vector(100,100)
+        for c in coin:
+            if c.distance(position) < nearest_coin.distance(position):
+                backup_coin = nearest_coin
+                nearest_coin = c
+        if position.distance(nearest_coin) != 0:
+            direction_to_nearest_coin = position.direction_to(nearest_coin)
+        else:
+            direction_to_nearest_coin = position.direction_to(backup_coin)
 
+        world.get_top(avatar.position.add_y(-1))
+
+        vent = ObjectType.VENT
+        can_move_right = world.can_object_occupy(position.add_x(1), avatar) and not world.object_is_found_at(
+            position.add_x(1), vent)
+        can_move_2_right = can_move_right and world.can_object_occupy(position.add_x(2),
+                                                                      avatar) and not world.object_is_found_at(
+            position.add_x(2), vent)
+        can_move_left = world.can_object_occupy(position.add_x(-1), avatar) and not world.object_is_found_at(
+            position.add_x(-1), vent)
+        can_move_2_left = can_move_left and world.can_object_occupy(position.add_x(-2),
+                                                                    avatar) and not world.object_is_found_at(
+            position.add_x(-2), vent)
+        can_move_up = world.can_object_occupy(position.add_y(-1), avatar) and not world.object_is_found_at(
+            position.add_y(-1), vent)
+        can_move_2_up = can_move_up and world.can_object_occupy(position.add_y(-2),
+                                                                avatar) and not world.object_is_found_at(position.add_y(-2),
+                                                                                                         vent)
+        can_move_down = world.can_object_occupy(position.add_y(1), avatar) and not world.object_is_found_at(
+            position.add_y(1), vent)
+        can_move_2_down = can_move_down and world.can_object_occupy(position.add_y(2),
+                                                                    avatar) and not world.object_is_found_at(
+            position.add_y(2), vent)
+
+        action1 = ActionType.INTERACT_CENTER
+        action2 = ActionType.INTERACT_CENTER
+
+        enemies = []
+        for i in [ObjectType.IAN_BOT, ObjectType.JUMPER_BOT,
+                  ObjectType.DUMB_BOT, ObjectType.CRAWLER_BOT]:
+            enemies.extend(list(world.get_objects(i)))
+
+        closest = enemies[0]
+        for i in enemies:
+            distance_i = position.distance(i)
+            if distance_i < position.distance(closest):
+                closest = i
+
+        movement_direction = Vector(0, 0)
+        if avatar.power < 70:
+            movement_direction = direction_to_nearest_battery
+        else: movement_direction = direction_to_nearest_coin
+
+        dist = avatar.position.add_to_vector(closest.negative())
+        dist = sqrt(dist.as_tuple()[0] ** 2 + dist.as_tuple()[1] ** 2)
+        if dist <= 6:
+            away = avatar.position.direction_to(closest).negative()
+            if away == Vector(1, 1):
+                action1 = ActionType.MOVE_RIGHT
+                action2 = ActionType.MOVE_DOWN
+            elif away == Vector(-1, 1):
+                action1 = ActionType.MOVE_LEFT
+                action2 = ActionType.MOVE_DOWN
+            elif away == Vector(1, -1):
+                action1 = ActionType.MOVE_RIGHT
+                action2 = ActionType.MOVE_UP
+            elif away == Vector(-1, -1):
+                action1 = ActionType.MOVE_LEFT
+                action2 = ActionType.MOVE_UP
+            else:
+                action1 = convert_vector_to_move(away)
+                action2 = convert_vector_to_interact(away)
+
+        if movement_direction == Vector(1, 1):
+            action1 = ActionType.MOVE_RIGHT
+            action2 = ActionType.MOVE_DOWN
+        elif movement_direction == Vector(-1, 1):
+            action1 = ActionType.MOVE_LEFT
+            action2 = ActionType.MOVE_DOWN
+        elif movement_direction == Vector(1, -1):
+            action1 = ActionType.MOVE_RIGHT
+            action2 = ActionType.MOVE_UP
+        elif movement_direction == Vector(-1, -1):
+            action1 = ActionType.MOVE_LEFT
+            action2 = ActionType.MOVE_UP
+        elif nearest_gen.distance(position) < 2:
+            action1 = convert_vector_to_move(movement_direction)
+            action2 = convert_vector_to_interact(movement_direction)
+        elif nearest_battery.distance(position) < 2:
+            action1 = convert_vector_to_move(movement_direction)
+        else:
+            action1 = convert_vector_to_move(movement_direction)
 
 
         if turn in [1, 2, 3, 4, 5, 6]:
             action1 = ActionType.MOVE_DOWN
             action2 = ActionType.MOVE_RIGHT
-        elif turn == 7:
+        if turn == 7:
             action1 = ActionType.MOVE_DOWN
             action2 = ActionType.INTERACT_CENTER
-        elif turn in [8, 9]:
+        if turn in [8, 9]:
             action1 = ActionType.MOVE_LEFT
             action2 = ActionType.MOVE_LEFT
-        elif turn == 10:
+        if turn == 10:
             action1 = ActionType.MOVE_LEFT
             action2 = ActionType.INTERACT_LEFT
-        elif turn in [11, 12]:
+        if turn in [11, 12]:
             action1 = ActionType.MOVE_RIGHT
             action2 = ActionType.MOVE_UP
 
-        elif turn in [13,14, 15, 16]: # TO COLLECT SECOND COIN, CONSIDERED UNSAFE
+        # TO COLLECT SECOND COIN, CONSIDERED UNSAFE
+        if turn in [13,14, 15, 16]:
             action1 = ActionType.MOVE_RIGHT
             action2 = ActionType.MOVE_UP
-        elif turn in [17, 18, 19]:
+        if turn in [17, 18, 19]:
             action1 = ActionType.MOVE_RIGHT
             action2 = ActionType.MOVE_RIGHT
-        else:
-            # Calc action1
-            action1, position = a_star_move(position, self.goal, world, game_object=avatar)
-            # Calc action2
-            action2, position = a_star_move(position, self.goal, world, game_object=avatar)
+
+        if action1 == None:
+            action1 = ActionType.INTERACT_CENTER
+        if action2 == None:
+            action2 = ActionType.INTERACT_CENTER
+
         return [action1, action2]
-
-    def find_closest(self, positions, avatar: Avatar):
-        position = avatar.position
-        closest = positions[0]
-        for i in positions:
-            distance_i = position.distance(i)
-            if distance_i < position.distance(closest) and distance_i != 0:
-                closest = i
-        return closest
-
-
-def a_star_move(start: Vector, goal: Vector, world, allow_vents: bool = True, game_object: GameObject | None = None) -> \
-tuple[Literal[ActionType.INTERACT_CENTER], Vector] | tuple[Any, Vector]:
-    path = a_star_path(
-        start=start,
-        goal=goal,
-        world=world,
-        allow_vents=allow_vents,
-        game_object=game_object
-    )
-
-    # Get list of objects to avoid
-    enemies = world.get_objects(ObjectType.IAN_BOT)
-    enemies.update(world.get_objects(ObjectType.JUMPER_BOT))
-    enemies.update(world.get_objects(ObjectType.DUMB_BOT))
-    enemies.update(world.get_objects(ObjectType.CRAWLER_BOT))
-    enemies = list(enemies)
-
-    # Find closest enemy
-    closest = enemies[0]
-    for i in enemies:
-        distance_i = start.distance(i)
-        if distance_i < start.distance(closest):
-            closest = i
-
-    # Get distance
-    #dist = start.add_to_vector(closest.negative())
-    #abs_dist = sqrt(dist.as_tuple()[0] ** 2 + dist.as_tuple()[1] ** 2)
-    # TODO : This potentially can be sped up
-    dist = start.distance(closest)
-
-    if dist <= _tol: # Avoid enemy
-        direction = (start - closest) - (goal - start)
-        my_x, my_y = direction.as_tuple()
-        abs_x = abs(my_x)
-        abs_y = abs(my_y)
-        s_x = int(my_x/abs_x)
-        s_y = int(my_y/abs_y)
-        if abs_x > abs_y:
-            direction = Vector(s_x, 0)
-        elif abs_x == abs_y:
-           if random.random() < 0.5:
-               direction = Vector(s_x, 0)
-           else:
-               direction = Vector(0, s_y)
-        else:
-            direction = Vector(0, s_y)
-        action = DIRECTION_TO_MOVE.get(direction)
-
-        # If cornered, strafe
-        top = world.get_top(start + direction)
-        if not isinstance(top, Occupiable):
-            if abs_x < abs_y:
-                direction = Vector(s_x, 0)
-            else:
-                direction = Vector(0, s_y)
-            action = DIRECTION_TO_MOVE.get(direction)
-
-        return action, start + direction
-    elif not path or len(path) < 2: # Reached goal
-        return ActionType.INTERACT_CENTER, start
-    else: # Take step
-        next_step: Vector = path[1]
-        direction = next_step - start
-        action = DIRECTION_TO_MOVE.get(direction)
-        return action, start + direction
-
-def a_star_path(start: Vector, goal: Vector, world, allow_vents = True, game_object: GameObject | None = None) -> Optional[List[Vector]]:
-    start_p = (start.x, start.y)
-    goal_p = (goal.x, goal.y)
-
-    frontier = [(0, start_p)]
-    came_from = {start_p: None}
-    cost = {start_p: 0}
-
-    while frontier:
-        _, current = heapq.heappop(frontier)
-
-        if current == goal_p:
-            path = []
-            while current is not None:
-                x, y = current
-                path.insert(0, Vector(x, y))
-                current = came_from[current]
-            return path
-
-        for dx, dy in DIRECTIONS:
-            nxt = (current[0] + dx, current[1] + dy)
-            vec = Vector(nxt[0], nxt[1])
-
-            if game_object is not None and not world.can_object_occupy(vec, game_object):
-                continue
-
-            if not world.is_valid_coords(vec):
-                continue
-
-            top = world.get_top(vec)
-            if top and top.object_type != ObjectType.AVATAR:
-                # vents block unless allowed
-                if top.object_type == ObjectType.VENT and not allow_vents:
-                    continue
-
-                # can't pass through non-occupiable
-                if not isinstance(top, Occupiable):
-                    continue
-
-
-            new_cost = cost[current] + 1
-            if nxt not in cost or new_cost < cost[nxt]:
-                cost[nxt] = new_cost
-                priority = new_cost + vec.distance(goal)
-                heapq.heappush(frontier, (priority, nxt))
-                came_from[nxt] = current
-
-    return None
